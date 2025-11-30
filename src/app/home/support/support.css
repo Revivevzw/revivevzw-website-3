@@ -1,0 +1,49 @@
+.support {
+    padding: 6rem 0;
+    background-color: var(--color-white);
+    text-align: center;
+}
+
+.support-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.support h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-dark);
+}
+
+.highlight {
+    color: var(--color-green);
+}
+
+.support {
+    padding: 6rem 0;
+    background-color: var(--color-white);
+    text-align: center;
+}
+
+.support-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.support h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-dark);
+}
+
+.highlight {
+    color: var(--color-green);
+}
+
+.support p {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    color: var(--color-text-light);
+}
+
+/* .btn-donate-large styles removed, using global .btn-primary .btn-large */

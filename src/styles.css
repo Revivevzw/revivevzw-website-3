@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap');
+
+:root {
+    /* Colors */
+    --primary-gradient: linear-gradient(90deg, #FFC107 0%, #FF9800 100%);
+    --color-dark: #1a1a1a;
+    --color-light: #f9f9f9;
+    --color-white: #ffffff;
+    --color-green: #4CAF50;
+    --color-text: #333333;
+    --color-text-light: #666666;
+    --color-background: #FCFCFC;
+
+    /* Brand Colors from Design */
+    --color-brand-red: #8B1A1A;
+    /* Dark Red */
+    --color-brand-green: #D4E157;
+    /* Light Green */
+    --color-brand-text: #333333;
+    --color-yellow-pale: #E6E69B;
+    --color-red-deep: #7A1C1C;
+
+    /* Fonts */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    margin: 0;
+    font-weight: 700;
+}
+
+button {
+    font-family: var(--font-body);
+    cursor: pointer;
+}
+
+/* Global Button Style */
+.btn-primary {
+    background: var(--primary-gradient);
+    border: none;
+    border-radius: 50px;
+    /* Pill shape */
+    padding: 12px 24px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-large {
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
+}
