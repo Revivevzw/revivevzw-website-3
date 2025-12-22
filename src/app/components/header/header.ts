@@ -1,0 +1,14 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+    selector: 'app-header',
+    standalone: true,
+    imports: [CommonModule],
+    templateUrl: './header.html',
+    styleUrl: './header.css'
+})
+export class Header {
+    searchIconUrl = "/assets/search.svg";
+    cartIconUrl = "/assets/cart.svg";
+}

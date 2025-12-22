@@ -1,0 +1,110 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Full viewport height */
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: var(--spacing-4);
+    /* Add padding to match the rounded corners container in design? */
+    box-sizing: border-box;
+}
+
+/* 
+   The design shows the image has rounded corners and padding around it (white border effect).
+   Wait, the design screenshot shows a white frame around the image? 
+   No, it looks like a large "card" or the body background is white and the hero image is a child with padding.
+   Or it's a "Frame" in Figma that has padding.
+   Looking at the header screenshot, there is a rounded corner on the top left/right.
+   Let's assume the whole "page" wrapper might have padding or the hero is just a section.
+   For now, I'll make the hero image fill the container but with the rounded corners as seen in the screenshot.
+*/
+
+.hero-background {
+    position: absolute;
+    top: var(--spacing-4);
+    /* 24px */
+    left: var(--spacing-4);
+    right: var(--spacing-4);
+    bottom: var(--spacing-4);
+    /* Assuming full frame margin */
+    border-radius: var(--border-radius-2);
+    /* 24px */
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    /* Subtle gradient if needed */
+    /* The screenshot doesn't show a heavy overlay, but text is white on busy background. */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-6);
+    margin-top: 100px;
+    /* Offset to account for header visual center */
+    padding: 0 var(--spacing-4);
+}
+
+.hero-title {
+    font: var(--font-h1);
+    font-size: 56px;
+    /* Larger than standard H1 for hero */
+    line-height: 1.1;
+    color: var(--color-white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    font-weight: 700;
+}
+
+.btn-hero {
+    background-color: var(--color-primary-600);
+    color: var(--color-white);
+    padding: 16px 32px;
+    border-radius: var(--border-radius-3);
+    font: var(--font-body-strong);
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.2s;
+    border: none;
+    display: inline-block;
+}
+
+.btn-hero:hover {
+    background-color: var(--color-primary-500);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-background {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}

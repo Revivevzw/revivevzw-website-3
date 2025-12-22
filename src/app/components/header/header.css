@@ -1,0 +1,220 @@
+.header {
+    width: 100%;
+    padding: var(--spacing-6) var(--spacing-6);
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1440px;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--shadow-default);
+    padding: var(--spacing-4) var(--spacing-6);
+    /* Increased top/bottom padding */
+    display: flex;
+    align-items: center;
+    /* Center logo vertically */
+    box-sizing: border-box;
+    gap: var(--spacing-4);
+}
+
+.header-left {
+    flex-shrink: 0;
+    align-self: flex-end;
+    /* This aligns the bottom of the logo (text) with the bottom of the right-side block (nav/buttons) */
+    padding-bottom: 6px;
+    /* Fine-tuning to match baseline exactly given button padding */
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-mark {
+    height: 80px;
+    /* Adjust based on eye-balling screenshot relative to container */
+    width: auto;
+    object-fit: contain;
+}
+
+.header-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+}
+
+/* TOP ROW */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Push everything to right */
+    gap: var(--spacing-4);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey-100);
+    border-radius: var(--border-radius-3);
+    padding: var(--spacing-2) var(--spacing-3);
+    width: 200px;
+    /* Simulating width */
+}
+
+.search-icon {
+    width: 18px;
+    height: 18px;
+    stroke: var(--color-grey-600);
+    /* Ensure color matches placeholder */
+    opacity: 0.6;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    font: var(--font-body-small-default);
+    outline: none;
+    width: 100%;
+    color: var(--color-blue-950);
+}
+
+.search-bar input::placeholder {
+    color: var(--color-grey-600);
+    opacity: 0.6;
+}
+
+.top-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+}
+
+.header-link {
+    font: var(--font-body-small-strong);
+    color: var(--color-blue-950);
+    text-decoration: none;
+}
+
+.header-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.lang-selector {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font: var(--font-body-small-strong);
+    color: var(--color-blue-950);
+    cursor: pointer;
+}
+
+/* BOTTOM ROW */
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* All content aligns to the right/center relative to logo */
+    gap: var(--spacing-5);
+}
+
+.nav {
+    margin-right: auto;
+    /* Push buttons to the right, keep nav closer to center if needed, or remove for group right */
+}
+
+/* Actually, per screenshot, Nav is "in between". 
+   If I use flex-grow on Nav, it might space out. 
+   Let's try margin-right on nav to push buttons far right? */
+.header-bottom {
+    justify-content: space-between;
+    /* Nav on left (of this section), Buttons on right */
+}
+
+.nav-list {
+    display: flex;
+    gap: var(--spacing-5);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.nav-link {
+    font: var(--font-body-strong);
+    /* Changed to strong 18px */
+    color: var(--color-blue-950);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-1);
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--color-primary-500);
+}
+
+.header-buttons {
+    display: flex;
+    gap: var(--spacing-3);
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: var(--border-radius-3);
+    font: var(--font-body-strong);
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-gift {
+    background-color: var(--color-cream-500);
+    color: var(--color-blue-950);
+}
+
+.btn-shop {
+    background-color: var(--color-primary-500);
+    /* Dark Red */
+    color: var(--color-white);
+}
+
+.chevron-icon {
+    font-size: 10px;
+    opacity: 0.5;
+    margin-top: 2px;
+}
+
+/* Responsive */
+@media (max-width: 1280px) {
+    .header-main {
+        align-items: flex-end;
+        /* Align right */
+    }
+
+    .nav {
+        display: none;
+        /* Hide nav on smaller screens as commonly done */
+    }
+}

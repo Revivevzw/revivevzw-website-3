@@ -1,0 +1,70 @@
+:root {
+    /* Colors */
+    --color-primary-500: #a12323;
+    --color-primary-600: #8c1f1f;
+    --color-primary-100: #f8d0d0;
+
+    --color-cream-300: #eff197;
+    --color-cream-400: #eae776;
+    --color-cream-500: #ebeca4;
+
+    --color-blue-100: #eef3f8;
+    --color-blue-200: #dfe9f1;
+    --color-blue-300: #cedce8;
+    --color-blue-400: #b9cdde;
+    --color-blue-900: #3d4c58;
+    --color-blue-950: #2a3640;
+
+    --color-stone-50: #fafaf7;
+    --color-stone-100: #f0f1ea;
+    --color-stone-300: #bdbeaa;
+    --color-stone-400: #bdbeaa;
+    --color-stone-950: #2a2a23;
+
+    --color-grey-100: #f3f4f6;
+    --color-grey-200: #e5e7eb;
+    --color-grey-600: #4b5563;
+    --color-grey-700: #374151;
+
+    --color-black: #000000;
+    --color-white: #ffffff;
+
+    /* Typography - Raleway (Headings) */
+    --font-family-headings: 'Raleway', sans-serif;
+    --font-h1: 700 36px/1.2 var(--font-family-headings);
+    --font-h2: 600 28px/1.3 var(--font-family-headings);
+    --font-h3: 600 20px/1.6 var(--font-family-headings);
+
+    /* Typography - Source Sans Pro (Body) */
+    --font-family-body: 'Source Sans Pro', sans-serif;
+    --font-body-lead: 400 20px/1.5 var(--font-family-body);
+    --font-body-strong: 600 18px/1.5 var(--font-family-body);
+    --font-body-default: 400 18px/1.4 var(--font-family-body);
+    --font-body-small-default: 400 16px/1.3 var(--font-family-body);
+    --font-body-small-strong: 600 16px/1.3 var(--font-family-body);
+    --font-label: 700 14px/1.3 var(--font-family-body);
+    --letter-spacing-label: 4px;
+
+    /* Spacings */
+    --spacing-0: 0px;
+    --spacing-1: 4px;
+    --spacing-2: 8px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+    --spacing-5: 32px;
+    --spacing-6: 40px;
+    --spacing-7: 48px;
+    --spacing-9: 64px;
+    --spacing-10: 80px;
+    --spacing-11: 96px;
+    --spacing-12: 112px;
+
+    /* Border Radius */
+    --border-radius-0: 0px;
+    --border-radius-1: 6px;
+    --border-radius-2: 24px;
+    --border-radius-3: 50px;
+
+    /* Shadows */
+    --shadow-default: 0 4px 30px 0 rgba(92, 109, 122, 0.1);
+}
