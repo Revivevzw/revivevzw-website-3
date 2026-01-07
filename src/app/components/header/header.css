@@ -16,13 +16,13 @@
     background-color: var(--color-white);
     border-radius: var(--border-radius-2);
     box-shadow: var(--shadow-default);
-    padding: var(--spacing-4) var(--spacing-6);
+    padding: var(--spacing-2) var(--spacing-4);
     /* Increased top/bottom padding */
     display: flex;
     align-items: center;
     /* Center logo vertically */
     box-sizing: border-box;
-    gap: var(--spacing-4);
+    gap: var(--spacing-3);
 }
 
 .header-left {
@@ -40,7 +40,7 @@
 }
 
 .logo-mark {
-    height: 80px;
+    height: 100px;
     /* Adjust based on eye-balling screenshot relative to container */
     width: auto;
     object-fit: contain;
@@ -129,6 +129,7 @@
     justify-content: flex-end;
     /* All content aligns to the right/center relative to logo */
     gap: var(--spacing-5);
+    margin-bottom: var(--spacing-4);
 }
 
 .nav {
@@ -156,17 +157,55 @@
 
 .nav-link {
     font: var(--font-body-strong);
-    /* Changed to strong 18px */
     color: var(--color-blue-950);
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: var(--spacing-1);
     transition: color 0.2s;
+    justify-content: space-between;
+}
+
+.nav-dropdown {
+    position: absolute;
+    display: none;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--shadow-default);
+}
+
+.nav-dropdown .nav-link {
+    font: var(--font-body-small-default);
+    padding: var(--spacing-3) var(--spacing-3);
+}
+
+.nav-dropdown .nav-link:hover {
+    background-color: var(--color-primary-100);
+}
+
+.nav-dropdown>.nav-link:first-child,
+.nav-dropdown>.nav-item:first-child>.nav-link {
+    border-top-left-radius: var(--border-radius-1);
+    border-top-right-radius: var(--border-radius-1);
+}
+
+.nav-dropdown>.nav-link:last-child,
+.nav-dropdown>.nav-item:last-child>.nav-link {
+    border-bottom-left-radius: var(--border-radius-1);
+    border-bottom-right-radius: var(--border-radius-1);
 }
 
 .nav-link:hover {
     color: var(--color-primary-500);
+}
+
+.nav-dropdown--sidedropdown {
+    left: 100%;
+    top: 106px;
+}
+
+.nav-item:hover>.nav-dropdown {
+    display: block;
 }
 
 .header-buttons {
@@ -174,31 +213,7 @@
     gap: var(--spacing-3);
 }
 
-.btn {
-    padding: 12px 24px;
-    border-radius: var(--border-radius-3);
-    font: var(--font-body-strong);
-    border: none;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
-}
 
-.btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.btn-gift {
-    background-color: var(--color-cream-500);
-    color: var(--color-blue-950);
-}
-
-.btn-shop {
-    background-color: var(--color-primary-500);
-    /* Dark Red */
-    color: var(--color-white);
-}
 
 .chevron-icon {
     font-size: 10px;

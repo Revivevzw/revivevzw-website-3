@@ -1,0 +1,26 @@
+<article class="split-card" [class.reversed]="reversed">
+    <div class="card-image-wrapper">
+        <img [src]="imageSrc" [alt]="imageAlt" class="card-image" />
+    </div>
+
+    <div class="card-content">
+        @if (label) {
+        <div class="card-label">
+            <span class="label-icon"></span>
+            {{ label }}
+        </div>
+        }
+
+        @if (title) {
+        <h2 class="card-title">{{ title }}</h2>
+        }
+
+        <div class="card-body">
+            <ng-content></ng-content>
+        </div>
+
+        <div class="card-actions">
+            <ng-content select="[actions]"></ng-content>
+        </div>
+    </div>
+</article>

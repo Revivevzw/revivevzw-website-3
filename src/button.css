@@ -1,0 +1,44 @@
+/* Shared Button Styles */
+
+/* Common base styles */
+[class^="btn-"] {
+    font-family: var(--font-family-body);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+[class^="btn-"]:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Primary Button (Red) */
+.btn-primary {
+    background-color: var(--color-primary-500);
+    color: var(--color-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-600);
+}
+
+/* Secondary Button (Cream/Yellowish) */
+.btn-secondary {
+    background-color: var(--color-cream-500);
+    color: var(--color-blue-950);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-cream-400);
+    /* Slightly darker/richer cream on hover */
+}
