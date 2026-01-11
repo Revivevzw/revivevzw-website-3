@@ -1,0 +1,16 @@
+<div class="info-block">
+    @if (label) {
+    <div class="label-container">
+        <div class="icon-circle"></div>
+        <span class="label-text">{{ label }}</span>
+    </div>
+    }
+
+    @if (title) {
+    <h2 class="title">{{ title }}</h2>
+    }
+
+    <div class="content">
+        <ng-content></ng-content>
+    </div>
+</div>

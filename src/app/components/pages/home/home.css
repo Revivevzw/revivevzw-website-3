@@ -1,3 +1,16 @@
 .spacer {
-    height: 100px;
+    height: var(--spacing-9);
+    /* or whatever spacing is appropriate */
+}
+
+/* Add any specific styles for the cards container if not using utility classes equivalent */
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-4);
+    padding: var(--spacing-5) var(--spacing-9);
+    justify-content: center;
+    align-items: stretch;
+    /* background-color: var(--color-stone-50); */
+    /* Assuming a section bg, or transparent */
 }

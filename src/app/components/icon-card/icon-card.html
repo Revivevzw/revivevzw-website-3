@@ -1,0 +1,13 @@
+<div class="icon-card">
+    <div class="icon-container" [style.background-color]="iconBackgroundColor">
+        <ng-content select="[icon]"></ng-content>
+    </div>
+
+    @if (title) {
+    <h3 class="title">{{ title }}</h3>
+    }
+
+    <div class="description">
+        <ng-content></ng-content>
+    </div>
+</div>
