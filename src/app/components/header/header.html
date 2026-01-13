@@ -1,7 +1,7 @@
 <header class="header">
     <div class="header-container">
         <div class="header-left">
-            <a href="/" class="logo-link">
+            <a routerLink="/" class="logo-link">
                 <img src="/assets/logo-horizontal.png" alt="Revive Mark" class="logo-mark">
             </a>
         </div>
@@ -14,7 +14,7 @@
                 </div>
 
                 <div class="top-actions">
-                    <a href="#" class="header-link">Contact</a>
+                    <a routerLink="/contact" class="header-link">Contact</a>
                     <a href="#" class="icon-link">
                         <img [src]="cartIconUrl" alt="Shopping Cart" class="header-icon">
                     </a>
@@ -32,38 +32,38 @@
                             <a href="#" class="nav-link">Vanuit het hart <span class="chevron-icon"><img
                                         [src]="carretDownUrl" class=""></span></a>
                             <div class="nav-dropdown">
-                                <a href="#" class="nav-link">Wie zijn we, wat doen we</a>
-                                <a href="#" class="nav-link">Ons team</a>
-                                <a href="#" class="nav-link">Onze missie</a>
-                                <a href="#" class="nav-link">Duurzame samenwerking</a>
-                                <a href="#" class="nav-link">Onze partners</a>
+                                <a routerLink="/about" class="nav-link">Wie zijn we, wat doen we</a>
+                                <a routerLink="/team" class="nav-link">Ons team</a>
+                                <a routerLink="/mission" class="nav-link">Onze missie</a>
+                                <a routerLink="/collaboration" class="nav-link">Duurzame samenwerking</a>
+                                <a routerLink="/partners" class="nav-link">Onze partners</a>
                             </div>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Hoe wij helpen <span class="chevron-icon"><img
                                         [src]="carretDownUrl" class=""></span></a>
                             <div class="nav-dropdown">
-                                <a href="#" class="nav-link">Geplande medische missies</a>
-                                <a href="#" class="nav-link">Voorbije medische missies</a>
-                                <a href="#" class="nav-link">Patiënten aan het woord</a>
-                                <a href="#" class="nav-link">Vrijwilligers aan het woord</a>
+                                <a routerLink="/planned-missions" class="nav-link">Geplande medische missies</a>
+                                <a routerLink="/past-missions" class="nav-link">Voorbije medische missies</a>
+                                <a routerLink="/patient-stories" class="nav-link">Patiënten aan het woord</a>
+                                <a routerLink="/volunteer-stories" class="nav-link">Vrijwilligers aan het woord</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Events</a>
+                            <a routerLink="/events" class="nav-link">Events</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Steun ons <span class="chevron-icon"><img [src]="carretDownUrl"
                                         class=""></span></a>
                             <div class="nav-dropdown">
-                                <a href="#" class="nav-link">Doe een gift</a>
-                                <a href="#" class="nav-link">Word lid</a>
+                                <a routerLink="/donate" class="nav-link">Doe een gift</a>
+                                <a routerLink="/become-member" class="nav-link">Word lid</a>
                                 <div class="nav-item">
                                     <a href="#" class="nav-link">Help mee <img [src]="carretRightUrl" class=""></a>
                                     <div class="nav-dropdown nav-dropdown--sidedropdown">
-                                        <a href="#" class="nav-link">Steun als organisatie</a>
-                                        <a href="#" class="nav-link">Testamenten en legaten</a>
-                                        <a href="#" class="nav-link">Versterk ons team</a>
+                                        <a routerLink="/corporate-support" class="nav-link">Steun als organisatie</a>
+                                        <a routerLink="/legacies" class="nav-link">Testamenten en legaten</a>
+                                        <a routerLink="/join-team" class="nav-link">Versterk ons team</a>
                                     </div>
                                 </div>
                             </div>
@@ -72,8 +72,8 @@
                 </nav>
 
                 <div class="header-buttons">
-                    <button class="btn-secondary">Doe een gift</button>
-                    <button class="btn-primary">Webshop</button>
+                    <button class="btn-secondary" routerLink="/donate">Doe een gift</button>
+                    <a href="https://shop.revivevzw.be/" class="btn-primary">Webshop</a>
                 </div>
             </div>
         </div>

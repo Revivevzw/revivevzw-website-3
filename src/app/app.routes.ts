@@ -1,7 +1,38 @@
 import { Routes } from '@angular/router';
-import { AppComponent } from './app';
-import { Home } from './components/pages/home/home';
+import { Home } from './pages/home/home';
+import { About } from './pages/about/about';
+import { Team } from './pages/team/team';
+import { Mission } from './pages/mission/mission';
+import { Collaboration } from './pages/collaboration/collaboration';
+import { Partners } from './pages/partners/partners';
+import { PlannedMissions } from './pages/planned-missions/planned-missions';
+import { PastMissions } from './pages/past-missions/past-missions';
+import { PatientStories } from './pages/patient-stories/patient-stories';
+import { VolunteerStories } from './pages/volunteer-stories/volunteer-stories';
+import { Events } from './pages/events/events';
+import { Donate } from './pages/donate/donate';
+import { BecomeMember } from './pages/become-member/become-member';
+import { CorporateSupport } from './pages/corporate-support/corporate-support';
+import { Legacies } from './pages/legacies/legacies';
+import { JoinTeam } from './pages/join-team/join-team';
+import { Contact } from './pages/contact/contact';
 
 export const routes: Routes = [
-    { path: '', component: Home }
+    { path: '', component: Home },
+    { path: 'about', component: About },
+    { path: 'team', component: Team },
+    { path: 'mission', component: Mission },
+    { path: 'collaboration', component: Collaboration },
+    { path: 'partners', component: Partners },
+    { path: 'planned-missions', component: PlannedMissions },
+    { path: 'past-missions', component: PastMissions },
+    { path: 'patient-stories', component: PatientStories },
+    { path: 'volunteer-stories', component: VolunteerStories },
+    { path: 'events', component: Events },
+    { path: 'donate', component: Donate },
+    { path: 'become-member', component: BecomeMember },
+    { path: 'corporate-support', component: CorporateSupport },
+    { path: 'legacies', component: Legacies },
+    { path: 'join-team', component: JoinTeam },
+    { path: 'contact', component: Contact },
 ];
