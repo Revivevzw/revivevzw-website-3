@@ -1,0 +1,216 @@
+:host {
+    display: block;
+    font-family: var(--font-family-body);
+    color: var(--color-blue-950);
+}
+
+/* Mission Page Style */
+.mission-page-container {
+    max-width: 1440px;
+    /* Expand to match breadcrumbs alignment */
+    margin: 0 auto;
+    /* Remove padding or keep vertical only ? */
+    /* If breadcrumbs is inside, it has its own padding/width logic. */
+    /* Breadcrumbs needs 210px margin top. */
+    /* Container should handle general layout */
+    display: flex;
+    flex-direction: column;
+    margin-top: 210px;
+    /* Accounts for fixed header */
+}
+
+
+
+/* Page Header */
+.page-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-4);
+}
+
+.label-wrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-cream-300);
+    /* Check specific color in screenshot, yellow/cream */
+    border-radius: 50%;
+}
+
+.label {
+    font: var(--font-label);
+    letter-spacing: var(--letter-spacing-label);
+    text-transform: uppercase;
+    color: var(--color-blue-950);
+}
+
+h1 {
+    font: var(--font-h1);
+    margin: 0;
+}
+
+.intro-text {
+    font: var(--font-body-lead);
+    color: var(--color-grey-600);
+    text-align: center;
+    margin: 0;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: var(--spacing-4);
+    margin-top: var(--spacing-4);
+    border-bottom: 1px solid var(--color-grey-200);
+    /* Optional, based on design interpretation */
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    font: var(--font-body-default);
+    color: var(--color-grey-600);
+    padding: var(--spacing-2) 0;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.tab-btn:hover {
+    color: var(--color-blue-950);
+}
+
+.tab-btn.active {
+    color: var(--color-primary-500);
+    /* Or black? Screenshot shows red underline text maybe? */
+    font-weight: 600;
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    /* Align with border-bottom */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary-500);
+}
+
+/* Mission Grid */
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    /* Adjusted to fit 3 columns: 340*3 + 32*2 < 1168 */
+    gap: var(--spacing-5);
+}
+
+.mission-card {
+    background-color: var(--color-blue-100);
+    /* #eef3f8 */
+    border: 1px solid var(--color-blue-200);
+    /* #dfe9f1 */
+    border-radius: var(--border-radius-2);
+    /* 24px */
+    padding: var(--spacing-6);
+    /* 40px */
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-5);
+    /* 32px between image and content-stack */
+}
+
+.mission-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-default);
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    /* Square */
+    border-radius: var(--border-radius-2);
+    /* 24px */
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    /* 8px vertical gap within content */
+}
+
+.card-date {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    /* 8px */
+    font: var(--font-body-strong);
+    /* Source Sans Pro SemiBold 18px */
+    color: var(--color-black);
+    /* or close to black */
+    margin-bottom: var(--spacing-3);
+    /* 16px bottom margin to Title */
+}
+
+.card-date svg {
+    width: 24px;
+    height: 24px;
+    color: var(--color-black);
+}
+
+h3 {
+    font: var(--font-h2);
+    /* Raleway SemiBold 28px */
+    margin: 0;
+    color: var(--color-blue-950);
+}
+
+.card-description {
+    font: var(--font-body-default);
+    /* Source Sans Pro Regular 18px */
+    color: var(--color-grey-700);
+    margin: 0;
+    margin-top: var(--spacing-3);
+    /* 16px top spacing */
+}
+
+/* No Missions Message */
+.no-missions {
+    grid-column: 1 / -1;
+    text-align: center;
+    font: var(--font-body-lead);
+    color: var(--color-grey-600);
+    padding: var(--spacing-6) 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header {
+        padding-left: var(--spacing-2);
+        padding-right: var(--spacing-2);
+    }
+}

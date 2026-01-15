@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PastMissions } from './past-missions';
+import { CtaBanner } from './cta-banner';
 
-describe('PastMissions', () => {
-  let component: PastMissions;
-  let fixture: ComponentFixture<PastMissions>;
+describe('CtaBanner', () => {
+  let component: CtaBanner;
+  let fixture: ComponentFixture<CtaBanner>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PastMissions]
+      imports: [CtaBanner]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PastMissions);
+    fixture = TestBed.createComponent(CtaBanner);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

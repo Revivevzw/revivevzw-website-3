@@ -2,11 +2,9 @@ import { Routes } from '@angular/router';
 import { Home } from './pages/home/home';
 import { About } from './pages/about/about';
 import { Team } from './pages/team/team';
-import { Mission } from './pages/mission/mission';
+import { Missions } from './pages/missions/missions';
 import { Collaboration } from './pages/collaboration/collaboration';
 import { Partners } from './pages/partners/partners';
-import { PlannedMissions } from './pages/planned-missions/planned-missions';
-import { PastMissions } from './pages/past-missions/past-missions';
 import { PatientStories } from './pages/patient-stories/patient-stories';
 import { VolunteerStories } from './pages/volunteer-stories/volunteer-stories';
 import { Events } from './pages/events/events';
@@ -18,21 +16,19 @@ import { JoinTeam } from './pages/join-team/join-team';
 import { Contact } from './pages/contact/contact';
 
 export const routes: Routes = [
-    { path: '', component: Home },
-    { path: 'about', component: About },
-    { path: 'team', component: Team },
-    { path: 'mission', component: Mission },
-    { path: 'collaboration', component: Collaboration },
-    { path: 'partners', component: Partners },
-    { path: 'planned-missions', component: PlannedMissions },
-    { path: 'past-missions', component: PastMissions },
-    { path: 'patient-stories', component: PatientStories },
-    { path: 'volunteer-stories', component: VolunteerStories },
-    { path: 'events', component: Events },
-    { path: 'donate', component: Donate },
-    { path: 'become-member', component: BecomeMember },
-    { path: 'corporate-support', component: CorporateSupport },
-    { path: 'legacies', component: Legacies },
-    { path: 'join-team', component: JoinTeam },
-    { path: 'contact', component: Contact },
+    { path: '', component: Home, pathMatch: 'full', data: { breadcrumb: 'Home' } },
+    { path: 'about', component: About, data: { breadcrumb: 'Wie zijn we' } },
+    { path: 'team', component: Team, data: { breadcrumb: 'Ons team' } },
+    { path: 'collaboration', component: Collaboration, data: { breadcrumb: 'Samenwerking' } },
+    { path: 'partners', component: Partners, data: { breadcrumb: 'Partners' } },
+    { path: 'missions', component: Missions, data: { breadcrumb: 'Onze missies' } },
+    { path: 'patient-stories', component: PatientStories, data: { breadcrumb: 'Patiëntenverhalen' } },
+    { path: 'volunteer-stories', component: VolunteerStories, data: { breadcrumb: 'Vrijwilligersverhalen' } },
+    { path: 'events', component: Events, data: { breadcrumb: 'Events' } },
+    { path: 'donate', component: Donate, data: { breadcrumb: 'Doe een gift' } },
+    { path: 'become-member', component: BecomeMember, data: { breadcrumb: 'Word lid' } },
+    { path: 'corporate-support', component: CorporateSupport, data: { breadcrumb: 'Steun als organisatie' } },
+    { path: 'legacies', component: Legacies, data: { breadcrumb: 'Testamenten en legaten' } },
+    { path: 'join-team', component: JoinTeam, data: { breadcrumb: 'Versterk ons team' } },
+    { path: 'contact', component: Contact, data: { breadcrumb: 'Contact' } },
 ];

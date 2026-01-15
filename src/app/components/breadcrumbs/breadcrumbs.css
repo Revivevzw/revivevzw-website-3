@@ -1,0 +1,39 @@
+:host {
+    display: block;
+    width: 100%;
+    /* margin-top moved to page container */
+}
+
+.breadcrumbs-container {
+    max-width: 1440px;
+    /* Match header max-width */
+    margin: 0 auto;
+    /* Match header padding: spacing-6 (outer). Inner text alignment handled by container width. */
+    padding: 0 var(--spacing-6);
+    width: 100%;
+}
+
+.breadcrumbs {
+    font-size: 14px;
+    color: var(--color-grey-600);
+}
+
+.breadcrumbs .separator {
+    margin: 0 var(--spacing-2);
+}
+
+.breadcrumbs .current {
+    font-weight: 600;
+    color: var(--color-blue-950);
+}
+
+.crumb-link {
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.crumb-link:hover {
+    color: var(--color-blue-950);
+    text-decoration: underline;
+}

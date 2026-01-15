@@ -43,8 +43,10 @@
                             <a href="#" class="nav-link">Hoe wij helpen <span class="chevron-icon"><img
                                         [src]="carretDownUrl" class=""></span></a>
                             <div class="nav-dropdown">
-                                <a routerLink="/planned-missions" class="nav-link">Geplande medische missies</a>
-                                <a routerLink="/past-missions" class="nav-link">Voorbije medische missies</a>
+                                <a [routerLink]="['/missions']" [queryParams]="{type: 'future'}"
+                                    class="nav-link">Geplande medische missies</a>
+                                <a [routerLink]="['/missions']" [queryParams]="{type: 'past'}" class="nav-link">Voorbije
+                                    medische missies</a>
                                 <a routerLink="/patient-stories" class="nav-link">Patiënten aan het woord</a>
                                 <a routerLink="/volunteer-stories" class="nav-link">Vrijwilligers aan het woord</a>
                             </div>
