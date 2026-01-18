@@ -47,7 +47,9 @@
 .overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%); */
+    background-color: var(--color-black);
+    opacity: 0.25;
     /* Subtle gradient if needed */
     /* The screenshot doesn't show a heavy overlay, but text is white on busy background. */
 }

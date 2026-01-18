@@ -12,15 +12,18 @@
         </p>
 
         <div class="tabs">
-            <button class="tab-btn" [class.active]="activeTab === 'future'" (click)="setActiveTab('future')">Geplande
+            <button class="tab-btn" [class.active]="activeTab() === 'future'" (click)="setActiveTab('future')">Geplande
                 missies</button>
-            <button class="tab-btn" [class.active]="activeTab === 'past'" (click)="setActiveTab('past')">Afgelopen
+            <button class="tab-btn" [class.active]="activeTab() === 'past'" (click)="setActiveTab('past')">Afgelopen
                 missies</button>
         </div>
     </section>
 
     <section class="mission-grid">
-        @for (mission of filteredMissions; track mission.id) {
+        @if (loading()) {
+        <p class="loading-message">Missies laden...</p>
+        } @else {
+        @for (mission of filteredMissions(); track mission.id) {
         <div class="mission-card">
             <div class="card-image">
                 <img [src]="mission.mainImage" [alt]="mission.name.nl">
@@ -43,6 +46,7 @@
         </div>
         } @empty {
         <p class="no-missions">Er zijn momenteel geen missies.</p>
+        }
         }
     </section>
 

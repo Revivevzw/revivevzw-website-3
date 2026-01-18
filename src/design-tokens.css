@@ -59,6 +59,9 @@
     --spacing-11: 96px;
     --spacing-12: 112px;
 
+    /* Layout */
+    --container-max-width: 1400px;
+
     /* Border Radius */
     --border-radius-0: 0px;
     --border-radius-1: 6px;

@@ -71,6 +71,7 @@ h1 {
     gap: var(--spacing-4);
     margin-top: var(--spacing-4);
     border-bottom: 1px solid var(--color-grey-200);
+    margin-bottom: var(--spacing-4);
     /* Optional, based on design interpretation */
 }
 
@@ -196,6 +197,14 @@ h3 {
 
 /* No Missions Message */
 .no-missions {
+    grid-column: 1 / -1;
+    text-align: center;
+    font: var(--font-body-lead);
+    color: var(--color-grey-600);
+    padding: var(--spacing-6) 0;
+}
+
+.loading-message {
     grid-column: 1 / -1;
     text-align: center;
     font: var(--font-body-lead);

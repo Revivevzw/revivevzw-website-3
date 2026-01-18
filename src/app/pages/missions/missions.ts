@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal, computed, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { MissionApiService } from '../../api/services/mission-api.service';
 import { Mission } from '../../api/models/mission.model';
 import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs';
@@ -13,59 +14,53 @@ import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs';
     styleUrl: './missions.css',
 })
 export class Missions implements OnInit {
-    activeTab: 'future' | 'past' = 'future';
-    allMissions: Mission[] = [];
-    loading = true;
+    private missionApi = inject(MissionApiService);
+    private route = inject(ActivatedRoute);
+    private router = inject(Router);
 
-    constructor(
-        private route: ActivatedRoute,
-        private router: Router,
-        private missionApi: MissionApiService,
-    ) { }
+    // Reactive State using Signals
+    activeTab = signal<'future' | 'past'>('future');
 
-    ngOnInit() {
-        this.route.queryParams.subscribe(params => {
-            const type = params['type'];
-            if (type === 'past') {
-                this.activeTab = 'past';
-            } else if (type === 'future') {
-                this.activeTab = 'future';
-            }
-        });
+    // toSignal handles the subscription and provides a reactive Signal of the data
+    private allMissions = toSignal(this.missionApi.getAll(), { initialValue: [] as Mission[] });
 
-        this.missionApi.getAll().subscribe({
-            next: (missions) => {
-                this.allMissions = missions;
-                this.loading = false;
-            },
-            error: (err) => {
-                console.error('Error fetching missions', err);
-                this.loading = false;
-            }
-        });
-    }
+    // Computed state automatically updates when activeTab or allMissions changes
+    filteredMissions = computed(() => {
+        const tab = this.activeTab();
+        const missions = this.allMissions();
 
-    get filteredMissions() {
-        let filtered: Mission[] = [];
-        if (this.activeTab === 'future') {
-            filtered = this.allMissions.filter(m => m.type === 0); // PLANNED_MISSIONS
-        } else {
-            filtered = this.allMissions.filter(m => m.type === 2); // PAST_MISSIONS
-        }
+        const filtered = missions.filter(m =>
+            tab === 'future' ? m.type === 0 : m.type === 2
+        );
 
-        return filtered.sort((a, b) => {
+        return [...filtered].sort((a, b) => {
             const dateA = a.startDate ? new Date(a.startDate).getTime() : 0;
             const dateB = b.startDate ? new Date(b.startDate).getTime() : 0;
             return dateB - dateA;
         });
+    });
+
+    // Simple loading flag based on whether we have data yet
+    // Note: In a real app, you might want a more explicit loading state from the API service
+    loading = computed(() => this.allMissions().length === 0);
+
+    ngOnInit() {
+        // Sync the Signal state with URL query parameters
+        this.route.queryParams.subscribe(params => {
+            const type = params['type'];
+            if (type === 'past') {
+                this.activeTab.set('past');
+            } else {
+                this.activeTab.set('future');
+            }
+        });
     }
 
     setActiveTab(tab: 'future' | 'past') {
-        this.activeTab = tab;
-        const typeInfo = tab === 'future' ? 'future' : 'past';
+        this.activeTab.set(tab);
         this.router.navigate([], {
             relativeTo: this.route,
-            queryParams: { type: typeInfo },
+            queryParams: { type: tab },
             queryParamsHandling: 'merge',
         });
     }

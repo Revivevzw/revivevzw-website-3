@@ -3,11 +3,7 @@
     width: 100%;
 }
 
-.cta-banner-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--spacing-3);
-    /* Match page padding */
+.cta-banner-wrapper {
     margin-bottom: var(--spacing-9);
     /* Spacing before footer */
 }
