@@ -1,1 +1,48 @@
-<p>about works!</p>
+<div class="container home-content">
+    <div class="header-spacer"></div>
+    <app-breadcrumbs></app-breadcrumbs>
+    <app-info-block label="ONS TEAM" title="Enthousiaste vrijwilligers">
+        <p>
+            Onze ondersteunende organisatie telt een 35-tal enthousiaste vrijwilligers die zich volledig gratis
+            inzetten.
+        </p>
+    </app-info-block>
+
+    <div class="spacer"></div>
+
+    <app-split-content-card imageSrc="assets/about-2.jpg" label="ONS TEAM" title="Ze zorgen voor">
+        <ul>
+            <li>De voorbereiding en organisatie van de medische missies</li>
+            <li>Het beheer en de stockage van het materiaal</li>
+            <li>De administratie</li>
+            <li>Juridische ondersteuning</li>
+            <li>De IT infrastructuur</li>
+            <li>De fundraising voor het bekostigen van medische apparatuur, instrumenten, verzorgingsmateriaal en
+                medicatie</li>
+            <li>De organisatie van benefiet evenementen</li>
+        </ul>
+
+        <div actions>
+            <button class="btn-primary">Organigram</button>
+        </div>
+    </app-split-content-card>
+
+    <div class="spacer"></div>
+
+    <app-split-content-card imageSrc="assets/about-1.jpg" label="ONS TEAM" title="Voorbereiding en organisatie"
+        [reversed]="true">
+        <p>
+            De voorbereiding van een medische missie vraagt zeer veel administratie: contacten met de lokale overheden
+            om toelatingen te krijgen, persoonlijke documenten zoals vertaling van diploma’s, aanvragen van visa en
+            bestellen van vliegtickets.
+
+            In overleg met de medische teams en het lokale ziekenhuis worden lijsten opgesteld van medisch materiaal,
+            apparatuur en medicatie. Dat alles moet ook worden aangekocht en er is een magazijn nodig om dat te kunnen
+            stockeren.
+        </p>
+
+        <div actions>
+            <a routerLink="/team" class="btn-primary">Versterk ons team</a>
+        </div>
+    </app-split-content-card>
+</div>

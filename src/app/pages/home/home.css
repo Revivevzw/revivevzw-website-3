@@ -1,8 +1,3 @@
-.spacer {
-    height: var(--spacing-9);
-    /* or whatever spacing is appropriate */
-}
-
 /* Add any specific styles for the cards container if not using utility classes equivalent */
 .cards-container {
     display: flex;
@@ -14,13 +9,6 @@
     margin-bottom: var(--spacing-12);
     /* background-color: var(--color-stone-50); */
     /* Assuming a section bg, or transparent */
-}
-
-
-
-.home-content {
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .info-block-container {

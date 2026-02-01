@@ -53,3 +53,16 @@ button {
 .container-narrow {
     max-width: 1200px;
 }
+
+.spacer {
+    height: var(--spacing-9);
+}
+
+.header-spacer {
+    height: 210px;
+}
+
+.main-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

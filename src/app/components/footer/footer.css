@@ -1,11 +1,13 @@
 .footer {
-    background-color: var(--color-primary-600);
+    /* background-color: var(--color-primary-600); */
+    background-color: var(--color-grey-200);
     padding: var(--spacing-9) var(--spacing-10);
     width: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    color: var(--color-white);
+    /* color: var(--color-white); */
+    color: var(--color-black);
 }
 
 .footer-content {
@@ -50,7 +52,7 @@
 }
 
 .contact-link {
-    color: var(--color-white);
+    color: var(--color-black);
     text-decoration: none;
     transition: opacity 0.2s;
 }
@@ -70,7 +72,8 @@
 }
 
 .footer-links li a {
-    color: var(--color-white);
+    /* color: var(--color-white); */
+    color: var(--color-black);
     text-decoration: none;
     font: var(--font-body-strong);
     font-size: 18px;
@@ -101,7 +104,8 @@
 .newsletter-input-wrapper {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.5); */
+    border-bottom: 1px solid var(--color-black);
     padding-bottom: var(--spacing-1);
     position: relative;
     width: 100%;
@@ -111,20 +115,23 @@
     background: transparent;
     border: none;
     outline: none;
-    color: var(--color-white);
+    /* color: var(--color-white); */
+    color: var(--color-black);
     font: var(--font-body-default);
     width: 100%;
     padding: 8px 0;
 }
 
 .newsletter-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    /* color: rgba(255, 255, 255, 0.6); */
+    color: var(--color-black);
 }
 
 .newsletter-submit {
     background: transparent;
     border: none;
-    color: var(--color-white);
+    /* color: var(--color-white); */
+    color: var(--color-black);
     cursor: pointer;
     padding: 0;
     display: flex;
