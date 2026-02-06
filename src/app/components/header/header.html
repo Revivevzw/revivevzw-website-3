@@ -14,13 +14,22 @@
                 </div>
 
                 <div class="top-actions">
-                    <a routerLink="/contact" class="header-link">Contact</a>
+                    <a routerLink="/contact" class="header-link">{{ 'HEADER.CONTACT' | translate }}</a>
                     <a href="#" class="icon-link">
                         <img [src]="cartIconUrl" alt="Shopping Cart" class="header-icon">
                     </a>
-                    <div class="lang-selector">
-                        <span class="lang-current">nl</span>
-                        <span class="chevron-icon">▾</span>
+                    <div class="lang-selector" (click)="toggleLangMenu()" [class.active]="isLangMenuOpen">
+                        <div class="lang-current-container">
+                            <span class="lang-current">{{ currentLangLabel() }}</span>
+                            <span class="chevron-icon">▾</span>
+                        </div>
+                        <div class="lang-dropdown" *ngIf="isLangMenuOpen">
+                            <div *ngFor="let lang of languages"
+                                (click)="setLanguage(lang.code); $event.stopPropagation()"
+                                [class.selected]="currentLang() === lang.code" class="lang-option">
+                                {{ lang.fullLabel }}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -74,8 +83,8 @@
                 </nav>
 
                 <div class="header-buttons">
-                    <button class="btn-secondary" routerLink="/donate">Doe een gift</button>
-                    <a href="https://shop.revivevzw.be/" class="btn-primary">Webshop</a>
+                    <button class="btn-secondary" routerLink="/donate">{{ 'HEADER.DONATE' | translate }}</button>
+                    <a href="https://shop.revivevzw.be/" class="btn-primary">{{ 'HEADER.WEBSHOP' | translate }}</a>
                 </div>
             </div>
         </div>

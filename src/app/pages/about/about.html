@@ -23,7 +23,9 @@
         </ul>
 
         <div actions>
-            <button class="btn-primary">Organigram</button>
+            @if (organigram()?.url?.nl) {
+            <a [href]="organigram()!.url | localize" target="_blank" download class="btn-primary">Organigram</a>
+            }
         </div>
     </app-split-content-card>
 

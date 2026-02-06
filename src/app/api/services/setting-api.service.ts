@@ -21,5 +21,4 @@ export class SettingApiService {
         const path = this.basePath + "/articles-of-association";
         return this.api.get<Setting>(path);
     }
-
 }
