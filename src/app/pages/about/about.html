@@ -23,8 +23,9 @@
         </ul>
 
         <div actions>
-            @if (organigram()?.url?.nl) {
-            <a [href]="organigram()!.url | localize" target="_blank" download class="btn-primary">Organigram</a>
+            @if (organigram()?.url) {
+            <a [href]="organigram()!.url | localize" target="_blank" download class="btn-primary">Download
+                Organigram</a>
             }
         </div>
     </app-split-content-card>
