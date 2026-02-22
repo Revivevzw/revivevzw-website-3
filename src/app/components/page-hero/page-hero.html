@@ -1,0 +1,20 @@
+<section class="page-hero" [style.height]="height">
+    <div class="hero-background">
+        @if (backgroundImage) {
+        <img [src]="backgroundImage" [alt]="title" class="bg-img">
+        } @else {
+        <div class="bg-placeholder"></div>
+        }
+        <div class="overlay"></div>
+    </div>
+
+    <div class="hero-content">
+        @if (subtitle) {
+        <div class="label-wrapper">
+            <span class="dot"></span>
+            <span class="label">{{ subtitle | uppercase }}</span>
+        </div>
+        }
+        <h1 class="hero-title">{{ title }}</h1>
+    </div>
+</section>

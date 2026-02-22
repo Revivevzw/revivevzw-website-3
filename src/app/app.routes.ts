@@ -14,6 +14,7 @@ import { CorporateSupport } from './pages/corporate-support/corporate-support';
 import { Legacies } from './pages/legacies/legacies';
 import { JoinTeam } from './pages/join-team/join-team';
 import { Contact } from './pages/contact/contact';
+import { MissionDetail } from './pages/mission-detail/mission-detail';
 
 export const routes: Routes = [
     { path: '', component: Home, pathMatch: 'full', data: { breadcrumb: 'Home' } },
@@ -21,7 +22,14 @@ export const routes: Routes = [
     { path: 'team', component: Team, data: { breadcrumb: 'Ons team' } },
     { path: 'collaboration', component: Collaboration, data: { breadcrumb: 'Samenwerking' } },
     { path: 'partners', component: Partners, data: { breadcrumb: 'Partners' } },
-    { path: 'missions', component: Missions, data: { breadcrumb: 'Onze missies' } },
+    {
+        path: 'missions',
+        data: { breadcrumb: 'Onze missies' },
+        children: [
+            { path: '', component: Missions },
+            { path: ':id', component: MissionDetail, data: { breadcrumb: 'Missie detail' } }
+        ]
+    },
     { path: 'patient-stories', component: PatientStories, data: { breadcrumb: 'Patiëntenverhalen' } },
     { path: 'volunteer-stories', component: VolunteerStories, data: { breadcrumb: 'Vrijwilligersverhalen' } },
     { path: 'events', component: Events, data: { breadcrumb: 'Events' } },

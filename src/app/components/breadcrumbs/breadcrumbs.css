@@ -9,8 +9,9 @@
     /* Match header max-width */
     margin: 0 auto;
     /* Match header padding: spacing-6 (outer). Inner text alignment handled by container width. */
-    padding: 0 var(--spacing-6);
+    padding: 0;
     width: 100%;
+    margin-bottom: var(--spacing-6);
 }
 
 .breadcrumbs {

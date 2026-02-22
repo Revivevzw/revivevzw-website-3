@@ -5,11 +5,12 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { MissionApiService } from '../../api/services/mission-api.service';
 import { Mission } from '../../api/models/mission.model';
 import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs';
+import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-missions',
     standalone: true,
-    imports: [CommonModule, Breadcrumbs],
+    imports: [CommonModule, Breadcrumbs, RouterLink],
     templateUrl: './missions.html',
     styleUrl: './missions.css',
 })

@@ -114,6 +114,17 @@ h1 {
     gap: var(--spacing-5);
 }
 
+.mission-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.mission-card-link:hover {
+    transform: translateY(-4px);
+}
+
 .mission-card {
     background-color: var(--color-blue-100);
     /* #eef3f8 */
