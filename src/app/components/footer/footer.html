@@ -1,48 +1,34 @@
 <footer class="footer">
     <div class="footer-content">
 
-        <!-- Column 1: Logo & Contact -->
+        <!-- Column 1: Logo -->
         <div class="footer-column logo-column">
             <img src="/assets/logo-horizontal.png" alt="Revive Logo" class="logo-img">
+        </div>
+
+        <!-- Column 2: Contact -->
+        <div class="footer-column contact-column">
             <div class="contact-info">
-                <p>Wittepaalstraat 16 9051 Afsnee België</p>
+                <p>Wittepaalstraat 16</p>
+                <p>9051 Afsnee, België</p>
                 <a href="mailto:info@revivevzw.be" class="contact-link">info@revivevzw.be</a>
             </div>
         </div>
 
-        <!-- Column 2: Links -->
-        <div class="footer-column">
-            <ul class="footer-links">
-                <li><a href="#">Wie zijn we, wat doen we</a></li>
-                <li><a href="#">Ons team</a></li>
-                <li><a href="#">Onze missie</a></li>
-                <li><a href="#">Duurzame samenwerking</a></li>
-                <li><a href="#">Hoe wij helpen</a></li>
-                <li><a href="#">Events</a></li>
-            </ul>
+        <!-- Column 3: Info -->
+        <div class="footer-column info-column">
+            <div class="info-details">
+                <p><span class="label">Ondernemingsnr.:</span></p>
+                <p>0550 521 718</p>
+                <div class="spacer-sm"></div>
+                <p><span class="label">Bankrekening nr.:</span></p>
+                <p>BE92 0017 5192 9023</p>
+            </div>
         </div>
 
-        <!-- Column 3: Support Links -->
-        <div class="footer-column">
-            <ul class="footer-links">
-                <li><a href="#">Doe een gift</a></li>
-                <li><a href="#">Word lid</a></li>
-                <li><a href="#">Steun als particulier</a></li>
-                <li><a href="#">Steun als organisatie</a></li>
-                <li><a href="#">Testamenten en legaten</a></li>
-                <li><a href="#">Versterk ons team</a></li>
-            </ul>
-        </div>
-
-        <!-- Column 4: Partners & Newsletter -->
-        <div class="footer-column newsletter-column">
-            <ul class="footer-links">
-                <li><a href="#">Onze partners</a></li>
-                <li><a href="#">Webshop</a></li>
-            </ul>
-
+        <!-- Column 4: Newsletter & GDPR -->
+        <div class="footer-column interaction-column">
             <div class="newsletter">
-                <p class="newsletter-label">Inschrijven op de nieuwsbrief</p>
                 @if(!isSubscribed) {
                 <div class="newsletter-input-wrapper" [formGroup]="subscribeForm">
                     <input type="email" placeholder="example@gmail.com" class="newsletter-input"
@@ -58,8 +44,31 @@
                 </div>
                 }
                 @else {
-                U bent ingeschreven
+                <p class="subscribed-message">Bedankt voor uw inschrijving!</p>
                 }
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-link"
+                    aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-link"
+                    aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="legal-links">
+                <a href="#" class="gdpr-link">GDPR</a>
             </div>
         </div>
 
