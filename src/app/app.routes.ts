@@ -21,7 +21,7 @@ export const routes: Routes = [
     { path: 'about', component: About, data: { breadcrumb: 'Wie zijn we' } },
     { path: 'team', component: Team, data: { breadcrumb: 'Ons team' } },
     { path: 'collaboration', component: Collaboration, data: { breadcrumb: 'Samenwerking' } },
-    { path: 'partners', component: Partners, data: { breadcrumb: 'Partners' } },
+    { path: 'partners', component: Partners, data: { breadcrumb: 'Onze partners' } },
     {
         path: 'missions',
         data: { breadcrumb: 'Onze missies' },

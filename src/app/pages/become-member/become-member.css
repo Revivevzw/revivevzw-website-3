@@ -1,0 +1,18 @@
+.become-member-page {
+    padding-bottom: var(--spacing-10);
+}
+
+.container-card {
+    margin-top: var(--spacing-6);
+}
+
+.text-link {
+    color: var(--color-primary-500);
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.text-link:hover {
+    color: var(--color-primary-600);
+}

@@ -1,1 +1,22 @@
-<p>partners works!</p>
+<main class="partners-page">
+    <div class="header-spacer"></div>
+    <app-breadcrumbs></app-breadcrumbs>
+    <section class="container intro-section">
+        <app-info-block label="ONZE PARTNERS" title="Met dank aan onze partners">
+        </app-info-block>
+    </section>
+
+    <section class="container partners-grid-section">
+        @if (sponsors$ | async; as sponsors) {
+        <div class="partners-grid">
+            @for (sponsor of sponsors; track sponsor.id) {
+            <div class="partner-card">
+                <a [href]="sponsor.websiteUrl" target="_blank" [title]="sponsor.name">
+                    <img [src]="sponsor.logoUrl" [alt]="sponsor.name" class="partner-logo">
+                </a>
+            </div>
+            }
+        </div>
+        }
+    </section>
+</main>
