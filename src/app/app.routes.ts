@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { Home } from './pages/home/home';
-import { About } from './pages/about/about';
 import { Team } from './pages/team/team';
 import { Missions } from './pages/missions/missions';
 import { Collaboration } from './pages/collaboration/collaboration';
@@ -18,7 +17,6 @@ import { MissionDetail } from './pages/mission-detail/mission-detail';
 
 export const routes: Routes = [
     { path: '', component: Home, pathMatch: 'full', data: { breadcrumb: 'Home' } },
-    { path: 'about', component: About, data: { breadcrumb: 'Wie zijn we' } },
     { path: 'team', component: Team, data: { breadcrumb: 'Ons team' } },
     { path: 'collaboration', component: Collaboration, data: { breadcrumb: 'Samenwerking' } },
     { path: 'partners', component: Partners, data: { breadcrumb: 'Onze partners' } },

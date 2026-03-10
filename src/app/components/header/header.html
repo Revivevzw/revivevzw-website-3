@@ -8,16 +8,16 @@
 
         <div class="header-main">
             <div class="header-top">
-                <div class="search-bar">
+                <!-- <div class="search-bar">
                     <img [src]="searchIconUrl" alt="Search" class="search-icon">
                     <input type="text" placeholder="Zoeken...">
-                </div>
+                </div> -->
 
                 <div class="top-actions">
                     <a routerLink="/contact" class="header-link">{{ 'HEADER.CONTACT' | translate }}</a>
-                    <a href="#" class="icon-link">
+                    <!-- <a href="#" class="icon-link">
                         <img [src]="cartIconUrl" alt="Shopping Cart" class="header-icon">
-                    </a>
+                    </a> -->
                     <div class="lang-selector" (click)="toggleLangMenu()" [class.active]="isLangMenuOpen">
                         <div class="lang-current-container">
                             <span class="lang-current">{{ currentLangLabel() }}</span>
@@ -41,9 +41,9 @@
                             <a href="#" class="nav-link">Vanuit het hart <span class="chevron-icon"><img
                                         [src]="carretDownUrl" class=""></span></a>
                             <div class="nav-dropdown">
-                                <a routerLink="/about" class="nav-link">Wie zijn we, wat doen we</a>
+                                <a routerLink="/" fragment="wie-zijn-we" class="nav-link">Wie zijn we, wat doen we</a>
                                 <a routerLink="/team" class="nav-link">Ons team</a>
-                                <a routerLink="/mission" class="nav-link">Onze missie</a>
+                                <a routerLink="/" fragment="onze-missie" class="nav-link">Onze missie</a>
                                 <a routerLink="/collaboration" class="nav-link">Duurzame samenwerking</a>
                                 <a routerLink="/partners" class="nav-link">Onze partners</a>
                             </div>
@@ -83,7 +83,8 @@
                 </nav>
 
                 <div class="header-buttons">
-                    <button class="btn-secondary" routerLink="/donate">{{ 'HEADER.DONATE' | translate }}</button>
+                    <a class="btn-secondary" href="https://shop.revivevzw.be/GIFT/BelVrijGIFT.aspx">{{
+                        'HEADER.DONATE' | translate }}</a>
                     <a href="https://shop.revivevzw.be/" class="btn-primary">{{ 'HEADER.WEBSHOP' | translate }}</a>
                 </div>
             </div>
