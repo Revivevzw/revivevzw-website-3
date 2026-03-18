@@ -7,7 +7,6 @@ import { Partners } from './pages/partners/partners';
 import { PatientStories } from './pages/patient-stories/patient-stories';
 import { VolunteerStories } from './pages/volunteer-stories/volunteer-stories';
 import { Events } from './pages/events/events';
-import { Donate } from './pages/donate/donate';
 import { BecomeMember } from './pages/become-member/become-member';
 import { CorporateSupport } from './pages/corporate-support/corporate-support';
 import { Legacies } from './pages/legacies/legacies';
@@ -31,7 +30,6 @@ export const routes: Routes = [
     { path: 'patient-stories', component: PatientStories, data: { breadcrumb: 'Patiëntenverhalen' } },
     { path: 'volunteer-stories', component: VolunteerStories, data: { breadcrumb: 'Vrijwilligersverhalen' } },
     { path: 'events', component: Events, data: { breadcrumb: 'Events' } },
-    { path: 'donate', component: Donate, data: { breadcrumb: 'Doe een gift' } },
     { path: 'become-member', component: BecomeMember, data: { breadcrumb: 'Word lid' } },
     { path: 'corporate-support', component: CorporateSupport, data: { breadcrumb: 'Steun als organisatie' } },
     { path: 'legacies', component: Legacies, data: { breadcrumb: 'Testamenten en legaten' } },
