@@ -13,6 +13,7 @@ import { Legacies } from './pages/legacies/legacies';
 import { JoinTeam } from './pages/join-team/join-team';
 import { Contact } from './pages/contact/contact';
 import { MissionDetail } from './pages/mission-detail/mission-detail';
+import { Gdpr } from './pages/gdpr/gdpr';
 
 export const routes: Routes = [
     { path: '', component: Home, pathMatch: 'full', data: { breadcrumb: 'Home' } },
@@ -35,4 +36,5 @@ export const routes: Routes = [
     { path: 'legacies', component: Legacies, data: { breadcrumb: 'Testamenten en legaten' } },
     { path: 'join-team', component: JoinTeam, data: { breadcrumb: 'Versterk ons team' } },
     { path: 'contact', component: Contact, data: { breadcrumb: 'Contact' } },
+    { path: 'gdpr', component: Gdpr, data: { breadcrumb: 'GDPR' } },
 ];
