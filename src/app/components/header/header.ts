@@ -23,6 +23,12 @@ export class Header {
 
     languages = this.languageService.getLanguages();
     isLangMenuOpen = false;
+    isScrolled = false;
+
+    @HostListener('window:scroll', [])
+    onWindowScroll() {
+        this.isScrolled = window.scrollY > 20;
+    }
 
     currentLang() {
         return this.languageService.getCurrentLanguage();
