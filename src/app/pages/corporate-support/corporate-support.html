@@ -1,1 +1,43 @@
-<p>corporate-support works!</p>
+<main class="corporate-support-page">
+    <div class="header-spacer"></div>
+    <app-breadcrumbs></app-breadcrumbs>
+
+    <section class="container container-card">
+        <app-split-content-card imageSrc="assets/corporate-support.jpg" imageAlt="Steun als organisatie"
+            label="STEUN ALS ORGANISATIE" [reversed]="true" title="Steun als organisatie">
+            <p>Als organisatie of bedrijf kan je REVIVE vzw <strong>financieel steunen</strong>. Zo help je ons helpen
+                en toon je jouw maatschappelijk engagement als bedrijf. Giften zijn in de boekhouding van je bedrijf
+                fiscaal aftrekbaar.</p>
+            <p>Als bedrijf kan je ook steunen in <strong>natura</strong>. Ben je actief in de medische sector dan zijn
+                schenkingen van
+                medisch materiaal voor onze hulpacties meer dan welkom.</p>
+            <p>Eveneens voor onze <strong>benefietactiviteiten</strong> kan ondersteuning gegeven worden door het ter
+                beschikking stellen
+                van infrastructuur, sponsoring van catering voor recepties, enz.</p>
+            <p>Of kan jouw bedrijf <strong>producten</strong> aanbieden die REVIVE vzw dan via zijn webshop te koop kan
+                aanbieden.</p>
+
+            <div actions>
+                <a routerLink="/contact" class="btn-primary">Contacteer ons</a>
+            </div>
+        </app-split-content-card>
+    </section>
+
+    <section class="container container-card">
+        <app-split-content-card imageSrc="assets/collaboration.jpg" imageAlt="Waarom zou ik steunen"
+            label="STEUN ALS ORGANISATIE" [reversed]="false" title="Waarom zou ik steunen?">
+            <ul class="bullet-list">
+                <li>Giften zijn in de boekhouding van je bedrijf <strong>fiscaal aftrekbaar</strong>.</li>
+                <li>Voor giften in natura kunnen we een attest bezorgen voor uw boekhouding.</li>
+                <li>We <strong>vermelden je graag als steunende partner</strong> in onze communicaties.</li>
+            </ul>
+            <p>
+                <br />
+                Wil je steunen als organisatie of bedrijf, neem dan contact met ons op.
+            </p>
+            <div actions>
+                <a routerLink="/contact" class="btn-primary">Contacteer ons</a>
+            </div>
+        </app-split-content-card>
+    </section>
+</main>
