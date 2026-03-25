@@ -12,4 +12,5 @@ export interface Activity {
    street: string;
    postalCode: string;
    canRegisterOnline: boolean;
+   mainImage?: string;
 }

@@ -7,18 +7,10 @@
 /* Mission Page Style */
 .mission-page-container {
     max-width: 1440px;
-    /* Expand to match breadcrumbs alignment */
     margin: 0 auto;
-    /* Remove padding or keep vertical only ? */
-    /* If breadcrumbs is inside, it has its own padding/width logic. */
-    /* Breadcrumbs needs 210px margin top. */
-    /* Container should handle general layout */
     display: flex;
     flex-direction: column;
-    /* Accounts for fixed header */
 }
-
-
 
 /* Page Header */
 .page-header {
@@ -41,7 +33,6 @@
     width: 8px;
     height: 8px;
     background-color: var(--color-cream-300);
-    /* Check specific color in screenshot, yellow/cream */
     border-radius: 50%;
 }
 
@@ -71,7 +62,6 @@ h1 {
     margin-top: var(--spacing-4);
     border-bottom: 1px solid var(--color-grey-200);
     margin-bottom: var(--spacing-4);
-    /* Optional, based on design interpretation */
 }
 
 .tab-btn {
@@ -91,7 +81,6 @@ h1 {
 
 .tab-btn.active {
     color: var(--color-primary-500);
-    /* Or black? Screenshot shows red underline text maybe? */
     font-weight: 600;
 }
 
@@ -99,7 +88,6 @@ h1 {
     content: '';
     position: absolute;
     bottom: -1px;
-    /* Align with border-bottom */
     left: 0;
     width: 100%;
     height: 2px;
@@ -110,99 +98,7 @@ h1 {
 .mission-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    /* Adjusted to fit 3 columns: 340*3 + 32*2 < 1168 */
     gap: var(--spacing-5);
-}
-
-.mission-card-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    transition: transform 0.2s ease;
-}
-
-.mission-card-link:hover {
-    transform: translateY(-4px);
-}
-
-.mission-card {
-    background-color: var(--color-blue-100);
-    /* #eef3f8 */
-    border: 1px solid var(--color-blue-200);
-    /* #dfe9f1 */
-    border-radius: var(--border-radius-2);
-    /* 24px */
-    padding: var(--spacing-6);
-    /* 40px */
-    transition: transform 0.2s, box-shadow 0.2s;
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-5);
-    /* 32px between image and content-stack */
-}
-
-.mission-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-default);
-}
-
-.card-image {
-    width: 100%;
-    aspect-ratio: 1/1;
-    /* Square */
-    border-radius: var(--border-radius-2);
-    /* 24px */
-    overflow: hidden;
-    flex-shrink: 0;
-}
-
-.card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.card-content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-2);
-    /* 8px vertical gap within content */
-}
-
-.card-date {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-2);
-    /* 8px */
-    font: var(--font-body-strong);
-    /* Source Sans Pro SemiBold 18px */
-    color: var(--color-black);
-    /* or close to black */
-    margin-bottom: var(--spacing-3);
-    /* 16px bottom margin to Title */
-}
-
-.card-date svg {
-    width: 24px;
-    height: 24px;
-    color: var(--color-black);
-}
-
-h3 {
-    font: var(--font-h2);
-    /* Raleway SemiBold 28px */
-    margin: 0;
-    color: var(--color-blue-950);
-}
-
-.card-description {
-    font: var(--font-body-default);
-    /* Source Sans Pro Regular 18px */
-    color: var(--color-grey-700);
-    margin: 0;
-    margin-top: var(--spacing-3);
-    /* 16px top spacing */
 }
 
 /* No Missions Message */

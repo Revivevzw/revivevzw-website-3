@@ -1,0 +1,19 @@
+.events-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: var(--spacing-5);
+    padding: var(--spacing-6) 0;
+}
+
+.loading-message, .no-events {
+    grid-column: 1 / -1;
+    text-align: center;
+    font: var(--font-body-lead);
+    color: var(--color-grey-600);
+    padding: var(--spacing-6) 0;
+}

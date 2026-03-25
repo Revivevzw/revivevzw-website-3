@@ -1,11 +1,11 @@
-<section class="hero">
+<section class="hero" [style.height]="height">
     <div class="hero-background">
-        <img src="/assets/home-page-header.jpg" alt="Medical care in Africa" class="bg-img">
+        <img [src]="imageSrc" [alt]="imageAlt" class="bg-img">
         <div class="overlay"></div>
     </div>
 
     <div class="hero-content">
-        <h1 class="hero-title">Medische zorg, daar waar het echt telt.</h1>
+        <h1 class="hero-title">{{title}}</h1>
         <!-- <a href="#" class="btn-primary">Ons verhaal</a> -->
     </div>
 </section>
