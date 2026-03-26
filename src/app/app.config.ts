@@ -3,6 +3,14 @@ import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { provideTranslateService, provideTranslateLoader } from '@ngx-translate/core';
 import { provideTranslateHttpLoader, TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { registerLocaleData } from '@angular/common';
+import localeNlBe from '@angular/common/locales/nl-BE';
+import localeFrBe from '@angular/common/locales/fr-BE';
+import localeEnGb from '@angular/common/locales/en-GB';
+
+registerLocaleData(localeNlBe);
+registerLocaleData(localeFrBe);
+registerLocaleData(localeEnGb);
 
 import { routes } from './app.routes';
 

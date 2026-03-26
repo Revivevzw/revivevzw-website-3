@@ -3,15 +3,13 @@
     <app-breadcrumbs></app-breadcrumbs>
 
     <section class="container legacies-container">
-        <app-split-content-card imageSrc="assets/testamenten-en-legaten.jpg" imageAlt="Testamenten en legaten"
-            label="TESTAMENTEN EN LEGATEN" title="Help ons hulpbehoevende mensen te helpen met uw nalatenschap">
-            <p>Kies voor REVIVE vzw als je echt een goed doel wenst op te nemen in je testament!</p>
+        <app-split-content-card imageSrc="assets/testamenten-en-legaten.jpg" [imageAlt]="'LEGACIES.IMAGE_ALT' | translate"
+            [label]="'LEGACIES.LABEL' | translate" [title]="'LEGACIES.TITLE' | translate">
+            <p>{{ 'LEGACIES.P1' | translate }}</p>
 
-            <p>ALLE GIFTEN gaan INTEGRAAL naar onze medische missies. Door REVIVE vzw op te nemen in uw nalatenschap
-                help je ons mee om zieke en hulpbehoevende mensen op
-                afgelegen plaatsen in Afrika te laten “herleven”.</p>
+            <p>{{ 'LEGACIES.P2' | translate }}</p>
 
-            <p>Neem contact op met je notaris of met <a href="mailto:legaten@revivevzw.be"
+            <p>{{ 'LEGACIES.P3_1' | translate }}<a href="mailto:legaten@revivevzw.be"
                     class="link">legaten@revivevzw.be</a></p>
         </app-split-content-card>
     </section>

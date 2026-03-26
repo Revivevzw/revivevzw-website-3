@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-activity-card',
@@ -10,6 +11,7 @@ import { RouterLink } from '@angular/router';
     styleUrl: './activity-card.css'
 })
 export class ActivityCard {
+    public translate = inject(TranslateService);
     @Input() link?: any[] | string;
     @Input() externalLink?: string;
     @Input() imageSrc?: string;

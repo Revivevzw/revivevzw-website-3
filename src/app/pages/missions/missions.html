@@ -4,25 +4,23 @@
     <section class="page-header">
         <div class="label-wrapper">
             <span class="dot"></span>
-            <span class="label">ONZE MISSIES</span>
+            <span class="label">{{ 'MISSIONS.LABEL' | translate }}</span>
         </div>
-        <h1>Onze missies</h1>
+        <h1>{{ 'MISSIONS.TITLE' | translate }}</h1>
         <p class="intro-text">
-            Ontdek hier onze geplande en afgelopen missies.<br>
-            De missies hebben telkens een duurtijd van 2 weken.
+            {{ 'MISSIONS.INTRO_1' | translate }}<br>
+            {{ 'MISSIONS.INTRO_2' | translate }}
         </p>
 
         <div class="tabs">
-            <button class="tab-btn" [class.active]="activeTab() === 'future'" (click)="setActiveTab('future')">Geplande
-                missies</button>
-            <button class="tab-btn" [class.active]="activeTab() === 'past'" (click)="setActiveTab('past')">Afgelopen
-                missies</button>
+            <button class="tab-btn" [class.active]="activeTab() === 'future'" (click)="setActiveTab('future')">{{ 'MISSIONS.TAB_FUTURE' | translate }}</button>
+            <button class="tab-btn" [class.active]="activeTab() === 'past'" (click)="setActiveTab('past')">{{ 'MISSIONS.TAB_PAST' | translate }}</button>
         </div>
     </section>
 
     <section class="mission-grid">
         @if (loading()) {
-        <p class="loading-message">Missies laden...</p>
+        <p class="loading-message">{{ 'MISSIONS.LOADING' | translate }}</p>
         } @else {
         @for (mission of filteredMissions(); track mission.id) {
         <app-activity-card 
@@ -34,7 +32,7 @@
             [description]="mission.description | localize">
         </app-activity-card>
         } @empty {
-        <p class="no-missions">Er zijn momenteel geen missies.</p>
+        <p class="no-missions">{{ 'MISSIONS.EMPTY' | translate }}</p>
         }
         }
     </section>

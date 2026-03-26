@@ -1,7 +1,277 @@
 {
+  "GDPR": {
+    "TITLE": "Privacy Statement",
+    "INTRO": "Revive vzw respects your privacy. To achieve our objectives, we can process your personal data as a \"data controller\". By processing personal data we mean collecting, storing, retrieving, using, transmitting and deleting personal data. <br /> Through this privacy statement we explain what we do with your data and what your rights are.",
+    "Q1": {
+      "TITLE": "What personal data do we collect and for what purpose?",
+      "P1": "We collect your personal data depending on how you are involved with our organization. <br /> The data of the persons mentioned under A, B and C are kept in <strong>the membership database.</strong>",
+      "A": "<strong>A: Sympathizers</strong>/ volunteers/ contact persons/ interested parties: they occasionally participate in activities organized by Revive vzw. Every sympathizer (both natural persons and legal entities) receives our newsletter. We only ask for your identification and contact details, including email address. You can always unsubscribe as stated in each newsletter.",
+      "B": "<strong>B: Members: </strong>Within the non-profit organization there are <strong>founding members, effective members (also called active or working members) and joined members, </strong>as determined in the statutes of Revive vzw.",
+      "C": "<strong>C</strong>: <strong>Mission members: </strong>the persons who participate in the medical missions organized by Revive vzw. The mission members are either members or sympathizers. <br /> From the mission members we collect the personal identification and contact details in the membership file, including the information mentioned in the international passport. In addition, we collect all documents necessary for the success of the mission, such as travel data, visa application, diplomas and other qualifications, and other specific documents required by the Ministry of Health of the country where the mission will take place. These documents are kept in separate files per mission. &nbsp;",
+      "D": "<strong>D</strong>. <strong>Donors/Sponsors – Donations</strong>: anyone who makes a <strong>donation</strong> to Revive vzw. We are legally obliged to request the amount of the donation, the identification and contact details and the national register number/company number. After all, the FPS Finance demands that information before we can provide you with a tax certificate. These specific data are not kept in the membership file.",
+      "COOKIES_P1": "Our website also uses cookies. Cookies are small text files that can be stored on your computer when visiting websites. Information is stored in this text file, such as your language preference for a website. When you visit the website again later, this cookie is sent back to the website. In this way, the website recognizes your browser and, for example, your language preference can be remembered. We only use cookies that are technically essential for the proper functioning of our website:",
+      "COOKIE_1": "ARRAffinity: a cookie used for \"load balancing\" to ensure that your page requests are sent to the same server in your browser session.",
+      "COOKIE_2": "PHPSESSID: a cookie used to maintain your session on the server.",
+      "OTHER_P1": "In addition, we may use and pass on your information to the extent that we deem it necessary or appropriate:",
+      "OTHER_1": "to comply with legal processes or applicable legislation, including laws outside the country where you live;",
+      "OTHER_2": "to comply with requests from public and governmental authorities as as permitted by applicable law, including authorities outside the country where you live; and",
+      "OTHER_3": "to protect the rights, privacy, safety or property of us, you or others. We may also use and pass on your information in other ways after we have obtained your consent to do so."
+    },
+    "Q2": {
+      "TITLE": "Who receives your personal data?",
+      "P1": "We never pass on your personal data, except:",
+      "ITEM1": "If you participate in a medical mission: to the travel operators, authorities and hospitals involved, each time limited to what is necessary. Those organizations are often located in countries where the legislation provides a lower level of data protection. As a participant in a medical mission, you agree to this transmission.",
+      "ITEM2": "If you make a donation to Revive vzw: to FPS Finance, as legally required.",
+      "ITEM3": "To our service providers (processors), such as Mailchimp for our newsletters and Microsoft for hosting our data. These service providers can process your data outside the European Union. We have signed appropriate contracts with them, and both are certified under the EU-US Privacy Shield (<a href=\"https://www.privacyshield.gov/list\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\" (opens in a new tab)\">https://www.privacyshield.gov/list</a>)."
+    },
+    "Q3": {
+      "TITLE": "How do we secure your data?",
+      "P1": "We take appropriate organizational, technical and administrative measures to protect personal data under our control. Unfortunately, it can never be guaranteed that the processing by organizations to which we must pass on your data for a mission or the storage in a system is 100% secure, even if we work with leading service providers. If you have reason to believe that your data is no longer secure, you must immediately report the problem to us."
+    },
+    "Q4": {
+      "TITLE": "Retention period",
+      "P1": "We will retain your personal data for as long as necessary or permitted for the purpose or purposes for which they were obtained.",
+      "ITEM1": "Newsletter: until you unsubscribe",
+      "ITEM2": "Members: We store some contact details for an indefinite period of time. Not to continuous informieren you after the end of your membership, but to potentially invite you for reunions or anniversaries.",
+      "ITEM3": "Mission: up to 10 years after the end of the mission",
+      "ITEM4": "Donations: up to 5 years after the year of payment"
+    },
+    "Q5": {
+      "TITLE": "Your rights",
+      "P1": "You have the right to",
+      "ITEM1": "Withdraw your consent for sending our newsletter. This can also be automated by clicking on \"unsubscribe\" at the bottom of a newsletter.",
+      "ITEM2": "Request further information about how we process your personal data",
+      "ITEM3": "Request access to your personal data that we process,",
+      "ITEM4": "Request correction of your personal data,",
+      "ITEM5": "Delete your personal data, as as permitted by law.",
+      "REQUEST": "Please send your privacy requests by email to <a href=\"mailto: privacy@revivevzw.be\">privacy@revivevzw.be</a>.",
+      "RESPONSE": "We will answer your request as quickly as reasonably possible, and no later than one month after receipt. If circumstances cause a delay in our response, you will be informed immediately and receive a date on which we will answer you."
+    },
+    "Q6": {
+      "TITLE": "How to contact us",
+      "P1": "You can contact Revive vzw at",
+      "EMAIL": "Email address:",
+      "ADDRESS": "Address: REVIVE VZW Wittepaalstraat 16 9051 Gent – Belgium"
+    },
+    "Q7": {
+      "TITLE": "Complaints",
+      "P1": "If you are not satisfied with how we handle your personal data, you can submit a complaint to the Data Protection Authority (<a href=\"http://www.dataprotectionauthority.be\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\" (opens in a new tab)\">www.dataprotectionauthority.be</a>)."
+    },
+    "Q8": {
+      "TITLE": "Adjustments to this privacy statement",
+      "P1": "We may change this privacy statement. Changes take effect as soon as we publish the revised version on the website. This privacy statement was last updated on May 4, 2020. (V20200504A)"
+    }
+  },
+  "EVENTS": {
+    "HERO_ALT": "Events header",
+    "TITLE": "Events",
+    "LOADING": "Loading events...",
+    "EMPTY": "There are currently no upcoming events."
+  },
+  "MISSION_DETAIL": {
+    "OVER_MISSION": "About this mission",
+    "INTERVENTIONS": "Interventions",
+    "REPORT": "Report",
+    "MEDIA": "Media",
+    "IMPRESSIONS": "Impressions",
+    "LOADING": "Loading mission details..."
+  },
+  "MISSIONS": {
+    "LABEL": "OUR MISSIONS",
+    "TITLE": "Our missions",
+    "INTRO_1": "Discover our planned and past missions here.",
+    "INTRO_2": "The missions always have a duration of 2 weeks.",
+    "TAB_FUTURE": "Planned missions",
+    "TAB_PAST": "Past missions",
+    "LOADING": "Loading missions...",
+    "EMPTY": "There are currently no missions."
+  },
+  "LEGACIES": {
+    "IMAGE_ALT": "Wills and legacies",
+    "LABEL": "WILLS AND LEGACIES",
+    "TITLE": "Help us help people in need with your legacy",
+    "P1": "Choose REVIVE vzw if you really want to include a charity in your will!",
+    "P2": "ALL DONATIONS go ENTIRELY to our medical missions. By including REVIVE vzw in your legacy, you help us to make sick and needy people in remote places in Africa “revive”.",
+    "P3_1": "Contact your notary or "
+  },
+  "PARTNERS": {
+    "LABEL": "OUR PARTNERS",
+    "TITLE": "Thanks to our partners"
+  },
+  "JOIN_TEAM": {
+    "IMAGE_ALT": "Join our team",
+    "LABEL": "JOIN OUR TEAM",
+    "TITLE": "Join our team",
+    "P1": "In our teams we need doctors, dentists, nurses, logistical support, back-office help, administrative help, helping hands….",
+    "P2_1": "If you would like to use your expertise as a volunteer, please contact ",
+    "P3_1": "More information can be found in the section ",
+    "P3_2": "How we help > volunteer stories"
+  },
+  "CORPORATE_SUPPORT": {
+    "IMAGE_ALT": "Support as an organization",
+    "LABEL": "SUPPORT AS AN ORGANIZATION",
+    "TITLE_1": "Support as an organization",
+    "P1": "As an organization or company you can <strong>financially support</strong> REVIVE vzw. In this way you help us help and show your social commitment as a company. Donations are tax deductible in your company's accounting.",
+    "P2": "As a company you can also support in <strong>kind</strong>. If you are active in the medical sector, donations of medical equipment for our relief actions are more than welcome.",
+    "P3": "Support can also be given for our <strong>benefit activities</strong> by making infrastructure available, sponsoring catering for receptions, etc.",
+    "P4": "Or perhaps your company can offer <strong>products</strong> that REVIVE vzw can then offer for sale via its webshop.",
+    "BTN_CONTACT": "Contact us",
+    "IMAGE_ALT_2": "Why should I support?",
+    "TITLE_2": "Why should I support?",
+    "LI1": "Donations are <strong>tax deductible</strong> in your company's accounting.",
+    "LI2": "For donations in kind, we can provide a certificate for your accounting.",
+    "LI3": "We are <strong>happy to mention you as a supporting partner</strong> in our communications.",
+    "P5": "If you would like to support as an organization or company, please contact us."
+  },
+  "BECOME_MEMBER": {
+    "IMAGE_ALT": "Become a member of REVIVE vzw",
+    "LABEL": "BECOME MEMBER",
+    "TITLE": "Become a member of our team",
+    "P1": "By becoming a member of REVIVE vzw in large numbers, you support us financially, but you also contribute to the image of our aid organization.",
+    "P2": "For people who join any of our relief actions, being a member is a condition to be covered by our insurance. Effective members of REVIVE vzw also have voting rights at our General Assembly.",
+    "PAYMENT_1": "Payment of the annual membership fee can be done via ",
+    "PAYMENT_2": "this Link"
+  },
+  "CONTACT": {
+    "TITLE": "Contact us",
+    "ADDRESS_LABEL": "Address:",
+    "ADDRESS_VALUE": "Wittepaalstraat 16 – 9051 Ghent – Belgium",
+    "EMAIL_LABEL": "Email:",
+    "PHONE_LABEL": "Tel.:",
+    "FORM_TITLE": "Fill in the form. We will reply as soon as possible.",
+    "SUCCESS_MSG": "Thank you for your message! We will contact you as soon as possible.",
+    "ERROR_MSG": "An error occurred while sending your message. Please try again later.",
+    "FORM": {
+      "EMAIL": "Email address",
+      "FIRST_NAME": "First name",
+      "LAST_NAME": "Last name",
+      "MESSAGE": "Message",
+      "PRIVACY_1": "I agree to the ",
+      "PRIVACY_2": "privacy terms",
+      "PRIVACY_3": " of REVIVEvzw.",
+      "SEND": "Send",
+      "SENDING": "Sending..."
+    }
+  },
+  "TEAM": {
+    "LABEL": "OUR TEAM",
+    "INFO_BLOCK": {
+      "TITLE": "Enthusiastic volunteers",
+      "P1": "Our supporting organization has about 35 enthusiastic volunteers who dedicate themselves completely free of charge."
+    },
+    "CARD1": {
+      "TITLE": "They take care of",
+      "LI1": "The preparation and organization of the medical missions",
+      "LI2": "The management and storage of the equipment",
+      "LI3": "The administration",
+      "LI4": "Legal support",
+      "LI5": "The IT infrastructure",
+      "LI6": "Fundraising to pay for medical equipment, instruments, care materials and medication",
+      "LI7": "The organization of benefit events",
+      "DOWNLOAD": "Download Organizational Chart"
+    },
+    "CARD2": {
+      "TITLE": "Preparation and organization",
+      "P1": "The preparation of a medical mission requires a lot of administration: contacts with local authorities to obtain permissions, personal documents such as translation of diplomas, applying for visas and ordering flight tickets.",
+      "P2": "In consultation with the medical teams and the local hospital, lists of medical equipment, devices and medication are drawn up. All this also needs to be purchased and a warehouse is needed to store it.",
+      "JOIN_BUTTON": "Join our team"
+    }
+  },
+  "VOLUNTEER_STORIES": {
+    "LABEL": "Volunteer stories",
+    "STORY1": {
+      "TITLE": "November 2024 – Benin – DASSA Surgical volunteer team",
+      "P1": "As a team of enthusiastic people from very diverse sectors, we have just completed an unforgettable medical mission together in Benin. It was surprising and a special experience to see how quickly we became attuned to each other and got the best out of ourselves, both in caring for the patients and in mutual contacts.",
+      "P2": "Every challenge was tackled as a team. We supported each other and looked for solutions together. The gratitude of the patients and their deep appreciation for our efforts was for us the most beautiful proof of the success of our mission.",
+      "P3": "We are glad that the hospital in DASSA has made great progress since the start of our missions, both in terms of infrastructure and medical equipment."
+    },
+    "STORY2": {
+      "TITLE": "Speaking: Liza and Febe, 2 final-year nursing students Benin – DASSA",
+      "P1": "Curious about how healthcare is organized elsewhere than in Flanders, we seized this unique opportunity to do an internship in Benin -DASSA with both hands.",
+      "P2": "The medical mission and internship was very tough and challenging. We saw an incredible enthusiasm from the mission members, drive, knowledge, skill, and resourcefulness.",
+      "P3": "They gave us enormous challenging opportunities that contributed to the fact that we learned more during those 2 weeks than on previous internships. We will carry all this with us as an example for our entire career. An internship never to be forgotten and absolutely worth repeating!"
+    },
+    "STORY3": {
+      "TITLE": "Volunteer logistical support testifies. Feel addressed!",
+      "P1": "A clear, concrete description for this volunteer commitment is impossible.",
+      "P2": "It is the perfect job for volunteers who want to roll up their sleeves firmly, are creative and possess a healthy dose of problem-solving ability.",
+      "P3": "It is and remains a fantastic, unforgettable experience."
+    }
+  },
+  "CTA_BANNER": {
+    "LABEL": "BECOME A MEMBER",
+    "TITLE": "Make a purchase in our webshop",
+    "P1": "You can support our non-profit organisation by making a purchase in our webshop.",
+    "BUTTON": "Make a donation"
+  },
+  "FOOTER": {
+    "ADDRESS_LINE_1": "Wittepaalstraat 16",
+    "ADDRESS_LINE_2": "9051 Afsnee, Belgium",
+    "ENTERPRISE_NO": "Company nr.:",
+    "BANK_ACC": "Bank account nr.:",
+    "NEWSLETTER_PLACEHOLDER": "example@gmail.com",
+    "SUBSCRIBE_A11Y": "Subscribe",
+    "SUBSCRIBED_MSG": "Thank you for subscribing!",
+    "GDPR": "GDPR"
+  },
   "HEADER": {
     "CONTACT": "Contact",
     "DONATE": "Make a donation",
-    "WEBSHOP": "Webshop"
+    "WEBSHOP": "Webshop",
+    "NAV": {
+      "FROM_HEART": "From the heart",
+      "WHO_WE_ARE": "Who we are, what we do",
+      "OUR_TEAM": "Our team",
+      "OUR_MISSION": "Our mission",
+      "SUSTAINABLE_COLLAB": "Sustainable collaboration",
+      "OUR_PARTNERS": "Our partners",
+      "HOW_WE_HELP": "How we help",
+      "PLANNED_MISSIONS": "Planned medical missions",
+      "PAST_MISSIONS": "Past medical missions",
+      "PATIENT_STORIES": "Patient stories",
+      "VOLUNTEER_STORIES": "Volunteer stories",
+      "EVENTS": "Events",
+      "SUPPORT_US": "Support us",
+      "MAKE_DONATION": "Make a donation",
+      "BECOME_MEMBER": "Become a member",
+      "HELP_US": "Help out",
+      "CORP_SUPPORT": "Corporate support",
+      "LEGACIES": "Legacies and bequests",
+      "JOIN_TEAM": "Join our team"
+    }
+  },
+  "HOME": {
+    "HERO": {
+      "ALT": "Medical care in Africa",
+      "TITLE": "Medical care, where it really counts."
+    },
+    "MISSION": {
+      "ALT": "Dirt road in Africa",
+      "LABEL": "our mission",
+      "TITLE": "Reviving the poorest in Africa in their community by providing them with free medical assistance.",
+      "P1": "Due to severe medical problems, people are often deprived of social contacts. Due to a lack of money and local medical care, they are left to their fate. Through our free efforts, we offer them the necessary medical care so that they can lead a normal life again and revive. \"REVIVE\"."
+    },
+    "INFO": {
+      "LABEL": "REVIVE NPO",
+      "TITLE": "Who we are, what we do",
+      "P1": "As a Belgian humanitarian non-profit organization, we have been providing necessary free medical assistance to the poor, mainly in Africa, who otherwise cannot afford it, for more than 15 years. At least 10 times a year, a team of medical specialists, surgeons, dentists, nurses and logistics personnel goes on a two-week mission to inland locations where other aid organizations rarely go."
+    },
+    "CARDS": {
+      "CARD1": {
+        "TITLE": "Cooperation with local staff",
+        "Icon_ALT": "Globe",
+        "P": "We work together with local authorities for this."
+      },
+      "CARD2": {
+        "TITLE": "Only volunteers",
+        "Icon_ALT": "Volunteer",
+        "P": "The teams work entirely for free and pay their own travel and accommodation expenses. REVIVE NPO has no fixed costs, no offices, no employees, only volunteers."
+      },
+      "CARD3": {
+        "TITLE": "Procedures and training",
+        "Icon_ALT": "Training",
+        "P": "We perform various surgical procedures, medical consultations and provide training to local medical staff."
+      }
+    }
   }
 }

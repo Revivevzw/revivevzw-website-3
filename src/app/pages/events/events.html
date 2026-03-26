@@ -1,10 +1,10 @@
 <main class="events-page">
-    <app-hero height="50vh" imageSrc="assets/events-header.png" imageAlt="Events header" title="Evenementen"></app-hero>
+    <app-hero height="50vh" imageSrc="assets/events-header.png" [imageAlt]="'EVENTS.HERO_ALT' | translate" [title]="'EVENTS.TITLE' | translate"></app-hero>
     <app-breadcrumbs></app-breadcrumbs>
     <section class="container container-card">
         <div class="events-grid">
             @if (loading()) {
-            <p class="loading-message">Evenementen laden...</p>
+            <p class="loading-message">{{ 'EVENTS.LOADING' | translate }}</p>
             } @else {
             @for (event of events(); track event.id) {
             <app-activity-card [externalLink]="'https://shop.revivevzw.be/ACTIVITEITEN/oneact60.aspx?ID=' + event.id"
@@ -13,7 +13,7 @@
                 [description]="event.description | localize">
             </app-activity-card>
             } @empty {
-            <p class="no-events">Er zijn momenteel geen aankomende evenementen.</p>
+            <p class="no-events">{{ 'EVENTS.EMPTY' | translate }}</p>
             }
             }
         </div>

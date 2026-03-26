@@ -1,51 +1,44 @@
 <div class="container home-content">
     <div class="header-spacer"></div>
     <app-breadcrumbs></app-breadcrumbs>
-    <app-info-block label="ONS TEAM" title="Enthousiaste vrijwilligers">
+    <app-info-block [label]="'TEAM.LABEL' | translate" [title]="'TEAM.INFO_BLOCK.TITLE' | translate">
         <p>
-            Onze ondersteunende organisatie telt een 35-tal enthousiaste vrijwilligers die zich volledig gratis
-            inzetten.
+            {{ 'TEAM.INFO_BLOCK.P1' | translate }}
         </p>
     </app-info-block>
 
     <div class="spacer"></div>
 
-    <app-split-content-card imageSrc="assets/about-2.jpg" label="ONS TEAM" title="Ze zorgen voor">
+    <app-split-content-card imageSrc="assets/about-2.jpg" [label]="'TEAM.LABEL' | translate" [title]="'TEAM.CARD1.TITLE' | translate">
         <ul>
-            <li>De voorbereiding en organisatie van de medische missies</li>
-            <li>Het beheer en de stockage van het materiaal</li>
-            <li>De administratie</li>
-            <li>Juridische ondersteuning</li>
-            <li>De IT infrastructuur</li>
-            <li>De fundraising voor het bekostigen van medische apparatuur, instrumenten, verzorgingsmateriaal en
-                medicatie</li>
-            <li>De organisatie van benefiet evenementen</li>
+            <li>{{ 'TEAM.CARD1.LI1' | translate }}</li>
+            <li>{{ 'TEAM.CARD1.LI2' | translate }}</li>
+            <li>{{ 'TEAM.CARD1.LI3' | translate }}</li>
+            <li>{{ 'TEAM.CARD1.LI4' | translate }}</li>
+            <li>{{ 'TEAM.CARD1.LI5' | translate }}</li>
+            <li>{{ 'TEAM.CARD1.LI6' | translate }}</li>
+            <li>{{ 'TEAM.CARD1.LI7' | translate }}</li>
         </ul>
 
         <div actions>
             @if (organigram()?.url) {
-            <a [href]="organigram()!.url | localize" target="_blank" download class="btn-primary">Download
-                Organigram</a>
+            <a [href]="organigram()!.url | localize" target="_blank" download class="btn-primary">{{ 'TEAM.CARD1.DOWNLOAD' | translate }}</a>
             }
         </div>
     </app-split-content-card>
 
     <div class="spacer"></div>
 
-    <app-split-content-card imageSrc="assets/about-1.jpg" label="ONS TEAM" title="Voorbereiding en organisatie"
+    <app-split-content-card imageSrc="assets/about-1.jpg" [label]="'TEAM.LABEL' | translate" [title]="'TEAM.CARD2.TITLE' | translate"
         [reversed]="true">
         <p>
-            De voorbereiding van een medische missie vraagt zeer veel administratie: contacten met de lokale overheden
-            om toelatingen te krijgen, persoonlijke documenten zoals vertaling van diploma’s, aanvragen van visa en
-            bestellen van vliegtickets.
-
-            In overleg met de medische teams en het lokale ziekenhuis worden lijsten opgesteld van medisch materiaal,
-            apparatuur en medicatie. Dat alles moet ook worden aangekocht en er is een magazijn nodig om dat te kunnen
-            stockeren.
+            {{ 'TEAM.CARD2.P1' | translate }}
+            <br><br>
+            {{ 'TEAM.CARD2.P2' | translate }}
         </p>
 
         <div actions>
-            <a routerLink="/team" class="btn-primary">Versterk ons team</a>
+            <a routerLink="/team" class="btn-primary">{{ 'TEAM.CARD2.JOIN_BUTTON' | translate }}</a>
         </div>
     </app-split-content-card>
 </div>

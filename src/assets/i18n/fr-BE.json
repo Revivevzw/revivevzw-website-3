@@ -1,7 +1,277 @@
 {
+  "GDPR": {
+    "TITLE": "Déclaration de confidentialité",
+    "INTRO": "Revive asbl respecte votre vie privée. Pour atteindre nos objectifs, nous pouvons traiter vos données personnelles en tant que « responsable du traitement ». Par traitement de données à caractère personnel, nous entendons, entre autres, la collecte, l'enregistrement, l'extraction, l'utilisation, la transmission et l'effacement de données à caractère personnel. <br /> À travers cette déclaration de confidentialité, nous expliquons ce que nous faisons de vos données et quels sont vos droits.",
+    "Q1": {
+      "TITLE": "Quelles données personnelles collectons-nous et pourquoi ?",
+      "P1": "Nous collectons vos données personnelles en fonction de votre implication dans notre organisation. <br /> Les données des personnes mentionnées sous A, B et C sont conservées dans <strong>le fichier des membres.</strong>",
+      "A": "<strong>A : Sympathisants</strong>/ bénévoles/ personnes de contact/ personnes intéressées : ils participent occasionnellement à des activités organisées par Revive asbl. Chaque sympathisant (personnes physiques et morales) reçoit notre newsletter. Nous demandons uniquement vos données d'identification et de contact, y compris votre adresse e-mail. Vous pouvez vous désabonner à tout moment comme indiqué dans chaque newsletter.",
+      "B": "<strong>B : Membres : </strong>Au sein de l'asbl, il existe des <strong>membres fondateurs, des membres effectifs (également appelés membres actifs ou travailleurs) et des membres adhérents, </strong>tels que définis dans les statuts de Revive asbl.",
+      "C": "<strong>C</strong> : <strong>Membres de mission : </strong>les personnes qui participent aux missions médicales organisées par Revive asbl. Les membres de la mission sont soit membres soit sympathisants. <br /> Nous collectons dans le fichier des membres les données d'identification personnelle et de contact des membres de la mission, y compris les données mentionnées dans le passeport international. En outre, nous collectons tous les documents nécessaires à la réussite de la mission tels que les données de voyage, la demande de visa, les diplômes et autres qualifications, et d'autres documents spécifiques requis par le ministère de la Santé du pays où la mission aura lieu. Ces documents sont conservés dans des dossiers séparés par mission. &nbsp;",
+      "D": "<strong>D</strong>. <strong>Donateurs/Sponsors – Dons</strong> : toute personne faisant un don à Revive asbl. Nous sommes légalement tenus de demander le montant du don, les données d'identification et de contact ainsi que le numéro de registre national/numéro d'entreprise. En effet, le SPF Finances exige ces informations avant que nous puissions vous remettre une attestation fiscale. Ces données spécifiques ne sont pas conservées dans le fichier des membres.",
+      "COOKIES_P1": "Notre site Web utilise également des cookies. Les cookies sont de petits fichiers texte qui peuvent être stockés sur votre ordinateur lors de la visite de sites Web. Des informations sont stockées dans ce fichier texte, comme par exemple votre préférence linguistique pour un site Web. Lorsque vous reviendrez sur le site plus tard, ce cookie sera renvoyé au site Web. De cette manière, le site Web reconnaît votre navigateur et peut, par exemple, mémoriser votre préférence linguistique. Nous utilisons uniquement des cookies techniquement essentiels au bon fonctionnement de notre site Web :",
+      "COOKIE_1": "ARRAffinity : un cookie utilisé pour l'équilibrage de charge afin de garantir que vos demandes de pages sont envoyées au même serveur au cours de votre session de navigation.",
+      "COOKIE_2": "PHPSESSID : un cookie utilisé pour maintenir votre session sur le serveur.",
+      "OTHER_P1": "En outre, nous pouvons utiliser et transmettre vos informations dans la mesure où nous le jugeons nécessaire ou approprié :",
+      "OTHER_1": "pour se conformer à un processus juridique ou à la législation applicable, y compris éventuellement des lois en dehors du pays où vous résidez ;",
+      "OTHER_2": "pour répondre aux demandes des autorités publiques et gouvernementales, comme autorisé par la loi applicable, y compris éventuellement des autorités en dehors du pays où vous résidez ; et",
+      "OTHER_3": "pour protéger les droits, la vie privée, la sécurité ou la propriété de nous, de vous ou d'autres personnes. Nous pouvons également utiliser et transmettre vos informations d'autres manières après avoir obtenu votre consentement à cet effet."
+    },
+    "Q2": {
+      "TITLE": "Qui reçoit vos données personnelles ?",
+      "P1": "Nous ne transmettons jamais vos données personnelles, sauf :",
+      "ITEM1": "Si vous participez à une mission médicale : aux voyagistes, autorités et hôpitaux concernés, chaque fois limités à ce qui est nécessaire. Ces organisations sont souvent situées dans des pays dont la législation prévoit un niveau de protection des données inférieur. En tant que participant à une mission médicale, vous acceptez ce transfert.",
+      "ITEM2": "Si vous faites un don à Revive asbl : au SPF Finances, comme l'exige la loi.",
+      "ITEM3": "À nos prestataires de services (sous-traitants), tels que Mailchimp pour nos newsletters et Microsoft pour l'hébergement de nos données. Ces prestataires de services peuvent traiter vos données en dehors de l'Union européenne. Nous avons signé des contrats appropriés avec eux, et tous deux sont certifiés dans le cadre du bouclier de protection des données UE-États-Unis (<a href=\"https://www.privacyshield.gov/list\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\" (ouvre dans un nouvel onglet)\">https://www.privacyshield.gov/list</a>)."
+    },
+    "Q3": {
+      "TITLE": "Comment sécurisons-nous vos données ?",
+      "P1": "Nous prenons les mesures organisationnelles, techniques et administratives appropriées pour protéger les données personnelles sous notre contrôle. Malheureusement, il ne peut jamais être garanti que le traitement par des organisations auxquelles nous devons transmettre vos données pour une mission ou le stockage dans un système est sûr à 100 %, même si nous travaillons avec des prestataires de services de premier plan. Si vous avez des raisons de croire que vos données ne sont plus sécurisées, vous devez nous signaler immédiatement le problème."
+    },
+    "Q4": {
+      "TITLE": "Durée de conservation",
+      "P1": "Nous conserverons vos données personnelles aussi longtemps que nécessaire ou autorisé aux fins pour lesquelles elles ont été obtenues.",
+      "ITEM1": "Newsletter : jusqu'à votre désinscription",
+      "ITEM2": "Membres : Nous conservons certaines coordonnées pour une durée indéterminée. Pas pour continuer à vous informer après la fin de votre adhésion, maar pour éventuellement vous inviter à des réunions ou des anniversaires.",
+      "ITEM3": "Mission : jusqu'à 10 ans après la fin de la mission",
+      "ITEM4": "Dons : jusqu'à 5 ans après l'année de versement"
+    },
+    "Q5": {
+      "TITLE": "Vos droits",
+      "P1": "Vous avez le droit de",
+      "ITEM1": "Retirer votre consentement à l'envoi de notre newsletter. Cela peut également être automatisé en cliquant sur « se désinscrire » en bas d'une newsletter.",
+      "ITEM2": "Demander de plus amples informations sur la manière dont nous traitons vos données personnelles",
+      "ITEM3": "Demander l'accès à vos données personnelles que nous traitons,",
+      "ITEM4": "Demander la correction de vos données personnelles,",
+      "ITEM5": "Supprimer vos données personnelles, dans la mesure où la loi nous le permet.",
+      "REQUEST": "Veuillez envoyer vos demandes relatives à la confidentialité par e-mail à <a href=\"mailto: privacy@revivevzw.be\">privacy@revivevzw.be</a>.",
+      "RESPONSE": "Nous répondrons à votre demande le plus rapidement possible, et au plus tard un mois après réception. Si les circonstances entraînent un retard dans notre réponse, vous en serez immédiatement informé et recevrez une date à laquelle nous vous répondrons."
+    },
+    "Q6": {
+      "TITLE": "Comment nous contacter",
+      "P1": "Vous pouvez contacter Revive asbl au",
+      "EMAIL": "Adresse e-mail :",
+      "ADDRESS": "Adresse : REVIVE ASBL Wittepaalstraat 16 9051 Gand – Belgique"
+    },
+    "Q7": {
+      "TITLE": "Plaintes",
+      "P1": "Si vous n'êtes pas satisfait de la manière dont nous traitons vos données personnelles, vous pouvez déposer une plainte auprès de l'Autorité de protection des données (<a href=\"http://www.autoriteprotectiondonnees.be\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\" (ouvre dans un nouvel onglet)\">www.autoriteprotectiondonnees.be</a>)."
+    },
+    "Q8": {
+      "TITLE": "Modifications à cette déclaration de confidentialité",
+      "P1": "Nous pouvons modifier cette déclaration de confidentialité. Les modifications entrent en vigueur dès que nous publions la version révisée sur le site Web. Cette déclaration de confidentialité a été mise à jour pour la dernière fois le 4 mai 2020. (V20200504A)"
+    }
+  },
+  "EVENTS": {
+    "HERO_ALT": "En-tête des événements",
+    "TITLE": "Événements",
+    "LOADING": "Chargement des événements...",
+    "EMPTY": "Il n'y a actuellement aucun événement à venir."
+  },
+  "MISSION_DETAIL": {
+    "OVER_MISSION": "À propos de cette mission",
+    "INTERVENTIONS": "Interventions",
+    "REPORT": "Rapport",
+    "MEDIA": "Médias",
+    "IMPRESSIONS": "Impressions",
+    "LOADING": "Chargement des détails de la mission..."
+  },
+  "MISSIONS": {
+    "LABEL": "NOS MISSIONS",
+    "TITLE": "Nos missions",
+    "INTRO_1": "Découvrez ici nos missions planifiées et passées.",
+    "INTRO_2": "Les missions ont toujours une durée de 2 semaines.",
+    "TAB_FUTURE": "Missions planifiées",
+    "TAB_PAST": "Missions passées",
+    "LOADING": "Chargement des missions...",
+    "EMPTY": "Il n'y a actuellement aucune mission."
+  },
+  "LEGACIES": {
+    "IMAGE_ALT": "Testaments et legs",
+    "LABEL": "TESTAMENTS ET LEGS",
+    "TITLE": "Aidez-nous à aider les personnes dans le besoin avec votre héritage",
+    "P1": "Choisissez REVIVE asbl si vous souhaitez vraiment inclure une association caritative dans votre testament !",
+    "P2": "TOUS LES DONS vont INTÉGRALEMENT à nos missions médicales. En incluant REVIVE asbl dans votre leg, vous nous aidez à faire « revivre » les personnes malades et nécessiteuses dans des endroits isolés d'Afrique.",
+    "P3_1": "Contactez votre notaire ou "
+  },
+  "PARTNERS": {
+    "LABEL": "NOS PARTENAIRES",
+    "TITLE": "Merci à nos partenaires"
+  },
+  "JOIN_TEAM": {
+    "IMAGE_ALT": "Rejoignez notre équipe",
+    "LABEL": "REJOIGNEZ NOTRE ÉQUIPE",
+    "TITLE": "Rejoignez notre équipe",
+    "P1": "Dans nos équipes, nous avons besoin de médecins, dentistes, infirmières, soutien logistique, aide back-office, aide administrative, petites mains….",
+    "P2_1": "Si vous souhaitez utiliser votre expertise en tant que bénévole, veuillez contacter ",
+    "P3_1": "Plus d'informations peuvent être trouvées dans la section ",
+    "P3_2": "Comment nous aidons > témoignages de bénévoles"
+  },
+  "CORPORATE_SUPPORT": {
+    "IMAGE_ALT": "Soutenir en tant qu'organisation",
+    "LABEL": "SOUTENIR EN TANT QU'ORGANISATION",
+    "TITLE_1": "Soutenir en tant qu'organisation",
+    "P1": "En tant qu'organisation ou entreprise, vous pouvez <strong>soutenir financièrement</strong> REVIVE asbl. De cette manière, vous nous aidez à aider et montrez votre engagement social en tant qu'entreprise. Les dons sont fiscalement déductibles dans la comptabilité de votre entreprise.",
+    "P2": "En tant qu'entreprise, vous pouvez également nous soutenir en <strong>nature</strong>. Si vous êtes actif dans le secteur médical, les dons de matériel médical pour nos actions de secours sont plus que bienvenus.",
+    "P3": "Un soutien peut également être apporté à nos <strong>activités de bienfaisance</strong> en mettant des infrastructures à disposition, en parrainant la restauration lors des réceptions, etc.",
+    "P4": "Ou peut-être votre entreprise peut-elle proposer des <strong>produits</strong> que REVIVE asbl pourrait ensuite mettre en vente via sa boutique en ligne.",
+    "BTN_CONTACT": "Contactez-nous",
+    "IMAGE_ALT_2": "Pourquoi devrais-je soutenir ?",
+    "TITLE_2": "Pourquoi devrais-je soutenir ?",
+    "LI1": "Les dons sont <strong>fiscalement déductibles</strong> dans la comptabilité de votre entreprise.",
+    "LI2": "Pour les dons en nature, nous pouvons vous fournir une attestation pour votre comptabilité.",
+    "LI3": "Nous serons <strong>heureux de vous mentionner comme partenaire de soutien</strong> dans nos communications.",
+    "P5": "Si vous souhaitez nous soutenir en tant qu'organisation ou entreprise, veuillez nous contacter."
+  },
+  "BECOME_MEMBER": {
+    "IMAGE_ALT": "Devenez membre de REVIVE asbl",
+    "LABEL": "DEVENIR MEMBRE",
+    "TITLE": "Devenez membre de notre équipe",
+    "P1": "En devenant membre de REVIVE asbl en grand nombre, vous nous soutenez financièrement, mais vous contribuez également à l'image de notre organisation d'aide.",
+    "P2": "Pour les personnes qui participent à l'une de nos actions de secours, être membre est une condition pour être couvert par notre assurance. Les membres effectifs de REVIVE asbl ont également le droit de vote à notre Assemblée Générale.",
+    "PAYMENT_1": "Le paiement de la cotisation annuelle peut se faire via ",
+    "PAYMENT_2": "ce lien"
+  },
+  "CONTACT": {
+    "TITLE": "Contactez-nous",
+    "ADDRESS_LABEL": "Adresse :",
+    "ADDRESS_VALUE": "Wittepaalstraat 16 – 9051 Gand – Belgique",
+    "EMAIL_LABEL": "E-mail :",
+    "PHONE_LABEL": "Tél. :",
+    "FORM_TITLE": "Remplissez le formulaire. Nous vous répondrons dans les plus brefs délais.",
+    "SUCCESS_MSG": "Merci pour votre message ! Nous vous contacterons dans les plus brefs délais.",
+    "ERROR_MSG": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard.",
+    "FORM": {
+      "EMAIL": "Adresse e-mail",
+      "FIRST_NAME": "Prénom",
+      "LAST_NAME": "Nom de famille",
+      "MESSAGE": "Message",
+      "PRIVACY_1": "J'accepte les ",
+      "PRIVACY_2": "conditions de confidentialité",
+      "PRIVACY_3": " de REVIVE asbl.",
+      "SEND": "Envoyer",
+      "SENDING": "Envoi en cours..."
+    }
+  },
+  "TEAM": {
+    "LABEL": "NOTRE ÉQUIPE",
+    "INFO_BLOCK": {
+      "TITLE": "Bénévoles enthousiastes",
+      "P1": "Notre organisation de soutien compte environ 35 bénévoles enthousiastes qui s'engagent de manière totalement gratuite."
+    },
+    "CARD1": {
+      "TITLE": "Ils s'occupent de",
+      "LI1": "La préparation et l'organisation des missions médicales",
+      "LI2": "La gestion et le stockage du matériel",
+      "LI3": "L'administration",
+      "LI4": "Le soutien juridique",
+      "LI5": "L'infrastructure informatique",
+      "LI6": "La collecte de fonds pour le financement de l'équipement médical, des instruments, du matériel de soins et des médicaments",
+      "LI7": "L'organisation d'événements de bienfaisance",
+      "DOWNLOAD": "Télécharger l'organigramme"
+    },
+    "CARD2": {
+      "TITLE": "Préparation et organisation",
+      "P1": "La préparation d'une mission médicale demande beaucoup d'administration : contacts avec les autorités locales pour obtenir les autorisations, documents personnels tels que la traduction des diplômes, demande de visas et commande de billets d'avion.",
+      "P2": "En concertation avec les équipes médicales et l'hôpital local, des listes d'équipement médical, d'appareils et de médicaments sont dressées. Tout cela doit également être acheté et un entrepôt est nécessaire pour le stocker.",
+      "JOIN_BUTTON": "Rejoignez notre équipe"
+    }
+  },
+  "VOLUNTEER_STORIES": {
+    "LABEL": "Témoignages de bénévoles",
+    "STORY1": {
+      "TITLE": "Novembre 2024 – Bénin – DASSA Équipe de bénévoles en chirurgie",
+      "P1": "En tant qu'équipe de personnes enthousiastes issues de secteurs très divers, nous venons d'accomplir ensemble une mission médicale inoubliable au Bénin. Ce fut une expérience surprenante et particulière de voir la rapidité avec laquelle nous nous sommes accordés et avons donné le meilleur de nous-mêmes, tant dans la prise en charge des patients que dans les contacts mutuels.",
+      "P2": "Chaque défi a été relevé en équipe. Nous nous sommes soutenus mutuellement et avons cherché des solutions ensemble. La gratitude des patients et leur profonde appréciation pour nos efforts ont été pour nous la plus belle preuve du succès de notre mission.",
+      "P3": "Nous sommes heureux de constater que l'hôpital de DASSA a fait de grands progrès depuis le début de nos missions, tant au niveau des infrastructures que de l'équipement médical."
+    },
+    "STORY2": {
+      "TITLE": "Témoignages : Liza et Febe, 2 étudiantes infirmières en dernière année Bénin – DASSA",
+      "P1": "Curieuses de savoir comment les soins de santé sont organisés ailleurs qu'en Flandre, nous avons saisi à deux mains cette opportunité unique de faire un stage au Bénin -DASSA.",
+      "P2": "La mission médicale et le stage ont été très intenses et stimulants. Nous avons constaté un enthousiasme incroyable de la part des membres de la mission, de la motivation, des connaissances, des compétences et de l'ingéniosité.",
+      "P3": "Ils nous ont offert d'énormes opportunités stimulantes qui ont contribué au fait que nous avons plus appris au cours de ces deux semaines que lors de nos stages précédents. Nous porterons tout cela avec nous comme exemple pour toute notre carrière. Un stage inoubliable et à refaire absolument !"
+    },
+    "STORY3": {
+      "TITLE": "Un bénévole en soutien logistique témoigne. Sentez-vous interpellé(e) !",
+      "P1": "L'élaboration d'une description claire et concrète de cet engagement bénévole est impossible.",
+      "P2": "C'est le travail idéal pour les bénévoles qui ont envie de se retrousser les manches, qui sont créatifs et qui possèdent une bonne dose de capacité à résoudre les problèmes.",
+      "P3": "Cela reste et restera une expérience fantastique et inoubliable."
+    }
+  },
+  "CTA_BANNER": {
+    "LABEL": "DEVENIR MEMBRE",
+    "TITLE": "Faites un achat sur notre boutique en ligne",
+    "P1": "Vous pouvez soutenir notre asbl en effectuant un achat dans notre boutique en ligne.",
+    "BUTTON": "Faire un don"
+  },
+  "FOOTER": {
+    "ADDRESS_LINE_1": "Wittepaalstraat 16",
+    "ADDRESS_LINE_2": "9051 Afsnee, Belgique",
+    "ENTERPRISE_NO": "N° d'entreprise :",
+    "BANK_ACC": "N° de compte bancaire :",
+    "NEWSLETTER_PLACEHOLDER": "exemple@gmail.com",
+    "SUBSCRIBE_A11Y": "S'abonner",
+    "SUBSCRIBED_MSG": "Merci de vous être abonné(e) !",
+    "GDPR": "RGPD"
+  },
   "HEADER": {
     "CONTACT": "Contact",
     "DONATE": "Faire un don",
-    "WEBSHOP": "Boutique en ligne"
+    "WEBSHOP": "Boutique en ligne",
+    "NAV": {
+      "FROM_HEART": "Du cœur",
+      "WHO_WE_ARE": "Qui sommes-nous, que faisons-nous",
+      "OUR_TEAM": "Notre équipe",
+      "OUR_MISSION": "Notre mission",
+      "SUSTAINABLE_COLLAB": "Collaboration durable",
+      "OUR_PARTNERS": "Nos partenaires",
+      "HOW_WE_HELP": "Comment nous aidons",
+      "PLANNED_MISSIONS": "Missions médicales prévues",
+      "PAST_MISSIONS": "Missions médicales passées",
+      "PATIENT_STORIES": "Histoires de patients",
+      "VOLUNTEER_STORIES": "Histoires de bénévoles",
+      "EVENTS": "Événements",
+      "SUPPORT_US": "Soutenez-nous",
+      "MAKE_DONATION": "Faire un don",
+      "BECOME_MEMBER": "Devenir membre",
+      "HELP_US": "Aidez-nous",
+      "CORP_SUPPORT": "Soutien aux organisations",
+      "LEGACIES": "Testaments et legs",
+      "JOIN_TEAM": "Rejoignez notre équipe"
+    }
+  },
+  "HOME": {
+    "HERO": {
+      "ALT": "Medical care in Africa",
+      "TITLE": "Les soins médicaux, là où ils comptent vraiment."
+    },
+    "MISSION": {
+      "ALT": "Dirt road in Africa",
+      "LABEL": "notre mission",
+      "TITLE": "Faire revivre les plus pauvres d'Afrique dans leur communauté en leur offrant une aide médicale gratuite.",
+      "P1": "En raison de graves problèmes médicaux, les gens sont souvent privés de contacts sociaux. Faute d'argent et de soins médicaux locaux, ils sont livrés à eux-mêmes. Grâce à nos efforts gratuits, nous leur offrons les soins médicaux nécessaires pour qu'ils puissent retrouver une vie normale et revivre. \"REVIVE\"."
+    },
+    "INFO": {
+      "LABEL": "REVIVE ASBL",
+      "TITLE": "Qui sommes-nous, que faisons-nous",
+      "P1": "En tant qu'asbl humanitaire belge, nous offrons depuis plus de 15 ans une aide médicale indispensable et gratuite aux plus démunis, principalement en Afrique, qui n'ont pas les moyens de se l'offrir autrement. Au moins 10 fois par an, une équipe de médecins spécialistes, de chirurgiens, de dentistes, d'infirmiers et de personnel logistique part en mission de deux semaines dans des régions reculées où les autres organisations humanitaires ne se rendent presque jamais."
+    },
+    "CARDS": {
+      "CARD1": {
+        "TITLE": "Coopération avec le personnel local",
+        "Icon_ALT": "Globe",
+        "P": "Pour cela, nous collaborons avec les autorités locales."
+      },
+      "CARD2": {
+        "TITLE": "Uniquement des bénévoles",
+        "Icon_ALT": "Volunteer",
+        "P": "Les équipes travaillent de manière totalement gratuite et paient elles-mêmes leurs frais de voyage et de séjour. L'asbl REVIVE n'a pas de frais fixes, pas de bureaux, pas d'employés, uniquement des bénévoles."
+      },
+      "CARD3": {
+        "TITLE": "Interventions et formation",
+        "Icon_ALT": "Training",
+        "P": "Nous y réalisons diverses interventions chirurgicales, des consultations médicales et formons le personnel médical local."
+      }
+    }
   }
 }

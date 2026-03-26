@@ -18,19 +18,19 @@
                                 <line x1="8" y1="2" x2="8" y2="6"></line>
                                 <line x1="3" y1="10" x2="21" y2="10"></line>
                             </svg>
-                            <span>{{ m.startDate | date:'d MMMM y' }} - {{ m.endDate | date:'d MMMM y' }}</span>
+                            <span>{{ m.startDate | date:'d MMMM y' : undefined : translate.currentLang }} - {{ m.endDate | date:'d MMMM y' : undefined : translate.currentLang }}</span>
                         </div>
                     </div>
 
                     @if (m.description && (m.description | localize)) {
-                    <h2>Over deze missie</h2>
+                    <h2>{{ 'MISSION_DETAIL.OVER_MISSION' | translate }}</h2>
                     <p class="lead-text">{{ m.description | localize }}</p>
                     }
                 </section>
 
                 @if (m.interventions && (m.interventions | localize)) {
                 <section class="interventions">
-                    <h2>Interventies</h2>
+                    <h2>{{ 'MISSION_DETAIL.INTERVENTIONS' | translate }}</h2>
                     <div class="interventions-card">
                         <p>{{ m.interventions | localize }}</p>
                     </div>
@@ -39,7 +39,7 @@
 
                 @if (m.showReport && m.report) {
                 <section class="report">
-                    <h2>Verslag</h2>
+                    <h2>{{ 'MISSION_DETAIL.REPORT' | translate }}</h2>
                     <div class="report-content">
                         <p>{{ m.report | localize }}</p>
                     </div>
@@ -61,7 +61,7 @@
 
                 @if (m.mediaUrls && m.mediaUrls.length > 0) {
                 <div class="media-sidebar">
-                    <h3>Media</h3>
+                    <h3>{{ 'MISSION_DETAIL.MEDIA' | translate }}</h3>
                     <div class="media-images">
                         @for (url of m.mediaUrls; track url) {
                         <div class="media-img-wrapper">
@@ -76,7 +76,7 @@
 
         @if (m.images && m.images.length > 0) {
         <section class="gallery-section">
-            <h2>Impressies</h2>
+            <h2>{{ 'MISSION_DETAIL.IMPRESSIONS' | translate }}</h2>
             <div class="gallery-grid">
                 @for (img of m.images; track img) {
                 <div class="gallery-item">
@@ -90,7 +90,7 @@
     } @else {
     <div class="container loading-container">
         <div class="loading-spinner"></div>
-        <p>Laden van missie details...</p>
+        <p>{{ 'MISSION_DETAIL.LOADING' | translate }}</p>
     </div>
     }
 </div>

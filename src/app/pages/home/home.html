@@ -1,17 +1,11 @@
-<app-hero imageSrc="assets/home-page-header.jpg" imageAlt="Medical care in Africa"
-    title="Medische zorg, daar waar het echt telt."></app-hero>
+<app-hero imageSrc="assets/home-page-header.jpg" [imageAlt]="'HOME.HERO.ALT' | translate"
+    [title]="'HOME.HERO.TITLE' | translate"></app-hero>
 
 <div class="container home-content main-container">
-    <app-split-content-card id="onze-missie" imageSrc="assets/our-mission.jpg" imageAlt="Dirt road in Africa"
-        label="onze missie"
-        title="De allerarmsten in Afrika laten herleven in hun gemeenschap door hen gratis medische hulp te bieden.">
-        <p>
-            Door zware medische problemen zijn mensen dikwijls verstoken van sociale contacten. Bij gebrek aan geld en
-            medische zorg ter plaatse zijn ze overgeleverd aan hun lot. Door onze gratis inzet bieden we hen de
-            nodige medische zorg zodat ze terug een
-            normaal leven kunnen leiden en herleven.
-            “REVIVE”.
-        </p>
+    <app-split-content-card id="onze-missie" imageSrc="assets/our-mission.jpg" [imageAlt]="'HOME.MISSION.ALT' | translate"
+        [label]="'HOME.MISSION.LABEL' | translate"
+        [title]="'HOME.MISSION.TITLE' | translate">
+        <p [innerHTML]="'HOME.MISSION.P1' | translate"></p>
 
         <!-- <div actions>
             <button class="btn-primary">Onze missie</button>
@@ -20,45 +14,24 @@
 
     <div class="spacer"></div>
 
-    <app-info-block id="wie-zijn-we" label="REVIVE VZW" title="Wie zijn wij, wat doen we">
-        <p>
-            Als Belgische humanitaire vzw bieden we reeds meer
-            dan 15 jaar gratis noodzakelijke medische hulp aan
-            de armen, voornamelijk in Afrika, die dit anders niet
-            kunnen betalen.
-            Minstens 10 keer per jaar gaat een team van
-            medische specialisten, chirurgen, tandartsen,
-            verplegers en logistiek personeel voor twee weken
-            op missie naar plaatsen in het binnenland waar
-            andere hulporganisaties bijna niet komen.
-        </p>
+    <app-info-block id="wie-zijn-we" [label]="'HOME.INFO.LABEL' | translate" [title]="'HOME.INFO.TITLE' | translate">
+        <p [innerHTML]="'HOME.INFO.P1' | translate"></p>
     </app-info-block>
 
     <div class="cards-container">
-        <app-icon-card title="Samenwerking lokale staf" iconBackgroundColor="var(--color-cream-300)">
-            <img icon src="assets/globe.svg" alt="Globe" />
-            <p>
-                Hiervoor werken we samen met de plaatselijke besturen.
-            </p>
+        <app-icon-card [title]="'HOME.CARDS.CARD1.TITLE' | translate" iconBackgroundColor="var(--color-cream-300)">
+            <img icon src="assets/globe.svg" [alt]="'HOME.CARDS.CARD1.Icon_ALT' | translate" />
+            <p [innerHTML]="'HOME.CARDS.CARD1.P' | translate"></p>
         </app-icon-card>
 
-        <app-icon-card title="Enkel vrijwilligers" iconBackgroundColor="var(--color-blue-200)">
-            <img icon src="assets/volunteer.svg" alt="Volunteer" />
-            <p>
-                De teams werken volledig gratis en betalen zelf hun
-                reis en verblijfskosten. REVIVE vzw heeft geen vaste
-                kosten, geen kantoren, geen bedienden, alleen
-                vrijwilligers.
-            </p>
+        <app-icon-card [title]="'HOME.CARDS.CARD2.TITLE' | translate" iconBackgroundColor="var(--color-blue-200)">
+            <img icon src="assets/volunteer.svg" [alt]="'HOME.CARDS.CARD2.Icon_ALT' | translate" />
+            <p [innerHTML]="'HOME.CARDS.CARD2.P' | translate"></p>
         </app-icon-card>
 
-        <app-icon-card title="Ingrepen en opleiding" iconBackgroundColor="var(--color-stone-300)">
-            <img icon src="assets/training.svg" alt="Training" />
-            <p>
-                We doen er diverse chirurgische ingrepen, medische
-                consultaties en geven opleiding aan plaatselijk
-                medisch personeel.
-            </p>
+        <app-icon-card [title]="'HOME.CARDS.CARD3.TITLE' | translate" iconBackgroundColor="var(--color-stone-300)">
+            <img icon src="assets/training.svg" [alt]="'HOME.CARDS.CARD3.Icon_ALT' | translate" />
+            <p [innerHTML]="'HOME.CARDS.CARD3.P' | translate"></p>
         </app-icon-card>
     </div>
 </div>

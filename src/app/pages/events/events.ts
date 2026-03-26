@@ -8,11 +8,12 @@ import { ActivityApiService } from "../../api/services/activity-api.service";
 import { Activity } from "../../api/models/activity.model";
 import { toSignal } from "@angular/core/rxjs-interop";
 import { map } from "rxjs";
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-events',
     standalone: true,
-    imports: [CommonModule, Hero, Breadcrumbs, ActivityCard, LocalizePipe],
+    imports: [CommonModule, Hero, Breadcrumbs, ActivityCard, LocalizePipe, TranslateModule],
     templateUrl: './events.html',
     styleUrl: './events.css',
 })

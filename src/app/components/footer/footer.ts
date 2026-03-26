@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { PersonApiService } from '../../api/services/person-api.service';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-footer',
     standalone: true,
-    imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterLink],
+    imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterLink, TranslateModule],
     templateUrl: './footer.html',
     styleUrl: './footer.css'
 })

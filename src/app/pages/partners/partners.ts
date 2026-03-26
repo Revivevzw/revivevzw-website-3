@@ -5,11 +5,12 @@ import { Sponsor } from '../../api/models/sponsor.model';
 import { SponsorApiService } from '../../api/services/sponsor-api.service';
 import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs';
 import { InfoBlock } from '../../components/info-block/info-block';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-partners',
     standalone: true,
-    imports: [CommonModule, Breadcrumbs, InfoBlock],
+    imports: [CommonModule, Breadcrumbs, InfoBlock, TranslateModule],
     templateUrl: './partners.html',
     styleUrl: './partners.css',
 })

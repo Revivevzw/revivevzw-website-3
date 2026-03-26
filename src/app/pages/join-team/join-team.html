@@ -3,20 +3,14 @@
     <app-breadcrumbs></app-breadcrumbs>
 
     <section class="container join-team-container">
-        <app-split-content-card imageSrc="assets/join-team.png" imageAlt="Join our team" label="Versterk ons team"
-            title="Versterk ons team">
+        <app-split-content-card imageSrc="assets/join-team.png" [imageAlt]="'JOIN_TEAM.IMAGE_ALT' | translate" [label]="'JOIN_TEAM.LABEL' | translate"
+            [title]="'JOIN_TEAM.TITLE' | translate">
+            <p>{{ 'JOIN_TEAM.P1' | translate }}</p>
             <p>
-                In onze teams hebben we nood aan artsen, tandartsen, verpleegkundigen, logistieke ondersteuners,
-                back-office hulp, administratieve hulp, helpende handen ….
+                {{ 'JOIN_TEAM.P2_1' | translate }}<a href="mailto:HR@revivevzw.be" class="link">HR@revivevzw.be</a>
             </p>
             <p>
-                Heb je zin om ook jouw expertise in te zetten als vrijwilliger, neem dan zeker contact op met
-                <a href="mailto:HR@revivevzw.be" class="link">HR@revivevzw.be</a>
-            </p>
-            <p>
-                Meer informatie vind je in de rubriek <a routerLink="/volunteer-stories" class="link">Hoe wij helpen >
-                    vrijwilligers
-                    aan het woord</a>
+                {{ 'JOIN_TEAM.P3_1' | translate }}<a routerLink="/volunteer-stories" class="link">{{ 'JOIN_TEAM.P3_2' | translate }}</a>
             </p>
 
         </app-split-content-card>

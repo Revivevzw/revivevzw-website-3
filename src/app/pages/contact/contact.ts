@@ -5,11 +5,12 @@ import { RouterLink } from '@angular/router';
 import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs';
 import { MailApiService } from '../../api/services/mail-api.service';
 import { Mail } from '../../api/models/mail.model';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-contact',
     standalone: true,
-    imports: [CommonModule, ReactiveFormsModule, RouterLink, Breadcrumbs],
+    imports: [CommonModule, ReactiveFormsModule, RouterLink, Breadcrumbs, TranslateModule],
     templateUrl: './contact.html',
     styleUrl: './contact.css',
 })
@@ -52,7 +53,7 @@ export class Contact {
                 },
                 error: (err) => {
                     this.isSending = false;
-                    this.errorMessage = 'Er is een fout opgetreden bij het verzenden van je bericht. Probeer het later opnieuw.';
+                    this.errorMessage = 'CONTACT.ERROR_MSG';
                     console.error('Email send failed', err);
                 }
             });

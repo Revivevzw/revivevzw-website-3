@@ -1,7 +1,277 @@
 {
+  "GDPR": {
+    "TITLE": "Privacyverklaring",
+    "INTRO": "Revive vzw respecteert uw privacy. Om onze doelstellingen te bereiken kunnen we uw persoonsgegevens verwerken als “verwerkingsverantwoordelijke”. Met verwerking van persoonsgegevens bedoelen we onder meer het verzamelen, het opslaan, het opvragen, het gebruiken, het doorzenden en het wissen van persoonsgegevens. <br /> Via deze privacyverklaring leggen we uit wat we met uw gegevens doen en wat uw rechten zijn.",
+    "Q1": {
+      "TITLE": "Welke persoonsgegevens verzamelen we en waarvoor?",
+      "P1": "We verzamelen uw persoonsgegevens afhankelijk van hoe je betrokken bent bij onze organisatie. <br /> De gegevens van de personen vermeld onder A, B en C worden bijgehouden in <strong>het ledenbestand.</strong>",
+      "A": "<strong>A: Sympathisanten</strong>/ vrijwilligers/ contactpersonen/ geïnteresseerden: zij nemen occasioneel deel aan activiteiten die door Revive vzw georganiseerd worden. Elke sympathisant (zowel natuurlijke personen als rechtspersonen) ontvangt onze nieuwsbrief. Hierbij vragen we enkel uw identificatie- en contactgegevens, inclusief emailadres. U kan zich steeds uitschrijven zoals vermeld in elke nieuwsbrief.",
+      "B": "<strong>B: Leden: </strong>Binnen de vzw zijn er <strong>stichtende leden, effectieve leden (ook actieve of werkende leden genoemd) en toegetreden leden, </strong>zoals bepaald in de statuten van Revive vzw.",
+      "C": "<strong>C</strong>: <strong>Missieleden: </strong>de personen die deelnemen aan de medische missies georganiseerd door Revive vzw. De missieleden zijn ofwel lid ofwel sympathisant. <br /> Van de missieleden verzamelen we in het ledenbestand de persoonlijke identificatie- en contactgegevens inclusief de gegevens vermeld in de internationale reispas. Daarnaast verzamelen we alle documenten die nodig zijn om de missie te doen slagen zoals reisgegevens, visumaanvraag, diploma’s en andere kwalificaties, en andere specifieke documenten die vereist worden door het Ministerie van Volksgezondheid van het land waar de missie zal doorgaan. Deze documenten worden bijgehouden in afzonderlijke bestanden per missie. &nbsp;",
+      "D": "<strong>D</strong>. <strong>Donateurs/Sponsors – Giften</strong>: iedereen die een <strong>gift</strong> doet aan Revive vzw. We zijn wettelijk verplicht het bedrag van de gift, de identificatie- en contactgegevens en het rijksregisternummer/ ondernemingsnummer op te vragen. De FOD Financiën eist die informatie immers vooraleer we u een fiscaal attest kunnen bezorgen. Deze specifieke gegevens worden niet bijgehouden in het ledenbestand.",
+      "COOKIES_P1": "Onze website gebruikt ook cookies. Cookies zijn kleine tekstbestandjes die bij het bezoeken van websites op je computer kunnen worden bewaard. In dit tekstbestand wordt informatie opgeslagen, zoals bijvoorbeeld je taalvoorkeur voor een website. Wanneer je de website later opnieuw bezoekt, wordt deze cookie opnieuw verstuurd naar de website. Op die manier herkent de website jouw browser en kan bijvoorbeeld je taalvoorkeur worden onthouden. Wij gebruiken enkel cookies die technisch essentieel zijn voor het goed functioneren van onze website:",
+      "COOKIE_1": "ARRAffinity: een cookie die gebruikt wordt voor “load balancing” om te verzekeren dat uw pagina-verzoeken naar de zelfde server gestuurd worden in uw browser sessie.",
+      "COOKIE_2": "PHPSESSID: een cookie die gebruikt wordt uw sessie te behouden op de server.",
+      "OTHER_P1": "Daarnaast gebruiken en geven we mogelijks uw informatie door voor zover wij dat noodzakelijk of geschikt achten:",
+      "OTHER_1": "om te voldoen aan een juridisch proces of de geldende wetgeving, waaronder mogelijk&nbsp;wetten buiten het land waar u woont;",
+      "OTHER_2": "om zoals toegelaten door de toepasselijke wetgeving aan verzoeken te voldoen van openbare en overheidsinstanties, waaronder mogelijk&nbsp;instanties buiten het land waar u woont; en",
+      "OTHER_3": "om de rechten, privacy, veiligheid of eigendom van ons, u of anderen te beschermen. We kunnen uw informatie ook gebruiken en doorgeven op andere manieren, nadat wij uw toestemming daartoe gekregen hebben."
+    },
+    "Q2": {
+      "TITLE": "Wie ontvangt uw persoonsgegevens?",
+      "P1": "We geven uw persoonsgegevens nooit door, behalve:",
+      "ITEM1": "Als u deelneemt aan een medische missie: aan de betrokken reisoperatoren, overheden en ziekenhuizen, telkens beperkt tot wat noodzakelijk is. Die organisaties bevinden zich vaak in landen waar de wetgeving een lager niveau van gegevens bescherming biedt. Als deelnemer aan een medische missie gaat u akkoord met deze doorgave.",
+      "ITEM2": "Als u een gift doet aan Revive vzw: aan FOD Financiën, zoals wettelijk vereist.",
+      "ITEM3": "Aan onze dienstverleners (verwerkers), zoals Mailchimp voor onze nieuwsbrieven en Microsoft voor de hosting van onze data. Deze dienstverleners kunnen uw gegevens buiten de Europese Unie verwerken. We hebben met hen gepaste contracten ondertekend, en beide zijn gecertificeerd onder het EU-US Privacy Shield (<a href=\"https://www.privacyshield.gov/list\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\" (opent in een nieuwe tab)\">https://www.privacyshield.gov/list</a>)."
+    },
+    "Q3": {
+      "TITLE": "Hoe beveiligen we uw gegevens?",
+      "P1": "We treffen passende organisatorische, technische en administratieve maatregelen om persoonsgegevens onder onze controle te beschermen. Helaas kan nooit worden gegarandeerd dat de verwerking door organisaties aan wie we uw gegevens moeten doorgeven voor een missie of de opslag in een systeem 100% veilig is, ook al werken we met toonaangevende dienstverleners. Als u reden hebt om te geloven dat uw gegevens niet meer veilig zijn, moet u het probleem onmiddellijk aan ons meedelen."
+    },
+    "Q4": {
+      "TITLE": "Bewaarperiode",
+      "P1": "We zullen uw persoonsgegevens bewaren voor zo lang als nodig of toegelaten is voor het doel of doelen waarvoor ze verkregen werden.",
+      "ITEM1": "Nieuwsbrief: tot u zich uitschrijft",
+      "ITEM2": "Leden: We bewaren enkele contactgegevens voor onbepaalde duur. Niet om je na het einde van je lidmaatschap nog continu te blijven informeren, maar om je eventueel nog te kunnen uitnodigen voor reünies of jubilea.",
+      "ITEM3": "Missie: tot 10 jaar na het einde van de missie",
+      "ITEM4": "Giften: tot 5 jaar na het jaar van storting"
+    },
+    "Q5": {
+      "TITLE": "Uw rechten",
+      "P1": "U heeft het recht om",
+      "ITEM1": "Uw toestemming voor het verzenden van onze nieuwsbrief in te trekken. Dit kan ook geautomatiseerd door op “uitschrijven” te klikken onderaan een nieuwsbrief.",
+      "ITEM2": "Verdere informatie over hoe we uw persoonsgegevens verwerken te vragen",
+      "ITEM3": "Inzage te vragen in uw persoonsgegevens die we verwerken,",
+      "ITEM4": "Correctie te vragen van uw persoonsgegevens,",
+      "ITEM5": "Uw persoonsgegevens te verwijderen, voor zover de wetgeving ons dat toelaat.",
+      "REQUEST": "Gelieve uw privacy-verzoeken per email te sturen naar <a href=\"mailto: privacy@revivevzw.be\">privacy@revivevzw.be</a>.",
+      "RESPONSE": "We zullen uw verzoek zo snel als redelijk mogelijk beantwoorden, en niet later dan een maand na ontvangst. Als omstandigheden een vertraging van ons antwoord veroorzaken, zal u onmiddellijk op de hoogte gebracht worden en een datum ontvangen waarop we u zullen antwoorden"
+    },
+    "Q6": {
+      "TITLE": "Hoe ons te contacteren",
+      "P1": "U kan Revive vzw contacteren op",
+      "EMAIL": "Emailadres:",
+      "ADDRESS": "Adres: REVIVE VZW Wittepaalstraat 16 9051 Gent – België"
+    },
+    "Q7": {
+      "TITLE": "Klachten",
+      "P1": "Indien u niet tevreden bent over hoe wij omgaan met uw persoonsgegevens, kan u een klacht indienen bij de Gegevensbeschermingsautoriteit (<a href=\"http://www.gegevensbeschermingsautoriteit.be\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\" (opent in een nieuwe tab)\">www.gegevensbeschermingsautoriteit.be</a>)."
+    },
+    "Q8": {
+      "TITLE": "Aanpassingen aan deze privacyverklaring",
+      "P1": "Wij kunnen deze privacyverklaring wijzigen. Wijzigingen worden van kracht zodra we de herziene versie op de website publiceren. Deze privacyverklaring is laatst bijgewerkt op 4 mei 2020. (V20200504A)"
+    }
+  },
+  "EVENTS": {
+    "HERO_ALT": "Evenementen header",
+    "TITLE": "Evenementen",
+    "LOADING": "Evenementen laden...",
+    "EMPTY": "Er zijn momenteel geen aankomende evenementen."
+  },
+  "MISSION_DETAIL": {
+    "OVER_MISSION": "Over deze missie",
+    "INTERVENTIONS": "Interventies",
+    "REPORT": "Verslag",
+    "MEDIA": "Media",
+    "IMPRESSIONS": "Impressies",
+    "LOADING": "Laden van missie details..."
+  },
+  "MISSIONS": {
+    "LABEL": "ONZE MISSIES",
+    "TITLE": "Onze missies",
+    "INTRO_1": "Ontdek hier onze geplande en afgelopen missies.",
+    "INTRO_2": "De missies hebben telkens een duurtijd van 2 weken.",
+    "TAB_FUTURE": "Geplande missies",
+    "TAB_PAST": "Afgelopen missies",
+    "LOADING": "Missies laden...",
+    "EMPTY": "Er zijn momenteel geen missies."
+  },
+  "LEGACIES": {
+    "IMAGE_ALT": "Testamenten en legaten",
+    "LABEL": "TESTAMENTEN EN LEGATEN",
+    "TITLE": "Help ons hulpbehoevende mensen te helpen met uw nalatenschap",
+    "P1": "Kies voor REVIVE vzw als je echt een goed doel wenst op te nemen in je testament!",
+    "P2": "ALLE GIFTEN gaan INTEGRAAL naar onze medische missies. Door REVIVE vzw op te nemen in uw nalatenschap help je ons mee om zieke en hulpbehoevende mensen op afgelegen plaatsen in Afrika te laten “herleven”.",
+    "P3_1": "Neem contact op met je notaris of met "
+  },
+  "PARTNERS": {
+    "LABEL": "ONZE PARTNERS",
+    "TITLE": "Met dank aan onze partners"
+  },
+  "JOIN_TEAM": {
+    "IMAGE_ALT": "Versterk ons team",
+    "LABEL": "VERSTERK ONS TEAM",
+    "TITLE": "Versterk ons team",
+    "P1": "In onze teams hebben we nood aan artsen, tandartsen, verpleegkundigen, logistieke ondersteuners, back-office hulp, administratieve hulp, helpende handen ….",
+    "P2_1": "Heb je zin om ook jouw expertise in te zetten als vrijwilliger, neem dan zeker contact op met ",
+    "P3_1": "Meer informatie vind je in de rubriek ",
+    "P3_2": "Hoe wij helpen > vrijwilligers aan het woord"
+  },
+  "CORPORATE_SUPPORT": {
+    "IMAGE_ALT": "Steun als organisatie",
+    "LABEL": "STEUN ALS ORGANISATIE",
+    "TITLE_1": "Steun als organisatie",
+    "P1": "Als organisatie of bedrijf kan je REVIVE vzw <strong>financieel steunen</strong>. Zo help je ons helpen en toon je jouw maatschappelijk engagement als bedrijf. Giften zijn in de boekhouding van je bedrijf fiscaal aftrekbaar.",
+    "P2": "Als bedrijf kan je ook steunen in <strong>natura</strong>. Ben je actief in de medische sector dan zijn schenkingen van medisch materiaal voor onze hulpacties meer dan welkom.",
+    "P3": "Eveneens voor onze <strong>benefietactiviteiten</strong> kan ondersteuning gegeven worden door het ter beschikking stellen van infrastructuur, sponsoring van catering voor recepties, enz.",
+    "P4": "Of kan jouw bedrijf <strong>producten</strong> aanbieden die REVIVE vzw dan via zijn webshop te koop kan aanbieden.",
+    "BTN_CONTACT": "Contacteer ons",
+    "IMAGE_ALT_2": "Waarom zou ik steunen?",
+    "TITLE_2": "Waarom zou ik steunen?",
+    "LI1": "Giften zijn in de boekhouding van je bedrijf <strong>fiscaal aftrekbaar</strong>.",
+    "LI2": "Voor giften in natura kunnen we een attest bezorgen voor uw boekhouding.",
+    "LI3": "We <strong>vermelden je graag als steunende partner</strong> in onze communicaties.",
+    "P5": "Wil je steunen als organisatie of bedrijf, neem dan contact met ons op."
+  },
+  "BECOME_MEMBER": {
+    "IMAGE_ALT": "Word lid van REVIVE vzw",
+    "LABEL": "WORD LID",
+    "TITLE": "Word lid van ons team",
+    "P1": "Door met velen lid te worden van REVIVE vzw steun je ons financieel, maar draag je ook bij aan de uitstraling van onze hulporganisatie.",
+    "P2": "Voor mensen die mee gaan op elk van onze hulpacties is lid zijn een voorwaarde om gedekt te zijn door onze verzekering. Effectieve leden van REVIVE vzw hebben ook stemrecht op onze Algemene Vergadering.",
+    "PAYMENT_1": "Betaling van het jaarlijkse lidgeld kan via ",
+    "PAYMENT_2": "deze Link"
+  },
+  "CONTACT": {
+    "TITLE": "Contacteer ons",
+    "ADDRESS_LABEL": "Adres:",
+    "ADDRESS_VALUE": "Wittepaalstraat 16 – 9051 Gent – België",
+    "EMAIL_LABEL": "E-mail:",
+    "PHONE_LABEL": "Tel.:",
+    "FORM_TITLE": "Vul het formulier in. Wij antwoorden zo snel mogelijk.",
+    "SUCCESS_MSG": "Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.",
+    "ERROR_MSG": "Er is een fout opgetreden bij het verzenden van je bericht. Probeer het later opnieuw.",
+    "FORM": {
+      "EMAIL": "E-mailadres",
+      "FIRST_NAME": "Voornaam",
+      "LAST_NAME": "Familienaam",
+      "MESSAGE": "Bericht",
+      "PRIVACY_1": "Ik ga akkoord met de ",
+      "PRIVACY_2": "privacyvoorwaarden",
+      "PRIVACY_3": " van REVIVEvzw.",
+      "SEND": "Verzend",
+      "SENDING": "Verzenden..."
+    }
+  },
+  "TEAM": {
+    "LABEL": "ONS TEAM",
+    "INFO_BLOCK": {
+      "TITLE": "Enthousiaste vrijwilligers",
+      "P1": "Onze ondersteunende organisatie telt een 35-tal enthousiaste vrijwilligers die zich volledig gratis inzetten."
+    },
+    "CARD1": {
+      "TITLE": "Ze zorgen voor",
+      "LI1": "De voorbereiding en organisatie van de medische missies",
+      "LI2": "Het beheer en de stockage van het materiaal",
+      "LI3": "De administratie",
+      "LI4": "Juridische ondersteuning",
+      "LI5": "De IT infrastructuur",
+      "LI6": "De fundraising voor het bekostigen van medische apparatuur, instrumenten, verzorgingsmateriaal en medicatie",
+      "LI7": "De organisatie van benefiet evenementen",
+      "DOWNLOAD": "Download Organigram"
+    },
+    "CARD2": {
+      "TITLE": "Voorbereiding en organisatie",
+      "P1": "De voorbereiding van een medische missie vraagt zeer veel administratie: contacten met de lokale overheden om toelatingen te krijgen, persoonlijke documenten zoals vertaling van diploma’s, aanvragen van visa en bestellen van vliegtickets.",
+      "P2": "In overleg met de medische teams en het lokale ziekenhuis worden lijsten opgesteld van medisch materiaal, apparatuur en medicatie. Dat alles moet ook worden aangekocht en er is een magazijn nodig om dat te kunnen stockeren.",
+      "JOIN_BUTTON": "Versterk ons team"
+    }
+  },
+  "VOLUNTEER_STORIES": {
+    "LABEL": "Vrijwilligers aan het woord",
+    "STORY1": {
+      "TITLE": "November 2024 – Benin – DASSA Chirurgisch vrijwilligers team",
+      "P1": "Als team van enthousiaste mensen uit heel diverse sectoren hebben we samen een onvergetelijke medische missie achter de rug in Benin. Het was verrassend en een bijzondere ervaring om te zien hoe snel we op elkaar raakten afgestemd en het beste uit onszelf haalden, zowel in de zorg voor de patiënten als in onderlinge contacten.",
+      "P2": "Elke uitdaging werd als team aangepakt. We ondersteunden elkaar en zochten samen naar oplossingen. De dankbaarheid van de patiënten en hun diepe waardering voor onze inzet was voor ons het mooiste bewijs van het succes van onze missie.",
+      "P3": "We zijn blij dat het ziekenhuis in DASSA sinds de start van onze missies er hier fel op vooruit is gegaan en dit zowel qua infrastructuur als betreffende de medische apparatuur."
+    },
+    "STORY2": {
+      "TITLE": "Aan het woord: Liza en Febe, 2 laatstejaars verpleegkundige studenten Benin – DASSA",
+      "P1": "Benieuwd naar hoe gezondheidszorg georganiseerd wordt elders dan in Vlaanderen, hebben we deze unieke kans om stage te lopen in Benin -DASSA met beide handen gegrepen.",
+      "P2": "De medische missie en stage was zeer pittig én uitdagend. We zagen een ongelooflijk enthousiasme van de missieleden, gedrevenheid, kennis, kunde, en vindingrijkheid.",
+      "P3": "Ze gaven ons enorm veel uitdagende kansen die ertoe bijgedragen hebben dat we tijdens die 2 weken meer geleerd hebben dan op eerdere stages. We zullen dit alles meedragen als voorbeeld voor onze ganse carrière. Een stage om nooit te vergeten en absoluut voor herhaling vatbaar !"
+    },
+    "STORY3": {
+      "TITLE": "Vrijwilliger logistieke ondersteuning getuigt. Voel je aangesproken!",
+      "P1": "Een duidelijke, concrete omschrijving voor dit vrijwilligersengagement is onmogelijk.",
+      "P2": "Het is de geknipte job voor vrijwilligers die stevig de handen uit de mouwen willen steken, creatief zijn en een gezonde dosis probleemoplossend vermogen bezitten.",
+      "P3": "Het is en blijft een fantastische, onvergetelijke ervaring."
+    }
+  },
+  "CTA_BANNER": {
+    "LABEL": "WORD LID",
+    "TITLE": "Doe een aankoop op onze webshop",
+    "P1": "Je kan onze vzw steunen door een aankoop te doen in onze webshop.",
+    "BUTTON": "Doe een gift"
+  },
+  "FOOTER": {
+    "ADDRESS_LINE_1": "Wittepaalstraat 16",
+    "ADDRESS_LINE_2": "9051 Afsnee, België",
+    "ENTERPRISE_NO": "Ondernemingsnr.:",
+    "BANK_ACC": "Bankrekening nr.:",
+    "NEWSLETTER_PLACEHOLDER": "example@gmail.com",
+    "SUBSCRIBE_A11Y": "Abonneren",
+    "SUBSCRIBED_MSG": "Bedankt voor uw inschrijving!",
+    "GDPR": "GDPR"
+  },
   "HEADER": {
     "CONTACT": "Contact",
     "DONATE": "Doe een gift",
-    "WEBSHOP": "Webshop"
+    "WEBSHOP": "Webshop",
+    "NAV": {
+      "FROM_HEART": "Vanuit het hart",
+      "WHO_WE_ARE": "Wie zijn we, wat doen we",
+      "OUR_TEAM": "Ons team",
+      "OUR_MISSION": "Onze missie",
+      "SUSTAINABLE_COLLAB": "Duurzame samenwerking",
+      "OUR_PARTNERS": "Onze partners",
+      "HOW_WE_HELP": "Hoe wij helpen",
+      "PLANNED_MISSIONS": "Geplande medische missies",
+      "PAST_MISSIONS": "Voorbije medische missies",
+      "PATIENT_STORIES": "Patiënten aan het woord",
+      "VOLUNTEER_STORIES": "Vrijwilligers aan het woord",
+      "EVENTS": "Events",
+      "SUPPORT_US": "Steun ons",
+      "MAKE_DONATION": "Doe een gift",
+      "BECOME_MEMBER": "Word lid",
+      "HELP_US": "Help mee",
+      "CORP_SUPPORT": "Steun als organisatie",
+      "LEGACIES": "Testamenten en legaten",
+      "JOIN_TEAM": "Versterk ons team"
+    }
+  },
+  "HOME": {
+    "HERO": {
+      "ALT": "Medical care in Africa",
+      "TITLE": "Medische zorg, daar waar het echt telt."
+    },
+    "MISSION": {
+      "ALT": "Dirt road in Africa",
+      "LABEL": "onze missie",
+      "TITLE": "De allerarmsten in Afrika laten herleven in hun gemeenschap door hen gratis medische hulp te bieden.",
+      "P1": "Door zware medische problemen zijn mensen dikwijls verstoken van sociale contacten. Bij gebrek aan geld en medische zorg ter plaatse zijn ze overgeleverd aan hun lot. Door onze gratis inzet bieden we hen de nodige medische zorg zodat ze terug een normaal leven kunnen leiden en herleven. “REVIVE”."
+    },
+    "INFO": {
+      "LABEL": "REVIVE VZW",
+      "TITLE": "Wie zijn wij, wat doen we",
+      "P1": "Als Belgische humanitaire vzw bieden we reeds meer dan 15 jaar gratis noodzakelijke medische hulp aan de armen, voornamelijk in Afrika, die dit anders niet kunnen betalen. Minstens 10 keer per jaar gaat een team van medische specialisten, chirurgen, tandartsen, verplegers en logistiek personeel voor twee weken op missie naar plaatsen in het binnenland waar andere hulporganisaties bijna niet komen."
+    },
+    "CARDS": {
+      "CARD1": {
+        "TITLE": "Samenwerking lokale staf",
+        "Icon_ALT": "Globe",
+        "P": "Hiervoor werken we samen met de plaatselijke besturen."
+      },
+      "CARD2": {
+        "TITLE": "Enkel vrijwilligers",
+        "Icon_ALT": "Volunteer",
+        "P": "De teams werken volledig gratis en betalen zelf hun reis en verblijfskosten. REVIVE vzw heeft geen vaste kosten, geen kantoren, geen bedienden, alleen vrijwilligers."
+      },
+      "CARD3": {
+        "TITLE": "Ingrepen en opleiding",
+        "Icon_ALT": "Training",
+        "P": "We doen er diverse chirurgische ingrepen, medische consultaties en geven opleiding aan plaatselijk medisch personeel."
+      }
+    }
   }
 }

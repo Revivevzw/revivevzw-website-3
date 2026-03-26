@@ -3,17 +3,15 @@
     <app-breadcrumbs></app-breadcrumbs>
 
     <div class="container container-card">
-        <app-split-content-card imageSrc="assets/word-lid.jpg" imageAlt="Word lid van REVIVE vzw" label="WORD LID"
-            title="Word lid van ons team">
-            <p>Door met velen lid te worden van REVIVE vzw steun je ons financieel, maar draag je ook bij aan de
-                uitstraling van onze hulporganisatie.</p>
-            <p>Voor mensen die mee gaan op elk van onze hulpacties is lid zijn een voorwaarde om gedekt te zijn door
-                onze verzekering. Effectieve leden van REVIVE vzw hebben ook stemrecht op onze Algemene Vergadering</p>
+        <app-split-content-card imageSrc="assets/word-lid.jpg" [imageAlt]="'BECOME_MEMBER.IMAGE_ALT' | translate" [label]="'BECOME_MEMBER.LABEL' | translate"
+            [title]="'BECOME_MEMBER.TITLE' | translate">
+            <p>{{ 'BECOME_MEMBER.P1' | translate }}</p>
+            <p>{{ 'BECOME_MEMBER.P2' | translate }}</p>
 
             <div actions>
-                <p>Betaling van het jaarlijkse lidgeld kan via <a
+                <p>{{ 'BECOME_MEMBER.PAYMENT_1' | translate }}<a
                         href="https://shop.revivevzw.be/ACTIVITEITEN/ShowOneACT.aspx?ID=340" target="_blank"
-                        class="text-link">deze Link</a></p>
+                        class="text-link">{{ 'BECOME_MEMBER.PAYMENT_2' | translate }}</a></p>
             </div>
         </app-split-content-card>
     </div>

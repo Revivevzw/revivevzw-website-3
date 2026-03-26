@@ -3,45 +3,33 @@
     <app-breadcrumbs></app-breadcrumbs>
 
     <section class="container container-card">
-        <app-split-content-card imageSrc="assets/volunteer-story-1.jpg" imageAlt="Vrijwilligers aan het woord"
-            label="Vrijwilligers aan het woord" [reversed]="true"
-            title="November 2024 – Benin – DASSA Chirurgisch vrijwilligers team">
-            <p>Als team van enthousiaste mensen uit heel diverse sectoren hebben we samen een onvergetelijke medische
-                missie achter de rug in Benin. Het was verrassend en een bijzondere ervaring om te zien hoe snel we op
-                elkaar raakten afgestemd en het beste uit onszelf haalden, zowel in de zorg voor de patiënten als in
-                onderlinge contacten.</p>
-            <p>Elke uitdaging werd als team aangepakt. We ondersteunden elkaar en zochten samen naar oplossingen. De
-                dankbaarheid van de patiënten en hun diepe waardering voor onze inzet was voor ons het mooiste bewijs
-                van
-                het succes van onze missie.</p>
-            <p>We zijn blij dat het ziekenhuis in DASSA sinds de start van onze missies er hier fel op vooruit is gegaan
-                en dit zowel qua infrastructuur als betreffende de medische apparatuur.</p>
+        <app-split-content-card imageSrc="assets/volunteer-story-1.jpg" [imageAlt]="'VOLUNTEER_STORIES.LABEL' | translate"
+            [label]="'VOLUNTEER_STORIES.LABEL' | translate" [reversed]="true"
+            [title]="'VOLUNTEER_STORIES.STORY1.TITLE' | translate">
+            <p>{{ 'VOLUNTEER_STORIES.STORY1.P1' | translate }}</p>
+            <p>{{ 'VOLUNTEER_STORIES.STORY1.P2' | translate }}</p>
+            <p>{{ 'VOLUNTEER_STORIES.STORY1.P3' | translate }}</p>
 
         </app-split-content-card>
     </section>
 
     <section class="container container-card">
-        <app-split-content-card imageSrc="assets/volunteer-story-2.jpg" imageAlt="Vrijwilligers aan het woord"
-            label="Vrijwilligers aan het woord" [reversed]="false"
-            title="Aan het woord: Liza en Febe, 2 laatstejaars verpleegkundige studenten Benin – DASSA">
-            <p>Benieuwd naar hoe gezondheidszorg georganiseerd wordt elders dan in Vlaanderen, hebben we deze unieke
-                kans om stage te lopen in Benin -DASSA met beide handen gegrepen.</p>
-            <p>De medische missie en stage was zeer pittig én uitdagend. We zagen een ongelooflijk enthousiasme van de
-                missieleden, gedrevenheid, kennis, kunde, en vindingrijkheid.</p>
-            <p>Ze gaven ons enorm veel uitdagende kansen die ertoe bijgedragen hebben dat we tijdens die 2 weken meer
-                geleerd hebben dan op eerdere stages. We zullen dit alles meedragen als voorbeeld voor onze ganse
-                carrière. Een stage om nooit te vergeten en absoluut voor herhaling vatbaar !</p>
+        <app-split-content-card imageSrc="assets/volunteer-story-2.jpg" [imageAlt]="'VOLUNTEER_STORIES.LABEL' | translate"
+            [label]="'VOLUNTEER_STORIES.LABEL' | translate" [reversed]="false"
+            [title]="'VOLUNTEER_STORIES.STORY2.TITLE' | translate">
+            <p>{{ 'VOLUNTEER_STORIES.STORY2.P1' | translate }}</p>
+            <p>{{ 'VOLUNTEER_STORIES.STORY2.P2' | translate }}</p>
+            <p>{{ 'VOLUNTEER_STORIES.STORY2.P3' | translate }}</p>
         </app-split-content-card>
     </section>
 
     <section class="container container-card">
-        <app-split-content-card imageSrc="assets/volunteer-story-3.jpg" imageAlt="Vrijwilligers aan het woord"
-            label="Vrijwilligers aan het woord" [reversed]="true"
-            title="Vrijwilliger logistieke ondersteuning getuigt. Voel je aangesproken!">
-            <p>Een duidelijke, concrete omschrijving voor dit vrijwilligersengagement is onmogelijk.</p>
-            <p>Het is de geknipte job voor vrijwilligers die stevig de handen uit de mouwen willen steken, creatief zijn
-                en een gezonde dosis probleemoplossend vermogen bezitten.</p>
-            <p>Het is en blijft een fantastische, onvergetelijke ervaring.</p>
+        <app-split-content-card imageSrc="assets/volunteer-story-3.jpg" [imageAlt]="'VOLUNTEER_STORIES.LABEL' | translate"
+            [label]="'VOLUNTEER_STORIES.LABEL' | translate" [reversed]="true"
+            [title]="'VOLUNTEER_STORIES.STORY3.TITLE' | translate">
+            <p>{{ 'VOLUNTEER_STORIES.STORY3.P1' | translate }}</p>
+            <p>{{ 'VOLUNTEER_STORIES.STORY3.P2' | translate }}</p>
+            <p>{{ 'VOLUNTEER_STORIES.STORY3.P3' | translate }}</p>
         </app-split-content-card>
     </section>
 </main>

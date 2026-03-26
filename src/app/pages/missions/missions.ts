@@ -7,11 +7,12 @@ import { Mission } from '../../api/models/mission.model';
 import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs';
 import { LocalizePipe } from "../../pipes/localize.pipe";
 import { ActivityCard } from '../../components/activity-card/activity-card';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-missions',
     standalone: true,
-    imports: [CommonModule, Breadcrumbs, LocalizePipe, ActivityCard],
+    imports: [CommonModule, Breadcrumbs, LocalizePipe, ActivityCard, TranslateModule],
     templateUrl: './missions.html',
     styleUrl: './missions.css',
 })

@@ -9,8 +9,8 @@
         <!-- Column 2: Contact -->
         <div class="footer-column contact-column">
             <div class="contact-info">
-                <p>Wittepaalstraat 16</p>
-                <p>9051 Afsnee, België</p>
+                <p>{{ 'FOOTER.ADDRESS_LINE_1' | translate }}</p>
+                <p>{{ 'FOOTER.ADDRESS_LINE_2' | translate }}</p>
                 <a href="mailto:info@revivevzw.be" class="link">info@revivevzw.be</a>
             </div>
         </div>
@@ -18,10 +18,10 @@
         <!-- Column 3: Info -->
         <div class="footer-column info-column">
             <div class="info-details">
-                <p><span class="label">Ondernemingsnr.:</span></p>
+                <p><span class="label">{{ 'FOOTER.ENTERPRISE_NO' | translate }}</span></p>
                 <p>0550 521 718</p>
                 <div class="spacer-sm"></div>
-                <p><span class="label">Bankrekening nr.:</span></p>
+                <p><span class="label">{{ 'FOOTER.BANK_ACC' | translate }}</span></p>
                 <p>BE92 0017 5192 9023</p>
             </div>
         </div>
@@ -31,9 +31,9 @@
             <div class="newsletter">
                 @if(!isSubscribed) {
                 <div class="newsletter-input-wrapper" [formGroup]="subscribeForm">
-                    <input type="email" placeholder="example@gmail.com" class="newsletter-input"
+                    <input type="email" [placeholder]="'FOOTER.NEWSLETTER_PLACEHOLDER' | translate" class="newsletter-input"
                         formControlName="email">
-                    <button class="newsletter-submit" aria-label="Subscribe" (click)="subscribe()"
+                    <button class="newsletter-submit" [attr.aria-label]="'FOOTER.SUBSCRIBE_A11Y' | translate" (click)="subscribe()"
                         [disabled]="isLoading">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -44,7 +44,7 @@
                 </div>
                 }
                 @else {
-                <p class="subscribed-message">Bedankt voor uw inschrijving!</p>
+                <p class="subscribed-message">{{ 'FOOTER.SUBSCRIBED_MSG' | translate }}</p>
                 }
             </div>
 
@@ -68,7 +68,7 @@
             </div>
 
             <div class="legal-links">
-                <a routerLink="/gdpr" class="gdpr-link">GDPR</a>
+                <a routerLink="/gdpr" class="gdpr-link">{{ 'FOOTER.GDPR' | translate }}</a>
             </div>
         </div>
     </div>

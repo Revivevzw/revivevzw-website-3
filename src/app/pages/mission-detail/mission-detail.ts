@@ -7,15 +7,17 @@ import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs';
 import { PageHero } from '../../components/page-hero/page-hero';
 import { LocalizePipe } from '../../pipes/localize.pipe';
 import { switchMap } from 'rxjs';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-mission-detail',
     standalone: true,
-    imports: [CommonModule, Breadcrumbs, PageHero, LocalizePipe],
+    imports: [CommonModule, Breadcrumbs, PageHero, LocalizePipe, TranslateModule],
     templateUrl: './mission-detail.html',
     styleUrl: './mission-detail.css',
 })
 export class MissionDetail {
+    public translate = inject(TranslateService);
     private route = inject(ActivatedRoute);
     private missionApi = inject(MissionApiService);
 

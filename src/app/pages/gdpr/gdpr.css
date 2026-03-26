@@ -41,17 +41,22 @@
     margin-bottom: var(--spacing-2);
 }
 
-.gdpr-content ul li strong {
+.gdpr-content ::ng-deep strong {
     color: var(--color-blue-950);
     font: var(--font-body-strong);
 }
 
-.gdpr-content a {
+.gdpr-content ul li ::ng-deep strong {
+    color: var(--color-blue-950);
+    font: var(--font-body-strong);
+}
+
+.gdpr-content ::ng-deep a {
     color: var(--color-primary-500);
     text-decoration: underline;
     transition: color 0.2s ease;
 }
 
-.gdpr-content a:hover {
+.gdpr-content ::ng-deep a:hover {
     color: var(--color-primary-600);
 }

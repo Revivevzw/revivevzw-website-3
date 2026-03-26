@@ -3,40 +3,33 @@
     <app-breadcrumbs></app-breadcrumbs>
 
     <section class="container container-card">
-        <app-split-content-card imageSrc="assets/corporate-support.jpg" imageAlt="Steun als organisatie"
-            label="STEUN ALS ORGANISATIE" [reversed]="true" title="Steun als organisatie">
-            <p>Als organisatie of bedrijf kan je REVIVE vzw <strong>financieel steunen</strong>. Zo help je ons helpen
-                en toon je jouw maatschappelijk engagement als bedrijf. Giften zijn in de boekhouding van je bedrijf
-                fiscaal aftrekbaar.</p>
-            <p>Als bedrijf kan je ook steunen in <strong>natura</strong>. Ben je actief in de medische sector dan zijn
-                schenkingen van
-                medisch materiaal voor onze hulpacties meer dan welkom.</p>
-            <p>Eveneens voor onze <strong>benefietactiviteiten</strong> kan ondersteuning gegeven worden door het ter
-                beschikking stellen
-                van infrastructuur, sponsoring van catering voor recepties, enz.</p>
-            <p>Of kan jouw bedrijf <strong>producten</strong> aanbieden die REVIVE vzw dan via zijn webshop te koop kan
-                aanbieden.</p>
+        <app-split-content-card imageSrc="assets/corporate-support.jpg" [imageAlt]="'CORPORATE_SUPPORT.IMAGE_ALT' | translate"
+            [label]="'CORPORATE_SUPPORT.LABEL' | translate" [reversed]="true" [title]="'CORPORATE_SUPPORT.TITLE_1' | translate">
+            <p [innerHTML]="'CORPORATE_SUPPORT.P1' | translate"></p>
+            <p [innerHTML]="'CORPORATE_SUPPORT.P2' | translate"></p>
+            <p [innerHTML]="'CORPORATE_SUPPORT.P3' | translate"></p>
+            <p [innerHTML]="'CORPORATE_SUPPORT.P4' | translate"></p>
 
             <div actions>
-                <a routerLink="/contact" class="btn-primary">Contacteer ons</a>
+                <a routerLink="/contact" class="btn-primary">{{ 'CORPORATE_SUPPORT.BTN_CONTACT' | translate }}</a>
             </div>
         </app-split-content-card>
     </section>
 
     <section class="container container-card">
-        <app-split-content-card imageSrc="assets/collaboration.jpg" imageAlt="Waarom zou ik steunen"
-            label="STEUN ALS ORGANISATIE" [reversed]="false" title="Waarom zou ik steunen?">
+        <app-split-content-card imageSrc="assets/collaboration.jpg" [imageAlt]="'CORPORATE_SUPPORT.IMAGE_ALT_2' | translate"
+            [label]="'CORPORATE_SUPPORT.LABEL' | translate" [reversed]="false" [title]="'CORPORATE_SUPPORT.TITLE_2' | translate">
             <ul class="bullet-list">
-                <li>Giften zijn in de boekhouding van je bedrijf <strong>fiscaal aftrekbaar</strong>.</li>
-                <li>Voor giften in natura kunnen we een attest bezorgen voor uw boekhouding.</li>
-                <li>We <strong>vermelden je graag als steunende partner</strong> in onze communicaties.</li>
+                <li [innerHTML]="'CORPORATE_SUPPORT.LI1' | translate"></li>
+                <li [innerHTML]="'CORPORATE_SUPPORT.LI2' | translate"></li>
+                <li [innerHTML]="'CORPORATE_SUPPORT.LI3' | translate"></li>
             </ul>
             <p>
                 <br />
-                Wil je steunen als organisatie of bedrijf, neem dan contact met ons op.
+                {{ 'CORPORATE_SUPPORT.P5' | translate }}
             </p>
             <div actions>
-                <a routerLink="/contact" class="btn-primary">Contacteer ons</a>
+                <a routerLink="/contact" class="btn-primary">{{ 'CORPORATE_SUPPORT.BTN_CONTACT' | translate }}</a>
             </div>
         </app-split-content-card>
     </section>
