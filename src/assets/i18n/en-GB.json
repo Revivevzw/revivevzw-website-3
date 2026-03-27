@@ -273,5 +273,22 @@
         "P": "We perform various surgical procedures, medical consultations and provide training to local medical staff."
       }
     }
+  },
+  "BREADCRUMBS": {
+    "HOME": "Home",
+    "TEAM": "Our team",
+    "COLLABORATION": "Collaboration",
+    "PARTNERS": "Our partners",
+    "MISSIONS": "Our missions",
+    "MISSION_DETAIL": "Mission detail",
+    "PATIENT_STORIES": "Patient stories",
+    "VOLUNTEER_STORIES": "Volunteer stories",
+    "EVENTS": "Events",
+    "BECOME_MEMBER": "Become a member",
+    "CORPORATE_SUPPORT": "Support as organization",
+    "LEGACIES": "Legacies",
+    "JOIN_TEAM": "Join our team",
+    "CONTACT": "Contact",
+    "GDPR": "GDPR"
   }
 }

@@ -273,5 +273,22 @@
         "P": "We doen er diverse chirurgische ingrepen, medische consultaties en geven opleiding aan plaatselijk medisch personeel."
       }
     }
+  },
+  "BREADCRUMBS": {
+    "HOME": "Home",
+    "TEAM": "Ons team",
+    "COLLABORATION": "Samenwerking",
+    "PARTNERS": "Onze partners",
+    "MISSIONS": "Onze missies",
+    "MISSION_DETAIL": "Missie detail",
+    "PATIENT_STORIES": "Patiëntenverhalen",
+    "VOLUNTEER_STORIES": "Vrijwilligersverhalen",
+    "EVENTS": "Events",
+    "BECOME_MEMBER": "Word lid",
+    "CORPORATE_SUPPORT": "Steun als organisatie",
+    "LEGACIES": "Testamenten en legaten",
+    "JOIN_TEAM": "Versterk ons team",
+    "CONTACT": "Contact",
+    "GDPR": "GDPR"
   }
 }

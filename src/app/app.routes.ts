@@ -16,25 +16,25 @@ import { MissionDetail } from './pages/mission-detail/mission-detail';
 import { Gdpr } from './pages/gdpr/gdpr';
 
 export const routes: Routes = [
-    { path: '', component: Home, pathMatch: 'full', data: { breadcrumb: 'Home' } },
-    { path: 'team', component: Team, data: { breadcrumb: 'Ons team' } },
-    { path: 'collaboration', component: Collaboration, data: { breadcrumb: 'Samenwerking' } },
-    { path: 'partners', component: Partners, data: { breadcrumb: 'Onze partners' } },
+    { path: '', component: Home, pathMatch: 'full', data: { breadcrumb: 'BREADCRUMBS.HOME' } },
+    { path: 'team', component: Team, data: { breadcrumb: 'BREADCRUMBS.TEAM' } },
+    { path: 'collaboration', component: Collaboration, data: { breadcrumb: 'BREADCRUMBS.COLLABORATION' } },
+    { path: 'partners', component: Partners, data: { breadcrumb: 'BREADCRUMBS.PARTNERS' } },
     {
         path: 'missions',
-        data: { breadcrumb: 'Onze missies' },
+        data: { breadcrumb: 'BREADCRUMBS.MISSIONS' },
         children: [
             { path: '', component: Missions },
-            { path: ':id', component: MissionDetail, data: { breadcrumb: 'Missie detail' } }
+            { path: ':id', component: MissionDetail, data: { breadcrumb: 'BREADCRUMBS.MISSION_DETAIL' } }
         ]
     },
-    { path: 'patient-stories', component: PatientStories, data: { breadcrumb: 'Patiëntenverhalen' } },
-    { path: 'volunteer-stories', component: VolunteerStories, data: { breadcrumb: 'Vrijwilligersverhalen' } },
-    { path: 'events', component: Events, data: { breadcrumb: 'Events' } },
-    { path: 'become-member', component: BecomeMember, data: { breadcrumb: 'Word lid' } },
-    { path: 'corporate-support', component: CorporateSupport, data: { breadcrumb: 'Steun als organisatie' } },
-    { path: 'legacies', component: Legacies, data: { breadcrumb: 'Testamenten en legaten' } },
-    { path: 'join-team', component: JoinTeam, data: { breadcrumb: 'Versterk ons team' } },
-    { path: 'contact', component: Contact, data: { breadcrumb: 'Contact' } },
-    { path: 'gdpr', component: Gdpr, data: { breadcrumb: 'GDPR' } },
+    { path: 'patient-stories', component: PatientStories, data: { breadcrumb: 'BREADCRUMBS.PATIENT_STORIES' } },
+    { path: 'volunteer-stories', component: VolunteerStories, data: { breadcrumb: 'BREADCRUMBS.VOLUNTEER_STORIES' } },
+    { path: 'events', component: Events, data: { breadcrumb: 'BREADCRUMBS.EVENTS' } },
+    { path: 'become-member', component: BecomeMember, data: { breadcrumb: 'BREADCRUMBS.BECOME_MEMBER' } },
+    { path: 'corporate-support', component: CorporateSupport, data: { breadcrumb: 'BREADCRUMBS.CORPORATE_SUPPORT' } },
+    { path: 'legacies', component: Legacies, data: { breadcrumb: 'BREADCRUMBS.LEGACIES' } },
+    { path: 'join-team', component: JoinTeam, data: { breadcrumb: 'BREADCRUMBS.JOIN_TEAM' } },
+    { path: 'contact', component: Contact, data: { breadcrumb: 'BREADCRUMBS.CONTACT' } },
+    { path: 'gdpr', component: Gdpr, data: { breadcrumb: 'BREADCRUMBS.GDPR' } },
 ];

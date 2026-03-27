@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { Router, ActivatedRoute, NavigationEnd, RouterLink } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
+import { TranslateModule } from '@ngx-translate/core';
+
 interface Breadcrumb {
     label: string;
     url: string;
@@ -11,7 +13,7 @@ interface Breadcrumb {
 @Component({
     selector: 'app-breadcrumbs',
     standalone: true,
-    imports: [CommonModule, RouterLink],
+    imports: [CommonModule, RouterLink, TranslateModule],
     templateUrl: './breadcrumbs.html',
     styleUrl: './breadcrumbs.css'
 })
@@ -44,9 +46,9 @@ export class Breadcrumbs implements OnInit {
         const crumbs = this.createBreadcrumbs(root);
 
         // Always start with Home, but avoid duplication if the first crumb is Home
-        const homeCrumb = { label: 'Home', url: '/' };
+        const homeCrumb = { label: 'BREADCRUMBS.HOME', url: '/' };
 
-        if (crumbs.length > 0 && crumbs[0].label === 'Home') {
+        if (crumbs.length > 0 && crumbs[0].label === 'BREADCRUMBS.HOME') {
             this.breadcrumbs = crumbs;
         } else {
             this.breadcrumbs = [homeCrumb, ...crumbs];

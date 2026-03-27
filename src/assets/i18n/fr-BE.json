@@ -273,5 +273,22 @@
         "P": "Nous y réalisons diverses interventions chirurgicales, des consultations médicales et formons le personnel médical local."
       }
     }
+  },
+  "BREADCRUMBS": {
+    "HOME": "Accueil",
+    "TEAM": "Notre équipe",
+    "COLLABORATION": "Collaboration",
+    "PARTNERS": "Nos partenaires",
+    "MISSIONS": "Nos missions",
+    "MISSION_DETAIL": "Détails de la mission",
+    "PATIENT_STORIES": "Histoires de patients",
+    "VOLUNTEER_STORIES": "Témoignages de bénévoles",
+    "EVENTS": "Événements",
+    "BECOME_MEMBER": "Devenir membre",
+    "CORPORATE_SUPPORT": "Soutenir en tant qu'organisation",
+    "LEGACIES": "Testaments et legs",
+    "JOIN_TEAM": "Rejoignez notre équipe",
+    "CONTACT": "Contact",
+    "GDPR": "GDPR"
   }
 }
