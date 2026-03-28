@@ -277,15 +277,184 @@
     margin-top: 2px;
 }
 
-/* Responsive */
-@media (max-width: 1280px) {
+
+/* Mobile Menu Toggle Styling */
+.menu-toggle {
+    display: none;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 6px;
+    padding: var(--spacing-2);
+    z-index: 1100;
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu-toggle .bar {
+    width: 28px;
+    height: 3px;
+    background-color: var(--color-blue-950);
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Tablet & Mobile Breakpoints */
+
+/* --- TABLET --- (max-width: 1024px) -- matches --breakpoint-tablet */
+@media (max-width: 1024px) {
+    .header {
+        padding: var(--spacing-3) var(--spacing-3);
+    }
+
+    .header-container {
+        padding: var(--spacing-2) var(--spacing-4);
+        position: relative;
+    }
+
+    .logo-mark {
+        height: 80px;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+        margin-left: auto;
+    }
+
+    /* Animation for burger to X */
+    .menu-toggle:checked+.mobile-menu-toggle .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle:checked+.mobile-menu-toggle .bar:nth-child(2) {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    .menu-toggle:checked+.mobile-menu-toggle .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    /* Transform header-main into the mobile sidebar */
     .header-main {
-        align-items: flex-end;
-        /* Align right */
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 320px;
+        height: 100vh;
+        background-color: var(--color-white);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+        padding: 90px var(--spacing-5) var(--spacing-5);
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow-y: auto;
+        z-index: 1050;
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-6);
+        align-items: flex-start;
+    }
+
+    .menu-toggle:checked~.header-main {
+        right: 0;
+    }
+
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        order: 2;
+        gap: var(--spacing-4);
+        padding-top: var(--spacing-4);
+        border-top: 1px solid var(--color-grey-100);
+    }
+
+    .header-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        order: 1;
+        gap: var(--spacing-5);
     }
 
     .nav {
-        display: none;
-        /* Hide nav on smaller screens as commonly done */
+        width: 100%;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: var(--spacing-4);
+        white-space: normal;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-dropdown {
+        position: static;
+        display: block;
+        /* Show dropdowns in mobile menu or toggle them? For simplicity, we can make them part of the list */
+        box-shadow: none;
+        padding-left: var(--spacing-3);
+        background-color: transparent;
+    }
+
+    /* Adjust dropdowns for mobile */
+    .nav-link {
+        font-size: 20px;
+        padding: 4px 0;
+    }
+
+    .nav-dropdown .nav-link {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    .header-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: var(--spacing-3);
+        order: 3;
+    }
+
+    .header-buttons .btn-primary,
+    .header-buttons .btn-secondary {
+        width: 100%;
+        text-align: center;
+        padding: var(--spacing-3);
+    }
+
+    .top-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .lang-selector {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* --- MOBILE --- (max-width: 768px) -- matches --breakpoint-mobile */
+@media (max-width: 768px) {
+    .header {
+        padding: var(--spacing-2) var(--spacing-2);
+    }
+
+    .header-container {
+        padding: var(--spacing-1) var(--spacing-3);
+    }
+
+    .logo-mark {
+        height: 60px;
+    }
+
+    .header-main {
+        width: 100%;
+        /* Full screen on mobile */
     }
 }

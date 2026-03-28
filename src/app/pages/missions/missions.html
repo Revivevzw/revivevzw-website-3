@@ -1,4 +1,4 @@
-<div class="mission-page-container">
+<div class="container mission-page-container">
     <div class="header-spacer"></div>
     <app-breadcrumbs></app-breadcrumbs>
     <section class="page-header">
@@ -13,8 +13,10 @@
         </p>
 
         <div class="tabs">
-            <button class="tab-btn" [class.active]="activeTab() === 'future'" (click)="setActiveTab('future')">{{ 'MISSIONS.TAB_FUTURE' | translate }}</button>
-            <button class="tab-btn" [class.active]="activeTab() === 'past'" (click)="setActiveTab('past')">{{ 'MISSIONS.TAB_PAST' | translate }}</button>
+            <button class="tab-btn" [class.active]="activeTab() === 'future'" (click)="setActiveTab('future')">{{
+                'MISSIONS.TAB_FUTURE' | translate }}</button>
+            <button class="tab-btn" [class.active]="activeTab() === 'past'" (click)="setActiveTab('past')">{{
+                'MISSIONS.TAB_PAST' | translate }}</button>
         </div>
     </section>
 
@@ -23,12 +25,8 @@
         <p class="loading-message">{{ 'MISSIONS.LOADING' | translate }}</p>
         } @else {
         @for (mission of filteredMissions(); track mission.id) {
-        <app-activity-card 
-            [link]="['/missions', mission.id]" 
-            [imageSrc]="mission.mainImage" 
-            [imageAlt]="mission.name | localize" 
-            [date]="mission.startDate" 
-            [title]="mission.name | localize" 
+        <app-activity-card [link]="['/missions', mission.id]" [imageSrc]="mission.mainImage"
+            [imageAlt]="mission.name | localize" [date]="mission.startDate" [title]="mission.name | localize"
             [description]="mission.description | localize">
         </app-activity-card>
         } @empty {

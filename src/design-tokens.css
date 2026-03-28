@@ -70,4 +70,9 @@
 
     /* Shadows */
     --shadow-default: 0 4px 30px 0 rgba(92, 109, 122, 0.1);
+
+    /* Breakpoints */
+    --breakpoint-tablet: 1024px;
+    --breakpoint-mobile-large: 900px;
+    --breakpoint-mobile: 768px;
 }

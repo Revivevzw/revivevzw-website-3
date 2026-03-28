@@ -6,6 +6,13 @@
             </a>
         </div>
 
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="mobile-menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
         <div class="header-main">
             <div class="header-top">
                 <!-- <div class="search-bar">
@@ -38,42 +45,55 @@
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">{{ 'HEADER.NAV.FROM_HEART' | translate }} <span class="chevron-icon"><img
-                                        [src]="carretDownUrl" class=""></span></a>
+                            <a class="nav-link">{{ 'HEADER.NAV.FROM_HEART' | translate }} <span
+                                    class="chevron-icon"><img [src]="carretDownUrl" class=""></span></a>
                             <div class="nav-dropdown">
-                                <a routerLink="/" fragment="wie-zijn-we" class="nav-link">{{ 'HEADER.NAV.WHO_WE_ARE' | translate }}</a>
+                                <a routerLink="/" fragment="wie-zijn-we" class="nav-link">{{ 'HEADER.NAV.WHO_WE_ARE' |
+                                    translate }}</a>
                                 <a routerLink="/team" class="nav-link">{{ 'HEADER.NAV.OUR_TEAM' | translate }}</a>
-                                <a routerLink="/" fragment="onze-missie" class="nav-link">{{ 'HEADER.NAV.OUR_MISSION' | translate }}</a>
-                                <a routerLink="/collaboration" class="nav-link">{{ 'HEADER.NAV.SUSTAINABLE_COLLAB' | translate }}</a>
-                                <a routerLink="/partners" class="nav-link">{{ 'HEADER.NAV.OUR_PARTNERS' | translate }}</a>
+                                <a routerLink="/" fragment="onze-missie" class="nav-link">{{ 'HEADER.NAV.OUR_MISSION' |
+                                    translate }}</a>
+                                <a routerLink="/collaboration" class="nav-link">{{ 'HEADER.NAV.SUSTAINABLE_COLLAB' |
+                                    translate }}</a>
+                                <a routerLink="/partners" class="nav-link">{{ 'HEADER.NAV.OUR_PARTNERS' | translate
+                                    }}</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">{{ 'HEADER.NAV.HOW_WE_HELP' | translate }} <span class="chevron-icon"><img
-                                        [src]="carretDownUrl" class=""></span></a>
+                            <a class="nav-link">{{ 'HEADER.NAV.HOW_WE_HELP' | translate }} <span
+                                    class="chevron-icon"><img [src]="carretDownUrl" class=""></span></a>
                             <div class="nav-dropdown">
-                                <a [routerLink]="['/missions']" [queryParams]="{type: 'future'}"
-                                    class="nav-link">{{ 'HEADER.NAV.PLANNED_MISSIONS' | translate }}</a>
-                                <a [routerLink]="['/missions']" [queryParams]="{type: 'past'}" class="nav-link">{{ 'HEADER.NAV.PAST_MISSIONS' | translate }}</a>
-                                <a routerLink="/patient-stories" class="nav-link">{{ 'HEADER.NAV.PATIENT_STORIES' | translate }}</a>
-                                <a routerLink="/volunteer-stories" class="nav-link">{{ 'HEADER.NAV.VOLUNTEER_STORIES' | translate }}</a>
+                                <a [routerLink]="['/missions']" [queryParams]="{type: 'future'}" class="nav-link">{{
+                                    'HEADER.NAV.PLANNED_MISSIONS' | translate }}</a>
+                                <a [routerLink]="['/missions']" [queryParams]="{type: 'past'}" class="nav-link">{{
+                                    'HEADER.NAV.PAST_MISSIONS' | translate }}</a>
+                                <a routerLink="/patient-stories" class="nav-link">{{ 'HEADER.NAV.PATIENT_STORIES' |
+                                    translate }}</a>
+                                <a routerLink="/volunteer-stories" class="nav-link">{{ 'HEADER.NAV.VOLUNTEER_STORIES' |
+                                    translate }}</a>
                             </div>
                         </li>
                         <li class="nav-item">
                             <a routerLink="/events" class="nav-link">{{ 'HEADER.NAV.EVENTS' | translate }}</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">{{ 'HEADER.NAV.SUPPORT_US' | translate }} <span class="chevron-icon"><img [src]="carretDownUrl"
-                                        class=""></span></a>
+                            <a class="nav-link">{{ 'HEADER.NAV.SUPPORT_US' | translate }} <span
+                                    class="chevron-icon"><img [src]="carretDownUrl" class=""></span></a>
                             <div class="nav-dropdown">
-                                <a href="https://shop.revivevzw.be/GIFT/BelVrijGift.aspx" class="nav-link">{{ 'HEADER.NAV.MAKE_DONATION' | translate }}</a>
-                                <a routerLink="/become-member" class="nav-link">{{ 'HEADER.NAV.BECOME_MEMBER' | translate }}</a>
+                                <a href="https://shop.revivevzw.be/GIFT/BelVrijGift.aspx" class="nav-link">{{
+                                    'HEADER.NAV.MAKE_DONATION' | translate }}</a>
+                                <a routerLink="/become-member" class="nav-link">{{ 'HEADER.NAV.BECOME_MEMBER' |
+                                    translate }}</a>
                                 <div class="nav-item">
-                                    <a href="#" class="nav-link">{{ 'HEADER.NAV.HELP_US' | translate }} <img [src]="carretRightUrl" class=""></a>
+                                    <a class="nav-link">{{ 'HEADER.NAV.HELP_US' | translate }} <img
+                                            [src]="carretRightUrl" class=""></a>
                                     <div class="nav-dropdown nav-dropdown--sidedropdown">
-                                        <a routerLink="/corporate-support" class="nav-link">{{ 'HEADER.NAV.CORP_SUPPORT' | translate }}</a>
-                                        <a routerLink="/legacies" class="nav-link">{{ 'HEADER.NAV.LEGACIES' | translate }}</a>
-                                        <a routerLink="/join-team" class="nav-link">{{ 'HEADER.NAV.JOIN_TEAM' | translate }}</a>
+                                        <a routerLink="/corporate-support" class="nav-link">{{ 'HEADER.NAV.CORP_SUPPORT'
+                                            | translate }}</a>
+                                        <a routerLink="/legacies" class="nav-link">{{ 'HEADER.NAV.LEGACIES' | translate
+                                            }}</a>
+                                        <a routerLink="/join-team" class="nav-link">{{ 'HEADER.NAV.JOIN_TEAM' |
+                                            translate }}</a>
                                     </div>
                                 </div>
                             </div>

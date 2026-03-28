@@ -100,7 +100,7 @@
     margin-top: 16px;
 }
 
-/* Responsive */
+/* Responsive -- matches --breakpoint-mobile-large */
 @media (max-width: 900px) {
     .split-card {
         flex-direction: column;
