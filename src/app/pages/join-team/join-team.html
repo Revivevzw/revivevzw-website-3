@@ -1,16 +1,17 @@
-<main class="join-team-page">
+<main class="container join-team-page">
     <div class="header-spacer"></div>
     <app-breadcrumbs></app-breadcrumbs>
 
-    <section class="container join-team-container">
-        <app-split-content-card imageSrc="assets/join-team.png" [imageAlt]="'JOIN_TEAM.IMAGE_ALT' | translate" [label]="'JOIN_TEAM.LABEL' | translate"
-            [title]="'JOIN_TEAM.TITLE' | translate">
+    <section class="join-team-container">
+        <app-split-content-card imageSrc="assets/join-team.png" [imageAlt]="'JOIN_TEAM.IMAGE_ALT' | translate"
+            [label]="'JOIN_TEAM.LABEL' | translate" [title]="'JOIN_TEAM.TITLE' | translate">
             <p>{{ 'JOIN_TEAM.P1' | translate }}</p>
             <p>
                 {{ 'JOIN_TEAM.P2_1' | translate }}<a href="mailto:HR@revivevzw.be" class="link">HR@revivevzw.be</a>
             </p>
             <p>
-                {{ 'JOIN_TEAM.P3_1' | translate }}<a routerLink="/volunteer-stories" class="link">{{ 'JOIN_TEAM.P3_2' | translate }}</a>
+                {{ 'JOIN_TEAM.P3_1' | translate }}<a routerLink="/volunteer-stories" class="link">{{ 'JOIN_TEAM.P3_2' |
+                    translate }}</a>
             </p>
 
         </app-split-content-card>

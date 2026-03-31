@@ -1,10 +1,11 @@
-<main class="corporate-support-page">
+<main class="container corporate-support-page">
     <div class="header-spacer"></div>
     <app-breadcrumbs></app-breadcrumbs>
 
-    <section class="container container-card">
-        <app-split-content-card imageSrc="assets/corporate-support.jpg" [imageAlt]="'CORPORATE_SUPPORT.IMAGE_ALT' | translate"
-            [label]="'CORPORATE_SUPPORT.LABEL' | translate" [reversed]="true" [title]="'CORPORATE_SUPPORT.TITLE_1' | translate">
+    <section class="container-card">
+        <app-split-content-card imageSrc="assets/corporate-support.jpg"
+            [imageAlt]="'CORPORATE_SUPPORT.IMAGE_ALT' | translate" [label]="'CORPORATE_SUPPORT.LABEL' | translate"
+            [reversed]="true" [title]="'CORPORATE_SUPPORT.TITLE_1' | translate">
             <p [innerHTML]="'CORPORATE_SUPPORT.P1' | translate"></p>
             <p [innerHTML]="'CORPORATE_SUPPORT.P2' | translate"></p>
             <p [innerHTML]="'CORPORATE_SUPPORT.P3' | translate"></p>
@@ -16,9 +17,10 @@
         </app-split-content-card>
     </section>
 
-    <section class="container container-card">
-        <app-split-content-card imageSrc="assets/collaboration.jpg" [imageAlt]="'CORPORATE_SUPPORT.IMAGE_ALT_2' | translate"
-            [label]="'CORPORATE_SUPPORT.LABEL' | translate" [reversed]="false" [title]="'CORPORATE_SUPPORT.TITLE_2' | translate">
+    <section class="container-card">
+        <app-split-content-card imageSrc="assets/collaboration.jpg"
+            [imageAlt]="'CORPORATE_SUPPORT.IMAGE_ALT_2' | translate" [label]="'CORPORATE_SUPPORT.LABEL' | translate"
+            [reversed]="false" [title]="'CORPORATE_SUPPORT.TITLE_2' | translate">
             <ul class="bullet-list">
                 <li [innerHTML]="'CORPORATE_SUPPORT.LI1' | translate"></li>
                 <li [innerHTML]="'CORPORATE_SUPPORT.LI2' | translate"></li>

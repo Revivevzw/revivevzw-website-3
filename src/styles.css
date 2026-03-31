@@ -66,6 +66,18 @@ button {
     height: 210px;
 }
 
+@media (max-width: 1024px) {
+    .header-spacer {
+        height: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-spacer {
+        height: 100px;
+    }
+}
+
 .main-container {
     margin-top: 20px;
     margin-bottom: 20px;

@@ -7,13 +7,18 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: var(--spacing-5);
-    padding: var(--spacing-6) 0;
+    padding: var(--spacing-2) 0;
 }
 
-.loading-message, .no-events {
+.loading-message,
+.no-events {
     grid-column: 1 / -1;
     text-align: center;
     font: var(--font-body-lead);
     color: var(--color-grey-600);
     padding: var(--spacing-6) 0;
+}
+
+.container-card {
+    padding-top: var(--spacing-4);
 }

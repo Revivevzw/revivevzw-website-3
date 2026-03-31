@@ -1,7 +1,8 @@
 <main class="events-page">
-    <app-hero height="50vh" imageSrc="assets/events-header.png" [imageAlt]="'EVENTS.HERO_ALT' | translate" [title]="'EVENTS.TITLE' | translate"></app-hero>
-    <app-breadcrumbs></app-breadcrumbs>
+    <app-hero height="50vh" imageSrc="assets/events-header.png" [imageAlt]="'EVENTS.HERO_ALT' | translate"
+        [title]="'EVENTS.TITLE' | translate"></app-hero>
     <section class="container container-card">
+        <app-breadcrumbs></app-breadcrumbs>
         <div class="events-grid">
             @if (loading()) {
             <p class="loading-message">{{ 'EVENTS.LOADING' | translate }}</p>

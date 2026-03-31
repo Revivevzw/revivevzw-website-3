@@ -1,8 +1,9 @@
 import { Component, inject, HostListener, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { RouterLink, Router, NavigationEnd } from '@angular/router';
 import { LanguageService } from '../../api/services/language.service';
 import { TranslateModule } from '@ngx-translate/core';
+import { filter } from 'rxjs/operators';
 
 @Component({
     selector: 'app-header',
@@ -14,16 +15,26 @@ import { TranslateModule } from '@ngx-translate/core';
 export class Header {
     private languageService = inject(LanguageService);
     private elementRef = inject(ElementRef);
+    private router = inject(Router);
 
     searchIconUrl = "/assets/search.svg";
-    // ... rest of urls ...
     cartIconUrl = "/assets/cart.svg";
     carretDownUrl = "/assets/carret-down.svg";
     carretRightUrl = "/assets/carret-right.svg";
 
     languages = this.languageService.getLanguages();
     isLangMenuOpen = false;
+    isMenuOpen = false;
     isScrolled = false;
+
+    constructor() {
+        this.router.events.pipe(
+            filter(event => event instanceof NavigationEnd)
+        ).subscribe(() => {
+            this.isMenuOpen = false;
+            this.isLangMenuOpen = false;
+        });
+    }
 
     @HostListener('window:scroll', [])
     onWindowScroll() {
@@ -45,6 +56,10 @@ export class Header {
 
     toggleLangMenu() {
         this.isLangMenuOpen = !this.isLangMenuOpen;
+    }
+
+    toggleMenu() {
+        this.isMenuOpen = !this.isMenuOpen;
     }
 
     @HostListener('document:click', ['$event'])

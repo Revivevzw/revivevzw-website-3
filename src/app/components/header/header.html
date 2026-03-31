@@ -1,17 +1,16 @@
 <header class="header" [class.scrolled]="isScrolled">
-    <div class="header-container">
+    <div class="header-container" [class.menu-open]="isMenuOpen">
         <div class="header-left">
             <a routerLink="/" class="logo-link">
                 <img src="/assets/logo-horizontal.png" alt="Revive Mark" class="logo-mark">
             </a>
         </div>
 
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="mobile-menu-toggle">
+        <button type="button" class="mobile-menu-toggle" (click)="toggleMenu()">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </label>
+        </button>
 
         <div class="header-main">
             <div class="header-top">
@@ -42,7 +41,7 @@
             </div>
 
             <div class="header-bottom">
-                <nav class="nav">
+                <nav class="nav" (click)="isMenuOpen = false">
                     <ul class="nav-list">
                         <li class="nav-item">
                             <a class="nav-link">{{ 'HEADER.NAV.FROM_HEART' | translate }} <span
