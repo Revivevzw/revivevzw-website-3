@@ -1,4 +1,4 @@
-<header class="header" [class.scrolled]="isScrolled">
+<header class="header" [class.scrolled]="isScrolled" [class.hidden]="!isVisible">
     <div class="header-container" [class.menu-open]="isMenuOpen">
         <div class="header-left">
             <a routerLink="/" class="logo-link">
@@ -41,7 +41,7 @@
             </div>
 
             <div class="header-bottom">
-                <nav class="nav" (click)="isMenuOpen = false">
+                <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-item">
                             <a class="nav-link">{{ 'HEADER.NAV.FROM_HEART' | translate }} <span
@@ -79,7 +79,7 @@
                             <a class="nav-link">{{ 'HEADER.NAV.SUPPORT_US' | translate }} <span
                                     class="chevron-icon"><img [src]="carretDownUrl" class=""></span></a>
                             <div class="nav-dropdown">
-                                <a href="https://shop.revivevzw.be/GIFT/BelVrijGift.aspx" class="nav-link">{{
+                                <a href="https://shop.revivevzw.be/GIFT/BelVrijGIFT.aspx" class="nav-link">{{
                                     'HEADER.NAV.MAKE_DONATION' | translate }}</a>
                                 <a routerLink="/become-member" class="nav-link">{{ 'HEADER.NAV.BECOME_MEMBER' |
                                     translate }}</a>

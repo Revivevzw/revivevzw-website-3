@@ -70,7 +70,10 @@ export class Breadcrumbs implements OnInit {
 
             const label = child.snapshot.data['breadcrumb'];
             if (label) {
-                breadcrumbs.push({ label, url });
+                // Prevent duplicate URLs in the breadcrumb trail
+                if (breadcrumbs.length === 0 || breadcrumbs[breadcrumbs.length - 1].url !== url) {
+                    breadcrumbs.push({ label, url });
+                }
             }
 
             return this.createBreadcrumbs(child, url, breadcrumbs);

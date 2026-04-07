@@ -12,11 +12,23 @@
             {{ 'MISSIONS.INTRO_2' | translate }}
         </p>
 
-        <div class="tabs">
-            <button class="tab-btn" [class.active]="activeTab() === 'future'" (click)="setActiveTab('future')">{{
-                'MISSIONS.TAB_FUTURE' | translate }}</button>
-            <button class="tab-btn" [class.active]="activeTab() === 'past'" (click)="setActiveTab('past')">{{
-                'MISSIONS.TAB_PAST' | translate }}</button>
+        <div class="filters">
+            <div class="tabs">
+                <button class="tab-btn" [class.active]="activeTab() === 'future'" (click)="setActiveTab('future')">{{
+                    'MISSIONS.TAB_FUTURE' | translate }}</button>
+                <button class="tab-btn" [class.active]="activeTab() === 'past'" (click)="setActiveTab('past')">{{
+                    'MISSIONS.TAB_PAST' | translate }}</button>
+            </div>
+
+            <div class="sort-container">
+                <label for="mission-sort">{{ 'MISSIONS.SORT.LABEL' | translate }}</label>
+                <select id="mission-sort" (change)="onSortChange($event)" [value]="sortBy()">
+                    <option value="newest">{{ 'MISSIONS.SORT.NEWEST' | translate }}</option>
+                    <option value="oldest">{{ 'MISSIONS.SORT.OLDEST' | translate }}</option>
+                    <option value="alpha-asc">{{ 'MISSIONS.SORT.ALPHA_ASC' | translate }}</option>
+                    <option value="alpha-desc">{{ 'MISSIONS.SORT.ALPHA_DESC' | translate }}</option>
+                </select>
+            </div>
         </div>
     </section>
 

@@ -84,7 +84,14 @@
     "TAB_FUTURE": "Planned missions",
     "TAB_PAST": "Past missions",
     "LOADING": "Loading missions...",
-    "EMPTY": "There are currently no missions."
+    "EMPTY": "There are currently no missions.",
+    "SORT": {
+      "LABEL": "Sort by",
+      "NEWEST": "Chronological (newest first)",
+      "OLDEST": "Chronological (oldest first)",
+      "ALPHA_ASC": "Alphabetical (A-Z)",
+      "ALPHA_DESC": "Alphabetical (Z-A)"
+    }
   },
   "LEGACIES": {
     "IMAGE_ALT": "Wills and legacies",
@@ -196,6 +203,15 @@
       "P1": "A clear, concrete description for this volunteer commitment is impossible.",
       "P2": "It is the perfect job for volunteers who want to roll up their sleeves firmly, are creative and possess a healthy dose of problem-solving ability.",
       "P3": "It is and remains a fantastic, unforgettable experience."
+    }
+  },
+  "PATIENT_STORIES": {
+    "LABEL": "Patients' stories",
+    "IMAGE_ALT": "Patients' stories",
+    "STORY1": {
+      "TITLE": "Testimony of a satisfied mother",
+      "P1": "This mother is very happy that her eldest son will finally be helped for his problem, a hydrocele (fluid accumulation in the scrotum).",
+      "P2": "Children can sometimes be very hard on each other and she hopes that her son will very soon be able and dare to go swimming with his friends again."
     }
   },
   "CTA_BANNER": {

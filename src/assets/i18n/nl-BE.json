@@ -79,12 +79,19 @@
   "MISSIONS": {
     "LABEL": "ONZE MISSIES",
     "TITLE": "Onze missies",
-    "INTRO_1": "Ontdek hier onze geplande en afgelopen missies.",
+    "INTRO_1": "Ontdek hier onze geplande en voorbije missies.",
     "INTRO_2": "De missies hebben telkens een duurtijd van 2 weken.",
     "TAB_FUTURE": "Geplande missies",
-    "TAB_PAST": "Afgelopen missies",
+    "TAB_PAST": "Voorbije missies",
     "LOADING": "Missies laden...",
-    "EMPTY": "Er zijn momenteel geen missies."
+    "EMPTY": "Er zijn momenteel geen missies.",
+    "SORT": {
+      "LABEL": "Sorteren op",
+      "NEWEST": "Chronologisch (nieuwste eerst)",
+      "OLDEST": "Chronologisch (oudste eerst)",
+      "ALPHA_ASC": "Alfabetisch (A-Z)",
+      "ALPHA_DESC": "Alfabetisch (Z-A)"
+    }
   },
   "LEGACIES": {
     "IMAGE_ALT": "Testamenten en legaten",
@@ -108,9 +115,9 @@
     "P3_2": "Hoe wij helpen > vrijwilligers aan het woord"
   },
   "CORPORATE_SUPPORT": {
-    "IMAGE_ALT": "Steun als organisatie",
-    "LABEL": "STEUN ALS ORGANISATIE",
-    "TITLE_1": "Steun als organisatie",
+    "IMAGE_ALT": "Steun als bedrijf",
+    "LABEL": "STEUN ALS BEDRIJF",
+    "TITLE_1": "Steun als bedrijf",
     "P1": "Als organisatie of bedrijf kan je REVIVE vzw <strong>financieel steunen</strong>. Zo help je ons helpen en toon je jouw maatschappelijk engagement als bedrijf. Giften zijn in de boekhouding van je bedrijf fiscaal aftrekbaar.",
     "P2": "Als bedrijf kan je ook steunen in <strong>natura</strong>. Ben je actief in de medische sector dan zijn schenkingen van medisch materiaal voor onze hulpacties meer dan welkom.",
     "P3": "Eveneens voor onze <strong>benefietactiviteiten</strong> kan ondersteuning gegeven worden door het ter beschikking stellen van infrastructuur, sponsoring van catering voor recepties, enz.",
@@ -198,6 +205,15 @@
       "P3": "Het is en blijft een fantastische, onvergetelijke ervaring."
     }
   },
+  "PATIENT_STORIES": {
+    "LABEL": "Patiënten aan het woord",
+    "IMAGE_ALT": "Patiënten aan het woord",
+    "STORY1": {
+      "TITLE": "Getuigenis van een tevreden mama",
+      "P1": "Deze moeder is zeer blij dat haar oudste zoon eindelijk zal geholpen worden voor zijn probleem, een hydrocoele (vocht opstapeling in de balzak).",
+      "P2": "Kinderen kunnen soms erg hard zijn voor elkaar en ze hoopt zo, dat haar zoon heel snel zal kunnen en durven terug gaan zwemmen met zijn vriendjes."
+    }
+  },
   "CTA_BANNER": {
     "LABEL": "WORD LID",
     "TITLE": "Doe een aankoop op onze webshop",
@@ -230,7 +246,7 @@
       "PAST_MISSIONS": "Voorbije medische missies",
       "PATIENT_STORIES": "Patiënten aan het woord",
       "VOLUNTEER_STORIES": "Vrijwilligers aan het woord",
-      "EVENTS": "Events",
+      "EVENTS": "Evenementen",
       "SUPPORT_US": "Steun ons",
       "MAKE_DONATION": "Doe een gift",
       "BECOME_MEMBER": "Word lid",
@@ -285,7 +301,7 @@
     "VOLUNTEER_STORIES": "Vrijwilligersverhalen",
     "EVENTS": "Events",
     "BECOME_MEMBER": "Word lid",
-    "CORPORATE_SUPPORT": "Steun als organisatie",
+    "CORPORATE_SUPPORT": "Steun als bedrijf",
     "LEGACIES": "Testamenten en legaten",
     "JOIN_TEAM": "Versterk ons team",
     "CONTACT": "Contact",

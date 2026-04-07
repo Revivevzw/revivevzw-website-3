@@ -26,6 +26,8 @@ export class Header {
     isLangMenuOpen = false;
     isMenuOpen = false;
     isScrolled = false;
+    isVisible = true;
+    private lastScrollTop = 0;
 
     constructor() {
         this.router.events.pipe(
@@ -33,12 +35,24 @@ export class Header {
         ).subscribe(() => {
             this.isMenuOpen = false;
             this.isLangMenuOpen = false;
+            this.isVisible = true;
         });
     }
 
     @HostListener('window:scroll', [])
     onWindowScroll() {
-        this.isScrolled = window.scrollY > 20;
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        
+        // Hide header on scroll down, show on scroll up
+        // But keep it visible if the mobile menu is open
+        if (scrollTop > this.lastScrollTop && scrollTop > 150 && !this.isMenuOpen) {
+            this.isVisible = false;
+        } else {
+            this.isVisible = true;
+        }
+        
+        this.isScrolled = scrollTop > 20;
+        this.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
     }
 
     currentLang() {

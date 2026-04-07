@@ -84,7 +84,14 @@
     "TAB_FUTURE": "Missions planifiées",
     "TAB_PAST": "Missions passées",
     "LOADING": "Chargement des missions...",
-    "EMPTY": "Il n'y a actuellement aucune mission."
+    "EMPTY": "Il n'y a actuellement aucune mission.",
+    "SORT": {
+      "LABEL": "Trier par",
+      "NEWEST": "Chronologique (du plus récent au plus ancien)",
+      "OLDEST": "Chronologique (du plus ancien au plus récent)",
+      "ALPHA_ASC": "Alphabétique (A-Z)",
+      "ALPHA_DESC": "Alphabétique (Z-A)"
+    }
   },
   "LEGACIES": {
     "IMAGE_ALT": "Testaments et legs",
@@ -198,6 +205,15 @@
       "P3": "Cela reste et restera une expérience fantastique et inoubliable."
     }
   },
+  "PATIENT_STORIES": {
+    "LABEL": "Paroles de patients",
+    "IMAGE_ALT": "Paroles de patients",
+    "STORY1": {
+      "TITLE": "Témoignage d'une maman satisfaite",
+      "P1": "Cette mère est très heureuse que son fils aîné soit enfin aidé pour son problème, une hydrocèle (accumulation de liquide dans le scrotum).",
+      "P2": "Les enfants peuvent parfois être très durs les uns envers les autres et elle espère que son fils pourra et osera très bientôt retourner nager avec ses amis."
+    }
+  },
   "CTA_BANNER": {
     "LABEL": "DEVENIR MEMBRE",
     "TITLE": "Faites un achat sur notre boutique en ligne",
@@ -243,7 +259,7 @@
   "HOME": {
     "HERO": {
       "ALT": "Medical care in Africa",
-      "TITLE": "Les soins médicaux, là où ils comptent vraiment."
+      "TITLE": "Soins médicaux, là où ça compte vraiment."
     },
     "MISSION": {
       "ALT": "Dirt road in Africa",

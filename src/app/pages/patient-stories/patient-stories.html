@@ -3,12 +3,12 @@
     <app-breadcrumbs></app-breadcrumbs>
 
     <section class="container-card">
-        <app-split-content-card imageSrc="assets/patient-story-1.jpg" imageAlt="Patiënten aan het woord"
-            label="Patiënten aan het woord" [reversed]="true" title="Getuigenis van een tevreden mama">
-            <p>Deze moeder is zeer blij dat haar oudste zoon eindelijk zal geholpen worden voor zijn probleem, een
-                hydrocoele (vocht opstapeling in de balzak).</p>
-            <p>Kinderen kunnen soms erg hard zij voor elkaar en ze hoopt zo, dat haar zoon heel snel zal kunnen en
-                durven teug gaan zwemmen met zijn vriendjes.</p>
+        <app-split-content-card imageSrc="assets/patient-story-1.jpg"
+            [imageAlt]="'PATIENT_STORIES.IMAGE_ALT' | translate"
+            [label]="'PATIENT_STORIES.LABEL' | translate" [reversed]="true"
+            [title]="'PATIENT_STORIES.STORY1.TITLE' | translate">
+            <p>{{ 'PATIENT_STORIES.STORY1.P1' | translate }}</p>
+            <p>{{ 'PATIENT_STORIES.STORY1.P2' | translate }}</p>
         </app-split-content-card>
     </section>
 </main>
