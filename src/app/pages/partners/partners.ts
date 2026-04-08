@@ -23,4 +23,12 @@ export class Partners implements OnInit {
             map(sponsors => this.sponsorApiService.filterActiveSponsors(sponsors))
         );
     }
+
+    ensureAbsoluteUrl(url: string | undefined): string | undefined {
+        if (!url) return undefined;
+        if (url.startsWith('http://') || url.startsWith('https://')) {
+            return url;
+        }
+        return `https://${url}`;
+    }
 }

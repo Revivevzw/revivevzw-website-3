@@ -78,7 +78,9 @@
 
 
 
-@media (max-width: 768px) { /* --breakpoint-mobile */
+@media (max-width: 768px) {
+
+    /* --breakpoint-mobile */
     .hero-title {
         font-size: 40px;
     }

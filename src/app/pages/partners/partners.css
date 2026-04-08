@@ -16,18 +16,24 @@
 .partner-card {
     width: 100%;
     aspect-ratio: 1 / 1;
-    background-color: #d9d9d9;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey-200);
     border-radius: var(--border-radius-2);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: var(--spacing-4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-.partner-card:hover {
+.partner-card.clickable {
+    cursor: pointer;
+}
+
+.partner-card.clickable:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-default);
+    border-color: var(--color-primary-500);
 }
 
 .partner-logo {

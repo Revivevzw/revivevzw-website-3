@@ -5,7 +5,10 @@
         <app-breadcrumbs></app-breadcrumbs>
         <div class="events-grid">
             @if (loading()) {
-            <p class="loading-message">{{ 'EVENTS.LOADING' | translate }}</p>
+            <div class="loading-container">
+                <div class="loading-spinner"></div>
+                <p>{{ 'EVENTS.LOADING' | translate }}</p>
+            </div>
             } @else {
             @for (event of events(); track event.id) {
             <app-activity-card [externalLink]="'https://shop.revivevzw.be/ACTIVITEITEN/oneact60.aspx?ID=' + event.id"

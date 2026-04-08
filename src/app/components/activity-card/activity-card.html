@@ -11,6 +11,7 @@
 <ng-template #cardContent>
     <div class="activity-card">
         <div class="card-image">
+            <div class="card-image-background" [style.background-image]="imageSrc ? 'url(\'' + imageSrc + '\')' : null"></div>
             <img [src]="imageSrc" [alt]="imageAlt || title">
         </div>
         <div class="card-content">

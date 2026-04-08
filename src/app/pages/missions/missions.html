@@ -34,7 +34,10 @@
 
     <section class="mission-grid">
         @if (loading()) {
-        <p class="loading-message">{{ 'MISSIONS.LOADING' | translate }}</p>
+        <div class="loading-container">
+            <div class="loading-spinner"></div>
+            <p>{{ 'MISSIONS.LOADING' | translate }}</p>
+        </div>
         } @else {
         @for (mission of filteredMissions(); track mission.id) {
         <app-activity-card [link]="['/missions', mission.id]" [imageSrc]="mission.mainImage"

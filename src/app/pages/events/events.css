@@ -10,7 +10,7 @@
     padding: var(--spacing-2) 0;
 }
 
-.loading-message,
+.loading-container,
 .no-events {
     grid-column: 1 / -1;
     text-align: center;

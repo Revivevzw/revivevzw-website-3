@@ -30,13 +30,15 @@ export class Missions implements OnInit {
     sortBy = signal<SortOption>('newest');
 
     // toSignal handles the subscription and provides a reactive Signal of the data
-    private allMissions = toSignal(this.missionApi.getAll(), { initialValue: [] as Mission[] });
+    private allMissions = toSignal(this.missionApi.getAll());
 
     // Computed state automatically updates when activeTab, sortBy or allMissions changes
     filteredMissions = computed(() => {
         const tab = this.activeTab();
         const missions = this.allMissions();
         const sort = this.sortBy();
+
+        if (!missions) return [];
 
         const filtered = missions.filter(m =>
             tab === 'future' ? m.type === 0 : m.type === 2
@@ -71,8 +73,7 @@ export class Missions implements OnInit {
     });
 
     // Simple loading flag based on whether we have data yet
-    // Note: In a real app, you might want a more explicit loading state from the API service
-    loading = computed(() => this.allMissions().length === 0);
+    loading = computed(() => this.allMissions() === undefined);
 
     ngOnInit() {
         // Sync the Signal state with URL query parameters

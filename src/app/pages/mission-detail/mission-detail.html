@@ -65,6 +65,7 @@
                     <div class="media-images">
                         @for (url of m.mediaUrls; track url) {
                         <div class="media-img-wrapper">
+                            <div class="image-background" [style.background-image]="'url(\'' + url + '\')'"></div>
                             <img [src]="url" alt="Mission media">
                         </div>
                         }
@@ -80,6 +81,7 @@
             <div class="gallery-grid">
                 @for (img of m.images; track img) {
                 <div class="gallery-item">
+                    <div class="image-background" [style.background-image]="'url(\'' + img + '\')'"></div>
                     <img [src]="img" alt="Mission impression">
                 </div>
                 }

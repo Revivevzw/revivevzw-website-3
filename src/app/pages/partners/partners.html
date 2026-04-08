@@ -10,10 +10,14 @@
         @if (sponsors$ | async; as sponsors) {
         <div class="partners-grid">
             @for (sponsor of sponsors; track sponsor.id) {
-            <div class="partner-card">
-                <a [href]="sponsor.websiteUrl" target="_blank" [title]="sponsor.name">
+            <div class="partner-card" [class.clickable]="sponsor.websiteUrl">
+                @if (sponsor.websiteUrl) {
+                <a [href]="ensureAbsoluteUrl(sponsor.websiteUrl)" target="_blank" [title]="sponsor.name">
                     <img [src]="sponsor.logoUrl" [alt]="sponsor.name" class="partner-logo">
                 </a>
+                } @else {
+                <img [src]="sponsor.logoUrl" [alt]="sponsor.name" class="partner-logo">
+                }
             </div>
             }
         </div>
