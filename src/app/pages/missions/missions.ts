@@ -114,5 +114,9 @@ export class Missions implements OnInit {
         const select = event.target as HTMLSelectElement;
         this.setSortBy(select.value as SortOption);
     }
+
+    formatMissionId(id: number): string {
+        return 'M' + id.toString().padStart(3, '0');
+    }
 }
 

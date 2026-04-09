@@ -15,7 +15,8 @@
             <img [src]="imageSrc" [alt]="imageAlt || title">
         </div>
         <div class="card-content">
-            <div class="card-date" *ngIf="date">
+            @if (date) {
+            <div class="card-date">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="feather feather-calendar">
@@ -25,9 +26,15 @@
                     <line x1="3" y1="10" x2="21" y2="10"></line>
                 </svg>
                 <span>{{ date | date:'d MMMM y' : undefined : translate.currentLang }}</span>
+                @if (identifier) {
+                <span class="card-identifier">{{ identifier }}</span>
+                }
             </div>
+            }
             <h3>{{ title }}</h3>
-            <p class="card-description" *ngIf="description">{{ description }}</p>
+            @if (description) {
+            <p class="card-description">{{ description }}</p>
+            }
         </div>
     </div>
 </ng-template>

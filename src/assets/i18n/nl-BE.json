@@ -215,10 +215,10 @@
     }
   },
   "CTA_BANNER": {
-    "LABEL": "WORD LID",
-    "TITLE": "Doe een aankoop op onze webshop",
-    "P1": "Je kan onze vzw steunen door een aankoop te doen in onze webshop.",
-    "BUTTON": "Doe een gift"
+    "LABEL": "STEUN ONS",
+    "TITLE": "Steun ons door een gift te doen, de webshop te bezoeken of word lid",
+    "P1": "Steun ons via onderstaande knoppen",
+    "BECOME_MEMBER": "Word lid"
   },
   "FOOTER": {
     "ADDRESS_LINE_1": "Wittepaalstraat 16",

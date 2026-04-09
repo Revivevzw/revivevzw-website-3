@@ -215,10 +215,10 @@
     }
   },
   "CTA_BANNER": {
-    "LABEL": "DEVENIR MEMBRE",
-    "TITLE": "Faites un achat sur notre boutique en ligne",
-    "P1": "Vous pouvez soutenir notre asbl en effectuant un achat dans notre boutique en ligne.",
-    "BUTTON": "Faire un don"
+    "LABEL": "SOUTENEZ-NOUS",
+    "TITLE": "Soutenez-nous en faisant un don, en visitant la boutique ou en devenant membre",
+    "P1": "Soutenez-nous via les boutons ci-dessous",
+    "BECOME_MEMBER": "Devenir membre"
   },
   "FOOTER": {
     "ADDRESS_LINE_1": "Wittepaalstraat 16",
@@ -259,7 +259,7 @@
   "HOME": {
     "HERO": {
       "ALT": "Medical care in Africa",
-      "TITLE": "Soins médicaux, là où ça compte vraiment."
+      "TITLE": "Des soins médicaux, là où cela compte vraiment."
     },
     "MISSION": {
       "ALT": "Dirt road in Africa",

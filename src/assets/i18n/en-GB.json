@@ -215,10 +215,10 @@
     }
   },
   "CTA_BANNER": {
-    "LABEL": "BECOME A MEMBER",
-    "TITLE": "Make a purchase in our webshop",
-    "P1": "You can support our non-profit organisation by making a purchase in our webshop.",
-    "BUTTON": "Make a donation"
+    "LABEL": "SUPPORT US",
+    "TITLE": "Support us by making a donation, visiting the webshop or becoming a member",
+    "P1": "Support us via the buttons below",
+    "BECOME_MEMBER": "Become a member"
   },
   "FOOTER": {
     "ADDRESS_LINE_1": "Wittepaalstraat 16",
@@ -259,7 +259,7 @@
   "HOME": {
     "HERO": {
       "ALT": "Medical care in Africa",
-      "TITLE": "Medical care, where it really counts."
+      "TITLE": "Medical care, where it truly matters."
     },
     "MISSION": {
       "ALT": "Dirt road in Africa",

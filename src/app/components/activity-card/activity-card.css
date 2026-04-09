@@ -74,6 +74,17 @@
     margin-bottom: var(--spacing-3);
 }
 
+.card-identifier {
+    font: var(--font-body-small-default);
+    color: var(--color-grey-600);
+}
+
+.card-identifier::before {
+    content: "•";
+    margin-right: var(--spacing-2);
+    color: var(--color-grey-200);
+}
+
 .card-date svg {
     width: 24px;
     height: 24px;

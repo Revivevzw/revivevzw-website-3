@@ -19,4 +19,5 @@ export class ActivityCard {
     @Input() date?: Date | string;
     @Input() title!: string;
     @Input() description?: string;
+    @Input() identifier?: string;
 }
