@@ -53,9 +53,10 @@
 
 .logo-mark {
     height: 100px;
-    /* Adjust based on eye-balling screenshot relative to container */
-    width: auto;
-    object-fit: contain;
+    aspect-ratio: 319 / 142;
+    background-color: rgb(230, 50, 18);
+    -webkit-mask: url(/assets/Logo-horizontal.svg) center/contain no-repeat;
+    mask: url(/assets/Logo-horizontal.svg) center/contain no-repeat;
 }
 
 .header-main {
