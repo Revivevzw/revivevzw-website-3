@@ -9,7 +9,8 @@
 
     <div class="spacer"></div>
 
-    <app-split-content-card imageSrc="assets/about-2.jpg" [label]="'TEAM.LABEL' | translate" [title]="'TEAM.CARD1.TITLE' | translate">
+    <app-split-content-card imageSrc="assets/about-2.jpg" [label]="'TEAM.LABEL' | translate"
+        [title]="'TEAM.CARD1.TITLE' | translate">
         <ul>
             <li>{{ 'TEAM.CARD1.LI1' | translate }}</li>
             <li>{{ 'TEAM.CARD1.LI2' | translate }}</li>
@@ -22,15 +23,16 @@
 
         <div actions>
             @if (organigram()?.url) {
-            <a [href]="organigram()!.url | localize" target="_blank" download class="btn-primary">{{ 'TEAM.CARD1.DOWNLOAD' | translate }}</a>
+            <a [href]="organigram()!.url | localize" target="_blank" download class="btn-primary">{{
+                'TEAM.CARD1.DOWNLOAD' | translate }}</a>
             }
         </div>
     </app-split-content-card>
 
     <div class="spacer"></div>
 
-    <app-split-content-card imageSrc="assets/about-1.jpg" [label]="'TEAM.LABEL' | translate" [title]="'TEAM.CARD2.TITLE' | translate"
-        [reversed]="true">
+    <app-split-content-card imageSrc="assets/about-1.jpg" [label]="'TEAM.LABEL' | translate"
+        [title]="'TEAM.CARD2.TITLE' | translate" [reversed]="true">
         <p>
             {{ 'TEAM.CARD2.P1' | translate }}
             <br><br>
@@ -38,7 +40,7 @@
         </p>
 
         <div actions>
-            <a routerLink="/team" class="btn-primary">{{ 'TEAM.CARD2.JOIN_BUTTON' | translate }}</a>
+            <a routerLink="/contact" class="btn-primary">{{ 'TEAM.CARD2.JOIN_BUTTON' | translate }}</a>
         </div>
     </app-split-content-card>
 </div>

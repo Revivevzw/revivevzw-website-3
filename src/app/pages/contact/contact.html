@@ -1,71 +1,76 @@
-<main class="contact-page">
+<main class="container contact-page">
     <div class="header-spacer"></div>
     <app-breadcrumbs></app-breadcrumbs>
-    
-    <section class="container contact-container">
+
+    <section class="contact-container">
         <!-- left content -->
         <div class="contact-info">
             <h1>{{ 'CONTACT.TITLE' | translate }}</h1>
-            
+
             <div class="info-group">
                 <p class="label">{{ 'CONTACT.ADDRESS_LABEL' | translate }}</p>
                 <p>{{ 'CONTACT.ADDRESS_VALUE' | translate }}</p>
-                
+
                 <p class="label">{{ 'CONTACT.EMAIL_LABEL' | translate }}</p>
                 <p><a href="mailto:info@revivevzw.be">info@revivevzw.be</a></p>
-                
+
                 <p class="label">{{ 'CONTACT.PHONE_LABEL' | translate }}</p>
                 <p><a href="tel:+32475467557">+32 (0)475 467 557</a></p>
             </div>
         </div>
-        
+
         <!-- right form -->
         <div class="contact-form-wrapper">
             <div class="contact-form-card">
                 <h2>{{ 'CONTACT.FORM_TITLE' | translate }}</h2>
-                
+
                 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                     @if (submitted) {
-                        <div class="success-message">
-                            {{ 'CONTACT.SUCCESS_MSG' | translate }}
-                        </div>
+                    <div class="success-message">
+                        {{ 'CONTACT.SUCCESS_MSG' | translate }}
+                    </div>
                     }
 
                     @if (errorMessage) {
-                        <div class="error-message">
-                            {{ errorMessage | translate }}
-                        </div>
+                    <div class="error-message">
+                        {{ errorMessage | translate }}
+                    </div>
                     }
 
                     <div class="form-group full-width">
                         <label for="email">{{ 'CONTACT.FORM.EMAIL' | translate }}<span class="required">*</span></label>
                         <input type="email" id="email" formControlName="email">
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="firstName">{{ 'CONTACT.FORM.FIRST_NAME' | translate }}<span class="required">*</span></label>
+                            <label for="firstName">{{ 'CONTACT.FORM.FIRST_NAME' | translate }}<span
+                                    class="required">*</span></label>
                             <input type="text" id="firstName" formControlName="firstName">
                         </div>
                         <div class="form-group">
-                            <label for="lastName">{{ 'CONTACT.FORM.LAST_NAME' | translate }}<span class="required">*</span></label>
+                            <label for="lastName">{{ 'CONTACT.FORM.LAST_NAME' | translate }}<span
+                                    class="required">*</span></label>
                             <input type="text" id="lastName" formControlName="lastName">
                         </div>
                     </div>
-                    
+
                     <div class="form-group full-width">
-                        <label for="message">{{ 'CONTACT.FORM.MESSAGE' | translate }}<span class="required">*</span></label>
+                        <label for="message">{{ 'CONTACT.FORM.MESSAGE' | translate }}<span
+                                class="required">*</span></label>
                         <textarea id="message" formControlName="message" rows="5"></textarea>
                     </div>
-                    
+
                     <div class="form-group checkbox-group">
                         <input type="checkbox" id="privacy" formControlName="privacy">
                         <label for="privacy">
-                            {{ 'CONTACT.FORM.PRIVACY_1' | translate }}<a routerLink="/gdpr" class="privacy-link">{{ 'CONTACT.FORM.PRIVACY_2' | translate }}</a>{{ 'CONTACT.FORM.PRIVACY_3' | translate }}
+                            {{ 'CONTACT.FORM.PRIVACY_1' | translate }}<a routerLink="/gdpr" class="privacy-link">{{
+                                'CONTACT.FORM.PRIVACY_2' | translate }}</a>{{ 'CONTACT.FORM.PRIVACY_3' | translate }}
                         </label>
                     </div>
-                    
-                    <button type="submit" class="btn-primary form-submit-btn" [disabled]="!contactForm.valid || isSending">
+
+                    <button type="submit" class="btn-primary form-submit-btn"
+                        [disabled]="!contactForm.valid || isSending">
                         {{ isSending ? ('CONTACT.FORM.SENDING' | translate) : ('CONTACT.FORM.SEND' | translate) }}
                     </button>
                 </form>
